@@ -1,0 +1,4558 @@
+<event name="STORAGE_CHECK_PROM_VATS">
+	<text>Which crew would you like to transform?</text>
+	<choice req="ANY LIST_TNC_PROM_CREW_HUMAN">
+		<text>Transform a Human.</text>
+		<event load="STORAGE_CHECK_PROM_VATS_SELECT_HUMAN" />
+	</choice>
+	<choice req="ANY LIST_TNC_PROM_CREW_ZOLTAN">
+		<text>Transform a Zoltan.</text>
+		<event load="STORAGE_CHECK_PROM_VATS_SELECT_ZOLTAN" />
+	</choice>
+	<choice req="ANY LIST_TNC_PROM_CREW_ENGI">
+		<text>Transform a Engi.</text>
+		<event load="STORAGE_CHECK_PROM_VATS_SELECT_ENGI" />
+	</choice>
+	<choice req="ANY LIST_TNC_PROM_CREW_ROCK">
+		<text>Transform a Rock.</text>
+		<event load="STORAGE_CHECK_PROM_VATS_SELECT_ROCK" />
+	</choice>
+	<choice req="ANY LIST_TNC_PROM_CREW_MANTIS">
+		<text>Transform a Mantis.</text>
+		<event load="STORAGE_CHECK_PROM_VATS_SELECT_MANTIS" />
+	</choice>
+	<choice req="ANY LIST_TNC_PROM_CREW_CRYSTAL">
+		<text>Transform a Crystal.</text>
+		<event load="STORAGE_CHECK_PROM_VATS_SELECT_CRYSTAL" />
+	</choice>
+	<choice req="ANY LIST_TNC_PROM_CREW_SLUG">
+		<text>Transform a Slug.</text>
+		<event load="STORAGE_CHECK_PROM_VATS_SELECT_SLUG" />
+	</choice>
+	<choice req="ANY LIST_TNC_PROM_CREW_SHELL">
+		<text>Transform a Shell.</text>
+		<event load="STORAGE_CHECK_PROM_VATS_SELECT_SHELL" />
+	</choice>
+	<choice req="ANY LIST_TNC_PROM_CREW_LEECH">
+		<text>Transform a Leech.</text>
+		<event load="STORAGE_CHECK_PROM_VATS_SELECT_LEECH" />
+	</choice>
+	<choice req="ANY LIST_TNC_PROM_CREW_LANIUS">
+		<text>Transform a Lanius.</text>
+		<event load="STORAGE_CHECK_PROM_VATS_SELECT_LANIUS" />
+	</choice>
+	<choice req="ANY LIST_TNC_PROM_CREW_GHOST">
+		<text>Transform a Ghost.</text>
+		<event load="STORAGE_CHECK_PROM_VATS_SELECT_GHOST" />
+	</choice>
+	<choice req="ANY LIST_TNC_PROM_CREW_ANCIENT">
+		<text>Transform a Ancient.</text>
+		<event load="STORAGE_CHECK_PROM_VATS_SELECT_ANCIENT" />
+	</choice>
+	<choice req="ANY LIST_TNC_PROM_CREW_SPIDER">
+		<text>Transform a Spider.</text>
+		<event load="STORAGE_CHECK_PROM_VATS_SELECT_SPIDER" />
+	</choice>
+	<choice req="ANY LIST_TNC_PROM_CREW_HORSE">
+		<text>Transform a Horse.</text>
+		<event load="STORAGE_CHECK_PROM_VATS_SELECT_HORSE" />
+	</choice>
+	<choice req="ANY LIST_TNC_PROM_CREW_MORPH">
+		<text>Transform a Morph.</text>
+		<event load="STORAGE_CHECK_PROM_VATS_SELECT_MORPH" />
+	</choice>
+	<choice req="ANY LIST_TNC_PROM_CREW_LIZARD">
+		<text>Transform a Lizard.</text>
+		<event load="STORAGE_CHECK_PROM_VATS_SELECT_LIZARD" />
+	</choice>
+	<choice req="ANY LIST_TNC_PROM_CREW_ORCHID">
+		<text>Transform a Orchid.</text>
+		<event load="STORAGE_CHECK_PROM_VATS_SELECT_ORCHID" />
+	</choice>
+	<choice hidden="true" req="pilot" lvl="1" blue="false" max_group="1">
+		<text>Nevermind, do something else.</text>
+		<event load="STORAGE_CHECK" />
+	</choice>
+</event>
+<event name="STORAGE_CHECK_PROM_VATS_SELECT_HUMAN">
+	<text>Which Human would you like to transform?</text>
+	<choice req="human" hidden="true">
+		<text>Transform a Human.</text>
+		<event load="STORAGE_CHECK_PROM_VATS_HUMAN" />
+	</choice>
+	<choice req="LIST_CREW_MEDIC_SKINS" hidden="true">
+		<text>Transform a Medic.</text>
+		<event load="STORAGE_CHECK_PROM_VATS_MEDIC" />
+	</choice>
+	<choice req="LIST_CREW_ENGINEER_SKINS" hidden="true">
+		<text>Transform a Engineer.</text>
+		<event load="STORAGE_CHECK_PROM_VATS_ENGINEER" />
+	</choice>
+	<choice req="LIST_CREW_SOLDIER_SKINS" hidden="true">
+		<text>Transform a Soldier.</text>
+		<event load="STORAGE_CHECK_PROM_VATS_SOLDIER" />
+	</choice>
+	<choice req="human_mfk" hidden="true">
+		<text>Transform a MFK.</text>
+		<event load="STORAGE_CHECK_PROM_VATS_MFK" />
+	</choice>
+	<choice req="human_technician" hidden="true">
+		<text>Transform a Technician .</text>
+		<event load="STORAGE_CHECK_PROM_VATS_TECHNICIAN" />
+	</choice>
+	<choice req="human_legion" hidden="true">
+		<text>Transform a Legionnaire Operative.</text>
+		<event load="STORAGE_CHECK_PROM_VATS_LEGIONNAIREOPERATIVE" />
+	</choice>
+	<choice req="human_legion_pyro" hidden="true">
+		<text>Transform a Legionnaire Pyrotechnic.</text>
+		<event load="STORAGE_CHECK_PROM_VATS_LEGIONNAIREPYROTECHNIC" />
+	</choice>
+	<choice req="human_angel" hidden="true">
+		<text>Transform a Angel.</text>
+		<event load="STORAGE_CHECK_PROM_VATS_ANGEL" />
+	</choice>
+	<choice req="unique_haynes" hidden="true">
+		<text>Transform a Lead Detective.</text>
+		<event load="STORAGE_CHECK_PROM_VATS_LEADDETECTIVE" />
+	</choice>
+	<choice req="unique_tully" hidden="true">
+		<text>Transform a Federation Admiral.</text>
+		<event load="STORAGE_CHECK_PROM_VATS_FEDERATIONADMIRAL" />
+	</choice>
+	<choice req="unique_jerry" hidden="true">
+		<text>Transform a New Best Friend.</text>
+		<event load="STORAGE_CHECK_PROM_VATS_NEWBESTFRIEND" />
+	</choice>
+	<choice req="unique_cyra" hidden="true">
+		<text>Transform a MFK Commander.</text>
+		<event load="STORAGE_CHECK_PROM_VATS_MFKCOMMANDER" />
+	</choice>
+	<choice req="unique_leah" hidden="true">
+		<text>Transform a Beam Master.</text>
+		<event load="STORAGE_CHECK_PROM_VATS_BEAMMASTER" />
+	</choice>
+	<choice req="unique_leah_mfk" hidden="true">
+		<text>Transform a Beam Master Ace.</text>
+		<event load="STORAGE_CHECK_PROM_VATS_BEAMMASTERACE" />
+	</choice>
+	<choice req="unique_vance" hidden="true">
+		<text>Transform a Legion Admiral.</text>
+		<event load="STORAGE_CHECK_PROM_VATS_LEGIONADMIRAL" />
+	</choice>
+	<choice hidden="true" req="pilot" lvl="1" blue="false" max_group="1">
+		<text>Nevermind, do something else.</text>
+		<event load="STORAGE_CHECK" />
+	</choice>
+</event><event name="STORAGE_CHECK_PROM_VATS_HUMAN">
+	<text>What would you like to transform your Human into?</text>
+	<choice req="human" hidden="true">
+		<text>Convert your Human into a Medic [Cost: 30~]</text>
+		<event>
+			<text>Your Human has been sucessfully converted into a Medic.</text>
+			<transformRace class="human">human_medic</transformRace>
+			<item_modify>
+				<item type="scrap" min="-30" max="-30" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice req="human" hidden="true">
+		<text>Convert your Human into a Engineer [Cost: 30~]</text>
+		<event>
+			<text>Your Human has been sucessfully converted into a Engineer.</text>
+			<transformRace class="human">human_engineer</transformRace>
+			<item_modify>
+				<item type="scrap" min="-30" max="-30" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice req="human" hidden="true">
+		<text>Convert your Human into a Soldier [Cost: 30~]</text>
+		<event>
+			<text>Your Human has been sucessfully converted into a Soldier.</text>
+			<transformRace class="human">human_soldier</transformRace>
+			<item_modify>
+				<item type="scrap" min="-30" max="-30" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice req="human" hidden="true">
+		<text>Convert your Human into a Beam Master [Cost: 10~]</text>
+		<event>
+			<text>Your Human has been sucessfully converted into a Beam Master.</text>
+			<transformRace class="human">unique_leah</transformRace>
+			<item_modify>
+				<item type="scrap" min="-10" max="-10" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="pilot" lvl="1" blue="false" max_group="1">
+		<text>Nevermind...</text>
+		<event load="STORAGE_CHECK" />
+	</choice>
+</event>
+<event name="STORAGE_CHECK_PROM_VATS_MEDIC">
+	<text>What would you like to transform your Medic into?</text>
+	<choice req="LIST_CREW_MEDIC_SKINS" hidden="true">
+		<text>Convert your Medic into a Human [Cost: 0~]</text>
+		<event>
+			<text>Your Medic has been sucessfully converted into a Human.</text>
+			<transformRace class="LIST_CREW_MEDIC_SKINS">human</transformRace>
+			<item_modify>
+				<item type="scrap" min="-0" max="-0" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice req="LIST_CREW_MEDIC_SKINS" hidden="true">
+		<text>Convert your Medic into a Engineer [Cost: 5~]</text>
+		<event>
+			<text>Your Medic has been sucessfully converted into a Engineer.</text>
+			<transformRace class="LIST_CREW_MEDIC_SKINS">human_engineer</transformRace>
+			<item_modify>
+				<item type="scrap" min="-5" max="-5" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice req="LIST_CREW_MEDIC_SKINS" hidden="true">
+		<text>Convert your Medic into a Soldier [Cost: 5~]</text>
+		<event>
+			<text>Your Medic has been sucessfully converted into a Soldier.</text>
+			<transformRace class="LIST_CREW_MEDIC_SKINS">human_soldier</transformRace>
+			<item_modify>
+				<item type="scrap" min="-5" max="-5" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="pilot" lvl="1" blue="false" max_group="1">
+		<text>Nevermind...</text>
+		<event load="STORAGE_CHECK" />
+	</choice>
+</event>
+<event name="STORAGE_CHECK_PROM_VATS_ENGINEER">
+	<text>What would you like to transform your Engineer into?</text>
+	<choice req="LIST_CREW_ENGINEER_SKINS" hidden="true">
+		<text>Convert your Engineer into a Human [Cost: 0~]</text>
+		<event>
+			<text>Your Engineer has been sucessfully converted into a Human.</text>
+			<transformRace class="LIST_CREW_ENGINEER_SKINS">human</transformRace>
+			<item_modify>
+				<item type="scrap" min="-0" max="-0" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice req="LIST_CREW_ENGINEER_SKINS" hidden="true">
+		<text>Convert your Engineer into a Medic [Cost: 5~]</text>
+		<event>
+			<text>Your Engineer has been sucessfully converted into a Medic.</text>
+			<transformRace class="LIST_CREW_ENGINEER_SKINS">human_medic</transformRace>
+			<item_modify>
+				<item type="scrap" min="-5" max="-5" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice req="LIST_CREW_ENGINEER_SKINS" hidden="true">
+		<text>Convert your Engineer into a Soldier [Cost: 5~]</text>
+		<event>
+			<text>Your Engineer has been sucessfully converted into a Soldier.</text>
+			<transformRace class="LIST_CREW_ENGINEER_SKINS">human_soldier</transformRace>
+			<item_modify>
+				<item type="scrap" min="-5" max="-5" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice req="LIST_CREW_ENGINEER_SKINS" hidden="true">
+		<text>Convert your Engineer into a Technician  [Cost: 70~]</text>
+		<event>
+			<text>Your Engineer has been sucessfully converted into a Technician .</text>
+			<transformRace class="LIST_CREW_ENGINEER_SKINS">human_technician</transformRace>
+			<item_modify>
+				<item type="scrap" min="-70" max="-70" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="pilot" lvl="1" blue="false" max_group="1">
+		<text>Nevermind...</text>
+		<event load="STORAGE_CHECK" />
+	</choice>
+</event>
+<event name="STORAGE_CHECK_PROM_VATS_SOLDIER">
+	<text>What would you like to transform your Soldier into?</text>
+	<choice req="LIST_CREW_SOLDIER_SKINS" hidden="true">
+		<text>Convert your Soldier into a Human [Cost: 0~]</text>
+		<event>
+			<text>Your Soldier has been sucessfully converted into a Human.</text>
+			<transformRace class="LIST_CREW_SOLDIER_SKINS">human</transformRace>
+			<item_modify>
+				<item type="scrap" min="-0" max="-0" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice req="LIST_CREW_SOLDIER_SKINS" hidden="true">
+		<text>Convert your Soldier into a Medic [Cost: 5~]</text>
+		<event>
+			<text>Your Soldier has been sucessfully converted into a Medic.</text>
+			<transformRace class="LIST_CREW_SOLDIER_SKINS">human_medic</transformRace>
+			<item_modify>
+				<item type="scrap" min="-5" max="-5" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice req="LIST_CREW_SOLDIER_SKINS" hidden="true">
+		<text>Convert your Soldier into a Engineer [Cost: 5~]</text>
+		<event>
+			<text>Your Soldier has been sucessfully converted into a Engineer.</text>
+			<transformRace class="LIST_CREW_SOLDIER_SKINS">human_engineer</transformRace>
+			<item_modify>
+				<item type="scrap" min="-5" max="-5" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice req="LIST_CREW_SOLDIER_SKINS" hidden="true">
+		<text>Convert your Soldier into a MFK [Cost: 70~]</text>
+		<event>
+			<text>Your Soldier has been sucessfully converted into a MFK.</text>
+			<transformRace class="LIST_CREW_SOLDIER_SKINS">human_mfk</transformRace>
+			<item_modify>
+				<item type="scrap" min="-70" max="-70" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice req="LIST_CREW_SOLDIER_SKINS" hidden="true">
+		<text>Convert your Soldier into a Angel [Cost: 70~]</text>
+		<event>
+			<text>Your Soldier has been sucessfully converted into a Angel.</text>
+			<transformRace class="LIST_CREW_SOLDIER_SKINS">human_angel</transformRace>
+			<item_modify>
+				<item type="scrap" min="-70" max="-70" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="pilot" lvl="1" blue="false" max_group="1">
+		<text>Nevermind...</text>
+		<event load="STORAGE_CHECK" />
+	</choice>
+</event>
+<event name="STORAGE_CHECK_PROM_VATS_MFK">
+	<text>What would you like to transform your MFK into?</text>
+	<choice req="human_mfk" hidden="true">
+		<text>Convert your MFK into a Soldier [Cost: 0~]</text>
+		<event>
+			<text>Your MFK has been sucessfully converted into a Soldier.</text>
+			<transformRace class="human_mfk">human_soldier</transformRace>
+			<item_modify>
+				<item type="scrap" min="-0" max="-0" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice req="human_mfk" hidden="true">
+		<text>Convert your MFK into a Legionnaire Operative [Cost: 100~]</text>
+		<event>
+			<text>Your MFK has been sucessfully converted into a Legionnaire Operative.</text>
+			<transformRace class="human_mfk">human_legion</transformRace>
+			<item_modify>
+				<item type="scrap" min="-100" max="-100" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice req="human_mfk" hidden="true">
+		<text>Convert your MFK into a Legionnaire Pyrotechnic [Cost: 100~]</text>
+		<event>
+			<text>Your MFK has been sucessfully converted into a Legionnaire Pyrotechnic.</text>
+			<transformRace class="human_mfk">human_legion_pyro</transformRace>
+			<item_modify>
+				<item type="scrap" min="-100" max="-100" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice req="human_mfk" hidden="true">
+		<text>Convert your MFK into a Federation Admiral [Cost: 150~]</text>
+		<event>
+			<text>Your MFK has been sucessfully converted into a Federation Admiral.</text>
+			<transformRace class="human_mfk">unique_tully</transformRace>
+			<item_modify>
+				<item type="scrap" min="-150" max="-150" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice req="human_mfk" hidden="true">
+		<text>Convert your MFK into a MFK Commander [Cost: 150~]</text>
+		<event>
+			<text>Your MFK has been sucessfully converted into a MFK Commander.</text>
+			<transformRace class="human_mfk">unique_cyra</transformRace>
+			<item_modify>
+				<item type="scrap" min="-150" max="-150" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="pilot" lvl="1" blue="false" max_group="1">
+		<text>Nevermind...</text>
+		<event load="STORAGE_CHECK" />
+	</choice>
+</event>
+<event name="STORAGE_CHECK_PROM_VATS_TECHNICIAN">
+	<text>What would you like to transform your Technician  into?</text>
+	<choice req="human_technician" hidden="true">
+		<text>Convert your Technician  into a Engineer [Cost: 0~]</text>
+		<event>
+			<text>Your Technician  has been sucessfully converted into a Engineer.</text>
+			<transformRace class="human_technician">human_engineer</transformRace>
+			<item_modify>
+				<item type="scrap" min="-0" max="-0" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="pilot" lvl="1" blue="false" max_group="1">
+		<text>Nevermind...</text>
+		<event load="STORAGE_CHECK" />
+	</choice>
+</event>
+<event name="STORAGE_CHECK_PROM_VATS_LEGIONNAIREOPERATIVE">
+	<text>What would you like to transform your Legionnaire Operative into?</text>
+	<choice req="human_legion" hidden="true">
+		<text>Convert your Legionnaire Operative into a MFK [Cost: 0~]</text>
+		<event>
+			<text>Your Legionnaire Operative has been sucessfully converted into a MFK.</text>
+			<transformRace class="human_legion">human_mfk</transformRace>
+			<item_modify>
+				<item type="scrap" min="-0" max="-0" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice req="human_legion" hidden="true">
+		<text>Convert your Legionnaire Operative into a Legionnaire Pyrotechnic [Cost: 10~]</text>
+		<event>
+			<text>Your Legionnaire Operative has been sucessfully converted into a Legionnaire Pyrotechnic.</text>
+			<transformRace class="human_legion">human_legion_pyro</transformRace>
+			<item_modify>
+				<item type="scrap" min="-10" max="-10" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice req="human_legion" hidden="true">
+		<text>Convert your Legionnaire Operative into a New Best Friend [Cost: 150~]</text>
+		<event>
+			<text>Your Legionnaire Operative has been sucessfully converted into a New Best Friend.</text>
+			<transformRace class="human_legion">unique_jerry</transformRace>
+			<item_modify>
+				<item type="scrap" min="-150" max="-150" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice req="human_legion" hidden="true">
+		<text>Convert your Legionnaire Operative into a Legion Admiral [Cost: 150~]</text>
+		<event>
+			<text>Your Legionnaire Operative has been sucessfully converted into a Legion Admiral.</text>
+			<transformRace class="human_legion">unique_vance</transformRace>
+			<item_modify>
+				<item type="scrap" min="-150" max="-150" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="pilot" lvl="1" blue="false" max_group="1">
+		<text>Nevermind...</text>
+		<event load="STORAGE_CHECK" />
+	</choice>
+</event>
+<event name="STORAGE_CHECK_PROM_VATS_LEGIONNAIREPYROTECHNIC">
+	<text>What would you like to transform your Legionnaire Pyrotechnic into?</text>
+	<choice req="human_legion_pyro" hidden="true">
+		<text>Convert your Legionnaire Pyrotechnic into a MFK [Cost: 0~]</text>
+		<event>
+			<text>Your Legionnaire Pyrotechnic has been sucessfully converted into a MFK.</text>
+			<transformRace class="human_legion_pyro">human_mfk</transformRace>
+			<item_modify>
+				<item type="scrap" min="-0" max="-0" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice req="human_legion_pyro" hidden="true">
+		<text>Convert your Legionnaire Pyrotechnic into a Legionnaire Operative [Cost: 10~]</text>
+		<event>
+			<text>Your Legionnaire Pyrotechnic has been sucessfully converted into a Legionnaire Operative.</text>
+			<transformRace class="human_legion_pyro">human_legion</transformRace>
+			<item_modify>
+				<item type="scrap" min="-10" max="-10" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice req="human_legion_pyro" hidden="true">
+		<text>Convert your Legionnaire Pyrotechnic into a New Best Friend [Cost: 150~]</text>
+		<event>
+			<text>Your Legionnaire Pyrotechnic has been sucessfully converted into a New Best Friend.</text>
+			<transformRace class="human_legion_pyro">unique_jerry</transformRace>
+			<item_modify>
+				<item type="scrap" min="-150" max="-150" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice req="human_legion_pyro" hidden="true">
+		<text>Convert your Legionnaire Pyrotechnic into a Legion Admiral [Cost: 150~]</text>
+		<event>
+			<text>Your Legionnaire Pyrotechnic has been sucessfully converted into a Legion Admiral.</text>
+			<transformRace class="human_legion_pyro">unique_vance</transformRace>
+			<item_modify>
+				<item type="scrap" min="-150" max="-150" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="pilot" lvl="1" blue="false" max_group="1">
+		<text>Nevermind...</text>
+		<event load="STORAGE_CHECK" />
+	</choice>
+</event>
+<event name="STORAGE_CHECK_PROM_VATS_ANGEL">
+	<text>What would you like to transform your Angel into?</text>
+	<choice req="human_angel" hidden="true">
+		<text>Convert your Angel into a Soldier [Cost: 0~]</text>
+		<event>
+			<text>Your Angel has been sucessfully converted into a Soldier.</text>
+			<transformRace class="human_angel">human_soldier</transformRace>
+			<item_modify>
+				<item type="scrap" min="-0" max="-0" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice req="human_angel" hidden="true">
+		<text>Convert your Angel into a Lead Detective [Cost: 150~]</text>
+		<event>
+			<text>Your Angel has been sucessfully converted into a Lead Detective.</text>
+			<transformRace class="human_angel">unique_haynes</transformRace>
+			<item_modify>
+				<item type="scrap" min="-150" max="-150" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="pilot" lvl="1" blue="false" max_group="1">
+		<text>Nevermind...</text>
+		<event load="STORAGE_CHECK" />
+	</choice>
+</event>
+<event name="STORAGE_CHECK_PROM_VATS_LEADDETECTIVE">
+	<text>What would you like to transform your Lead Detective into?</text>
+	<choice req="unique_haynes" hidden="true">
+		<text>Convert your Lead Detective into a Angel [Cost: 0~]</text>
+		<event>
+			<text>Your Lead Detective has been sucessfully converted into a Angel.</text>
+			<transformRace class="unique_haynes">human_angel</transformRace>
+			<item_modify>
+				<item type="scrap" min="-0" max="-0" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="pilot" lvl="1" blue="false" max_group="1">
+		<text>Nevermind...</text>
+		<event load="STORAGE_CHECK" />
+	</choice>
+</event>
+<event name="STORAGE_CHECK_PROM_VATS_FEDERATIONADMIRAL">
+	<text>What would you like to transform your Federation Admiral into?</text>
+	<choice req="unique_tully" hidden="true">
+		<text>Convert your Federation Admiral into a MFK [Cost: 0~]</text>
+		<event>
+			<text>Your Federation Admiral has been sucessfully converted into a MFK.</text>
+			<transformRace class="unique_tully">human_mfk</transformRace>
+			<item_modify>
+				<item type="scrap" min="-0" max="-0" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="pilot" lvl="1" blue="false" max_group="1">
+		<text>Nevermind...</text>
+		<event load="STORAGE_CHECK" />
+	</choice>
+</event>
+<event name="STORAGE_CHECK_PROM_VATS_NEWBESTFRIEND">
+	<text>What would you like to transform your New Best Friend into?</text>
+	<choice req="unique_jerry" hidden="true">
+		<text>Convert your New Best Friend into a Legionnaire Operative [Cost: 0~]</text>
+		<event>
+			<text>Your New Best Friend has been sucessfully converted into a Legionnaire Operative.</text>
+			<transformRace class="unique_jerry">human_legion</transformRace>
+			<item_modify>
+				<item type="scrap" min="-0" max="-0" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice req="unique_jerry" hidden="true">
+		<text>Convert your New Best Friend into a Legionnaire Pyrotechnic [Cost: 0~]</text>
+		<event>
+			<text>Your New Best Friend has been sucessfully converted into a Legionnaire Pyrotechnic.</text>
+			<transformRace class="unique_jerry">human_legion_pyro</transformRace>
+			<item_modify>
+				<item type="scrap" min="-0" max="-0" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice req="unique_jerry" hidden="true">
+		<text>Convert your New Best Friend into a New Best Friend With a Gun [Cost: 180~]</text>
+		<event>
+			<text>Your New Best Friend has been sucessfully converted into a New Best Friend With a Gun.</text>
+			<transformRace class="unique_jerry">unique_jerry_gun</transformRace>
+			<item_modify>
+				<item type="scrap" min="-180" max="-180" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="pilot" lvl="1" blue="false" max_group="1">
+		<text>Nevermind...</text>
+		<event load="STORAGE_CHECK" />
+	</choice>
+</event>
+<event name="STORAGE_CHECK_PROM_VATS_MFKCOMMANDER">
+	<text>What would you like to transform your MFK Commander into?</text>
+	<choice req="unique_cyra" hidden="true">
+		<text>Convert your MFK Commander into a MFK [Cost: 0~]</text>
+		<event>
+			<text>Your MFK Commander has been sucessfully converted into a MFK.</text>
+			<transformRace class="unique_cyra">human_mfk</transformRace>
+			<item_modify>
+				<item type="scrap" min="-0" max="-0" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="pilot" lvl="1" blue="false" max_group="1">
+		<text>Nevermind...</text>
+		<event load="STORAGE_CHECK" />
+	</choice>
+</event>
+
+<event name="STORAGE_CHECK_PROM_VATS_BEAMMASTER">
+	<text>What would you like to transform your Beam Master into?</text>
+	<choice req="unique_leah" hidden="true">
+		<text>Convert your Beam Master into a Human [Cost: 0~]</text>
+		<event>
+			<text>Your Beam Master has been sucessfully converted into a Human.</text>
+			<transformRace class="unique_leah">human</transformRace>
+			<item_modify>
+				<item type="scrap" min="-0" max="-0" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice req="unique_leah" hidden="true">
+		<text>Convert your Beam Master into a Beam Master Ace [Cost: 60~]</text>
+		<event>
+			<text>Your Beam Master has been sucessfully converted into a Beam Master Ace.</text>
+			<transformRace class="unique_leah">unique_leah_mfk</transformRace>
+			<item_modify>
+				<item type="scrap" min="-60" max="-60" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="pilot" lvl="1" blue="false" max_group="1">
+		<text>Nevermind...</text>
+		<event load="STORAGE_CHECK" />
+	</choice>
+</event>
+<event name="STORAGE_CHECK_PROM_VATS_BEAMMASTERACE">
+	<text>What would you like to transform your Beam Master Ace into?</text>
+	<choice req="unique_leah_mfk" hidden="true">
+		<text>Convert your Beam Master Ace into a Beam Master [Cost: 0~]</text>
+		<event>
+			<text>Your Beam Master Ace has been sucessfully converted into a Beam Master.</text>
+			<transformRace class="unique_leah_mfk">unique_leah</transformRace>
+			<item_modify>
+				<item type="scrap" min="-0" max="-0" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="pilot" lvl="1" blue="false" max_group="1">
+		<text>Nevermind...</text>
+		<event load="STORAGE_CHECK" />
+	</choice>
+</event>
+<event name="STORAGE_CHECK_PROM_VATS_LEGIONADMIRAL">
+	<text>What would you like to transform your Legion Admiral into?</text>
+	<choice req="unique_vance" hidden="true">
+		<text>Convert your Legion Admiral into a Legionnaire Operative [Cost: 0~]</text>
+		<event>
+			<text>Your Legion Admiral has been sucessfully converted into a Legionnaire Operative.</text>
+			<transformRace class="unique_vance">human_legion</transformRace>
+			<item_modify>
+				<item type="scrap" min="-0" max="-0" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice req="unique_vance" hidden="true">
+		<text>Convert your Legion Admiral into a Legionnaire Pyrotechnic [Cost: 0~]</text>
+		<event>
+			<text>Your Legion Admiral has been sucessfully converted into a Legionnaire Pyrotechnic.</text>
+			<transformRace class="unique_vance">human_legion_pyro</transformRace>
+			<item_modify>
+				<item type="scrap" min="-0" max="-0" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="pilot" lvl="1" blue="false" max_group="1">
+		<text>Nevermind...</text>
+		<event load="STORAGE_CHECK" />
+	</choice>
+</event>
+<event name="STORAGE_CHECK_PROM_VATS_SELECT_ZOLTAN">
+	<text>Which Zoltan would you like to transform?</text>
+	<choice req="zoltan" hidden="true">
+		<text>Transform a Zoltan.</text>
+		<event load="STORAGE_CHECK_PROM_VATS_ZOLTAN" />
+	</choice>
+	<choice req="zoltan_monk" hidden="true">
+		<text>Transform a Monk.</text>
+		<event load="STORAGE_CHECK_PROM_VATS_MONK" />
+	</choice>
+	<choice req="zoltan_osmian" hidden="true">
+		<text>Transform a Osmian.</text>
+		<event load="STORAGE_CHECK_PROM_VATS_OSMIAN" />
+	</choice>
+	<choice req="zoltan_peacekeeper" hidden="true">
+		<text>Transform a Peacekeeper.</text>
+		<event load="STORAGE_CHECK_PROM_VATS_PEACEKEEPER" />
+	</choice>
+	<choice req="zoltan_devotee" hidden="true">
+		<text>Transform a Duskbringer Devotee.</text>
+		<event load="STORAGE_CHECK_PROM_VATS_DUSKBRINGERDEVOTEE" />
+	</choice>
+	<choice req="zoltan_martyr" hidden="true">
+		<text>Transform a Duskbringer Martyr.</text>
+		<event load="STORAGE_CHECK_PROM_VATS_DUSKBRINGERMARTYR" />
+	</choice>
+	<choice req="unique_devorak" hidden="true">
+		<text>Transform a Duskbringer Deathless.</text>
+		<event load="STORAGE_CHECK_PROM_VATS_DUSKBRINGERDEATHLESS" />
+	</choice>
+	<choice hidden="true" req="pilot" lvl="1" blue="false" max_group="1">
+		<text>Nevermind, do something else.</text>
+		<event load="STORAGE_CHECK" />
+	</choice>
+</event><event name="STORAGE_CHECK_PROM_VATS_ZOLTAN">
+	<text>What would you like to transform your Zoltan into?</text>
+	<choice req="zoltan" hidden="true">
+		<text>Convert your Zoltan into a Monk [Cost: 30~]</text>
+		<event>
+			<text>Your Zoltan has been sucessfully converted into a Monk.</text>
+			<transformRace class="zoltan">zoltan_monk</transformRace>
+			<item_modify>
+				<item type="scrap" min="-30" max="-30" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice req="zoltan" hidden="true">
+		<text>Convert your Zoltan into a Osmian [Cost: 30~]</text>
+		<event>
+			<text>Your Zoltan has been sucessfully converted into a Osmian.</text>
+			<transformRace class="zoltan">zoltan_osmian</transformRace>
+			<item_modify>
+				<item type="scrap" min="-30" max="-30" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice req="zoltan" hidden="true">
+		<text>Convert your Zoltan into a Peacekeeper [Cost: 70~]</text>
+		<event>
+			<text>Your Zoltan has been sucessfully converted into a Peacekeeper.</text>
+			<transformRace class="zoltan">zoltan_peacekeeper</transformRace>
+			<item_modify>
+				<item type="scrap" min="-70" max="-70" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice req="zoltan" hidden="true">
+		<text>Convert your Zoltan into a Duskbringer Devotee [Cost: 30~]</text>
+		<event>
+			<text>Your Zoltan has been sucessfully converted into a Duskbringer Devotee.</text>
+			<transformRace class="zoltan">zoltan_devotee</transformRace>
+			<item_modify>
+				<item type="scrap" min="-30" max="-30" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="pilot" lvl="1" blue="false" max_group="1">
+		<text>Nevermind...</text>
+		<event load="STORAGE_CHECK" />
+	</choice>
+</event>
+<event name="STORAGE_CHECK_PROM_VATS_MONK">
+	<text>What would you like to transform your Monk into?</text>
+	<choice req="zoltan_monk" hidden="true">
+		<text>Convert your Monk into a Zoltan [Cost: 0~]</text>
+		<event>
+			<text>Your Monk has been sucessfully converted into a Zoltan.</text>
+			<transformRace class="zoltan_monk">zoltan</transformRace>
+			<item_modify>
+				<item type="scrap" min="-0" max="-0" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="pilot" lvl="1" blue="false" max_group="1">
+		<text>Nevermind...</text>
+		<event load="STORAGE_CHECK" />
+	</choice>
+</event>
+<event name="STORAGE_CHECK_PROM_VATS_OSMIAN">
+	<text>What would you like to transform your Osmian into?</text>
+	<choice req="zoltan_osmian" hidden="true">
+		<text>Convert your Osmian into a Zoltan [Cost: 0~]</text>
+		<event>
+			<text>Your Osmian has been sucessfully converted into a Zoltan.</text>
+			<transformRace class="zoltan_osmian">zoltan</transformRace>
+			<item_modify>
+				<item type="scrap" min="-0" max="-0" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="pilot" lvl="1" blue="false" max_group="1">
+		<text>Nevermind...</text>
+		<event load="STORAGE_CHECK" />
+	</choice>
+</event>
+<event name="STORAGE_CHECK_PROM_VATS_PEACEKEEPER">
+	<text>What would you like to transform your Peacekeeper into?</text>
+	<choice req="zoltan_peacekeeper" hidden="true">
+		<text>Convert your Peacekeeper into a Zoltan [Cost: 0~]</text>
+		<event>
+			<text>Your Peacekeeper has been sucessfully converted into a Zoltan.</text>
+			<transformRace class="zoltan_peacekeeper">zoltan</transformRace>
+			<item_modify>
+				<item type="scrap" min="-0" max="-0" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="pilot" lvl="1" blue="false" max_group="1">
+		<text>Nevermind...</text>
+		<event load="STORAGE_CHECK" />
+	</choice>
+</event>
+<event name="STORAGE_CHECK_PROM_VATS_DUSKBRINGERDEVOTEE">
+	<text>What would you like to transform your Duskbringer Devotee into?</text>
+	<choice req="zoltan_devotee" hidden="true">
+		<text>Convert your Duskbringer Devotee into a Zoltan [Cost: 0~]</text>
+		<event>
+			<text>Your Duskbringer Devotee has been sucessfully converted into a Zoltan.</text>
+			<transformRace class="zoltan_devotee">zoltan</transformRace>
+			<item_modify>
+				<item type="scrap" min="-0" max="-0" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice req="zoltan_devotee" hidden="true">
+		<text>Convert your Duskbringer Devotee into a Duskbringer Martyr [Cost: 70~]</text>
+		<event>
+			<text>Your Duskbringer Devotee has been sucessfully converted into a Duskbringer Martyr.</text>
+			<transformRace class="zoltan_devotee">zoltan_martyr</transformRace>
+			<item_modify>
+				<item type="scrap" min="-70" max="-70" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="pilot" lvl="1" blue="false" max_group="1">
+		<text>Nevermind...</text>
+		<event load="STORAGE_CHECK" />
+	</choice>
+</event>
+<event name="STORAGE_CHECK_PROM_VATS_DUSKBRINGERMARTYR">
+	<text>What would you like to transform your Duskbringer Martyr into?</text>
+	<choice req="zoltan_martyr" hidden="true">
+		<text>Convert your Duskbringer Martyr into a Duskbringer Devotee [Cost: 0~]</text>
+		<event>
+			<text>Your Duskbringer Martyr has been sucessfully converted into a Duskbringer Devotee.</text>
+			<transformRace class="zoltan_martyr">zoltan_devotee</transformRace>
+			<item_modify>
+				<item type="scrap" min="-0" max="-0" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice req="zoltan_martyr" hidden="true">
+		<text>Convert your Duskbringer Martyr into a Duskbringer Deathless [Cost: 150~]</text>
+		<event>
+			<text>Your Duskbringer Martyr has been sucessfully converted into a Duskbringer Deathless.</text>
+			<transformRace class="zoltan_martyr">unique_devorak</transformRace>
+			<item_modify>
+				<item type="scrap" min="-150" max="-150" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="pilot" lvl="1" blue="false" max_group="1">
+		<text>Nevermind...</text>
+		<event load="STORAGE_CHECK" />
+	</choice>
+</event>
+<event name="STORAGE_CHECK_PROM_VATS_DUSKBRINGERDEATHLESS">
+	<text>What would you like to transform your Duskbringer Deathless into?</text>
+	<choice req="unique_devorak" hidden="true">
+		<text>Convert your Duskbringer Deathless into a Duskbringer Martyr [Cost: 0~]</text>
+		<event>
+			<text>Your Duskbringer Deathless has been sucessfully converted into a Duskbringer Martyr.</text>
+			<transformRace class="unique_devorak">zoltan_martyr</transformRace>
+			<item_modify>
+				<item type="scrap" min="-0" max="-0" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="pilot" lvl="1" blue="false" max_group="1">
+		<text>Nevermind...</text>
+		<event load="STORAGE_CHECK" />
+	</choice>
+</event>
+<event name="STORAGE_CHECK_PROM_VATS_SELECT_ENGI">
+	<text>Which Engi would you like to transform?</text>
+	<choice req="engi" hidden="true">
+		<text>Transform a Engi.</text>
+		<event load="STORAGE_CHECK_PROM_VATS_ENGI" />
+	</choice>
+	<choice req="LIST_VARIANT_SEPARATIST" hidden="true">
+		<text>Transform a Engi Separtist.</text>
+		<event load="STORAGE_CHECK_PROM_VATS_ENGISEPARTIST" />
+	</choice>
+	<choice req="engi_defender" hidden="true">
+		<text>Transform a Engi Defender.</text>
+		<event load="STORAGE_CHECK_PROM_VATS_ENGIDEFENDER" />
+	</choice>
+	<choice req="unique_turzil" hidden="true">
+		<text>Transform a Chief Defender.</text>
+		<event load="STORAGE_CHECK_PROM_VATS_CHIEFDEFENDER" />
+	</choice>
+	<choice hidden="true" req="pilot" lvl="1" blue="false" max_group="1">
+		<text>Nevermind, do something else.</text>
+		<event load="STORAGE_CHECK" />
+	</choice>
+</event><event name="STORAGE_CHECK_PROM_VATS_ENGI">
+	<text>What would you like to transform your Engi into?</text>
+	<choice req="engi" hidden="true">
+		<text>Convert your Engi into a Engi Separtist [Cost: 10~]</text>
+		<event>
+			<text>Your Engi has been sucessfully converted into a Engi Separtist.</text>
+			<transformRace class="engi">engi_separatist</transformRace>
+			<item_modify>
+				<item type="scrap" min="-10" max="-10" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice req="engi" hidden="true">
+		<text>Convert your Engi into a Engi Defender [Cost: 70~]</text>
+		<event>
+			<text>Your Engi has been sucessfully converted into a Engi Defender.</text>
+			<transformRace class="engi">engi_defender</transformRace>
+			<item_modify>
+				<item type="scrap" min="-70" max="-70" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="pilot" lvl="1" blue="false" max_group="1">
+		<text>Nevermind...</text>
+		<event load="STORAGE_CHECK" />
+	</choice>
+</event>
+<event name="STORAGE_CHECK_PROM_VATS_ENGISEPARTIST">
+	<text>What would you like to transform your Engi Separtist into?</text>
+	<choice req="LIST_VARIANT_SEPARATIST" hidden="true">
+		<text>Convert your Engi Separtist into a Engi [Cost: 10~]</text>
+		<event>
+			<text>Your Engi Separtist has been sucessfully converted into a Engi.</text>
+			<transformRace class="LIST_VARIANT_SEPARATIST">engi</transformRace>
+			<item_modify>
+				<item type="scrap" min="-10" max="-10" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="pilot" lvl="1" blue="false" max_group="1">
+		<text>Nevermind...</text>
+		<event load="STORAGE_CHECK" />
+	</choice>
+</event>
+<event name="STORAGE_CHECK_PROM_VATS_ENGIDEFENDER">
+	<text>What would you like to transform your Engi Defender into?</text>
+	<choice req="engi_defender" hidden="true">
+		<text>Convert your Engi Defender into a Engi [Cost: 0~]</text>
+		<event>
+			<text>Your Engi Defender has been sucessfully converted into a Engi.</text>
+			<transformRace class="engi_defender">engi</transformRace>
+			<item_modify>
+				<item type="scrap" min="-0" max="-0" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice req="engi_defender" hidden="true">
+		<text>Convert your Engi Defender into a Chief Defender [Cost: 150~]</text>
+		<event>
+			<text>Your Engi Defender has been sucessfully converted into a Chief Defender.</text>
+			<transformRace class="engi_defender">unique_turzil</transformRace>
+			<item_modify>
+				<item type="scrap" min="-150" max="-150" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="pilot" lvl="1" blue="false" max_group="1">
+		<text>Nevermind...</text>
+		<event load="STORAGE_CHECK" />
+	</choice>
+</event>
+<event name="STORAGE_CHECK_PROM_VATS_CHIEFDEFENDER">
+	<text>What would you like to transform your Chief Defender into?</text>
+	<choice req="unique_turzil" hidden="true">
+		<text>Convert your Chief Defender into a Engi Defender [Cost: 0~]</text>
+		<event>
+			<text>Your Chief Defender has been sucessfully converted into a Engi Defender.</text>
+			<transformRace class="unique_turzil">engi_defender</transformRace>
+			<item_modify>
+				<item type="scrap" min="-0" max="-0" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="pilot" lvl="1" blue="false" max_group="1">
+		<text>Nevermind...</text>
+		<event load="STORAGE_CHECK" />
+	</choice>
+</event>
+<event name="STORAGE_CHECK_PROM_VATS_SELECT_ROCK">
+	<text>Which Rock would you like to transform?</text>
+	<choice req="LIST_CREW_ROCK_SKINS" hidden="true">
+		<text>Transform a Rock.</text>
+		<event load="STORAGE_CHECK_PROM_VATS_ROCK" />
+	</choice>
+	<choice req="rock_outcast" hidden="true">
+		<text>Transform a Rock Outcast.</text>
+		<event load="STORAGE_CHECK_PROM_VATS_ROCKOUTCAST" />
+	</choice>
+	<choice req="rock_commando" hidden="true">
+		<text>Transform a Lost Sun Commando.</text>
+		<event load="STORAGE_CHECK_PROM_VATS_LOSTSUNCOMMANDO" />
+	</choice>
+	<choice req="rock_cultist" hidden="true">
+		<text>Transform a Rock Cultist.</text>
+		<event load="STORAGE_CHECK_PROM_VATS_ROCKCULTIST" />
+	</choice>
+	<choice req="rock_crusader" hidden="true">
+		<text>Transform a Rock Crusader.</text>
+		<event load="STORAGE_CHECK_PROM_VATS_ROCKCRUSADER" />
+	</choice>
+	<choice req="rock_paladin" hidden="true">
+		<text>Transform a Rock Paladin.</text>
+		<event load="STORAGE_CHECK_PROM_VATS_ROCKPALADIN" />
+	</choice>
+	<choice req="rock_elder" hidden="true">
+		<text>Transform a Rock Elder.</text>
+		<event load="STORAGE_CHECK_PROM_VATS_ROCKELDER" />
+	</choice>
+	<choice req="symbiote" hidden="true">
+		<text>Transform a Symbiote.</text>
+		<event load="STORAGE_CHECK_PROM_VATS_SYMBIOTE" />
+	</choice>
+	<choice req="unique_tuco" hidden="true">
+		<text>Transform a Dread Priate.</text>
+		<event load="STORAGE_CHECK_PROM_VATS_DREADPRIATE" />
+	</choice>
+	<choice req="unique_ariadne" hidden="true">
+		<text>Transform a Lost Sun Admiral.</text>
+		<event load="STORAGE_CHECK_PROM_VATS_LOSTSUNADMIRAL" />
+	</choice>
+	<choice req="unique_vortigon" hidden="true">
+		<text>Transform a Grand Priest.</text>
+		<event load="STORAGE_CHECK_PROM_VATS_GRANDPRIEST" />
+	</choice>
+	<choice hidden="true" req="pilot" lvl="1" blue="false" max_group="1">
+		<text>Nevermind, do something else.</text>
+		<event load="STORAGE_CHECK" />
+	</choice>
+</event><event name="STORAGE_CHECK_PROM_VATS_ROCK">
+	<text>What would you like to transform your Rock into?</text>
+	<choice req="LIST_CREW_ROCK_SKINS" hidden="true">
+		<text>Convert your Rock into a Rock Outcast [Cost: 10~]</text>
+		<event>
+			<text>Your Rock has been sucessfully converted into a Rock Outcast.</text>
+			<transformRace class="LIST_CREW_ROCK_SKINS">rock_outcast</transformRace>
+			<item_modify>
+				<item type="scrap" min="-10" max="-10" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice req="LIST_CREW_ROCK_SKINS" hidden="true">
+		<text>Convert your Rock into a Rock Cultist [Cost: 30~]</text>
+		<event>
+			<text>Your Rock has been sucessfully converted into a Rock Cultist.</text>
+			<transformRace class="LIST_CREW_ROCK_SKINS">rock_cultist</transformRace>
+			<item_modify>
+				<item type="scrap" min="-30" max="-30" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice req="LIST_CREW_ROCK_SKINS" hidden="true">
+		<text>Convert your Rock into a Rock Crusader [Cost: 70~]</text>
+		<event>
+			<text>Your Rock has been sucessfully converted into a Rock Crusader.</text>
+			<transformRace class="LIST_CREW_ROCK_SKINS">rock_crusader</transformRace>
+			<item_modify>
+				<item type="scrap" min="-70" max="-70" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice req="LIST_CREW_ROCK_SKINS" hidden="true">
+		<text>Convert your Rock into a Symbiote [Cost: 150~]</text>
+		<event>
+			<text>Your Rock has been sucessfully converted into a Symbiote.</text>
+			<transformRace class="LIST_CREW_ROCK_SKINS">symbiote</transformRace>
+			<item_modify>
+				<item type="scrap" min="-150" max="-150" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="pilot" lvl="1" blue="false" max_group="1">
+		<text>Nevermind...</text>
+		<event load="STORAGE_CHECK" />
+	</choice>
+</event>
+<event name="STORAGE_CHECK_PROM_VATS_ROCKOUTCAST">
+	<text>What would you like to transform your Rock Outcast into?</text>
+	<choice req="rock_outcast" hidden="true">
+		<text>Convert your Rock Outcast into a Rock [Cost: 10~]</text>
+		<event>
+			<text>Your Rock Outcast has been sucessfully converted into a Rock.</text>
+			<transformRace class="rock_outcast">rock</transformRace>
+			<item_modify>
+				<item type="scrap" min="-10" max="-10" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice req="rock_outcast" hidden="true">
+		<text>Convert your Rock Outcast into a Lost Sun Commando [Cost: 70~]</text>
+		<event>
+			<text>Your Rock Outcast has been sucessfully converted into a Lost Sun Commando.</text>
+			<transformRace class="rock_outcast">rock_commando</transformRace>
+			<item_modify>
+				<item type="scrap" min="-70" max="-70" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice req="rock_outcast" hidden="true">
+		<text>Convert your Rock Outcast into a Rock Cultist [Cost: 30~]</text>
+		<event>
+			<text>Your Rock Outcast has been sucessfully converted into a Rock Cultist.</text>
+			<transformRace class="rock_outcast">rock_cultist</transformRace>
+			<item_modify>
+				<item type="scrap" min="-30" max="-30" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice req="rock_outcast" hidden="true">
+		<text>Convert your Rock Outcast into a Dread Priate [Cost: 150~]</text>
+		<event>
+			<text>Your Rock Outcast has been sucessfully converted into a Dread Priate.</text>
+			<transformRace class="rock_outcast">unique_tuco</transformRace>
+			<item_modify>
+				<item type="scrap" min="-150" max="-150" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="pilot" lvl="1" blue="false" max_group="1">
+		<text>Nevermind...</text>
+		<event load="STORAGE_CHECK" />
+	</choice>
+</event>
+<event name="STORAGE_CHECK_PROM_VATS_LOSTSUNCOMMANDO">
+	<text>What would you like to transform your Lost Sun Commando into?</text>
+	<choice req="rock_commando" hidden="true">
+		<text>Convert your Lost Sun Commando into a Rock Outcast [Cost: 0~]</text>
+		<event>
+			<text>Your Lost Sun Commando has been sucessfully converted into a Rock Outcast.</text>
+			<transformRace class="rock_commando">rock_outcast</transformRace>
+			<item_modify>
+				<item type="scrap" min="-0" max="-0" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice req="rock_commando" hidden="true">
+		<text>Convert your Lost Sun Commando into a Lost Sun Admiral [Cost: 150~]</text>
+		<event>
+			<text>Your Lost Sun Commando has been sucessfully converted into a Lost Sun Admiral.</text>
+			<transformRace class="rock_commando">unique_ariadne</transformRace>
+			<item_modify>
+				<item type="scrap" min="-150" max="-150" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="pilot" lvl="1" blue="false" max_group="1">
+		<text>Nevermind...</text>
+		<event load="STORAGE_CHECK" />
+	</choice>
+</event>
+<event name="STORAGE_CHECK_PROM_VATS_ROCKCULTIST">
+	<text>What would you like to transform your Rock Cultist into?</text>
+	<choice req="rock_cultist" hidden="true">
+		<text>Convert your Rock Cultist into a Rock [Cost: 0~]</text>
+		<event>
+			<text>Your Rock Cultist has been sucessfully converted into a Rock.</text>
+			<transformRace class="rock_cultist">rock</transformRace>
+			<item_modify>
+				<item type="scrap" min="-0" max="-0" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice req="rock_cultist" hidden="true">
+		<text>Convert your Rock Cultist into a Rock Outcast [Cost: 10~]</text>
+		<event>
+			<text>Your Rock Cultist has been sucessfully converted into a Rock Outcast.</text>
+			<transformRace class="rock_cultist">rock_outcast</transformRace>
+			<item_modify>
+				<item type="scrap" min="-10" max="-10" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice req="rock_cultist" hidden="true">
+		<text>Convert your Rock Cultist into a Grand Priest [Cost: 150~]</text>
+		<event>
+			<text>Your Rock Cultist has been sucessfully converted into a Grand Priest.</text>
+			<transformRace class="rock_cultist">unique_vortigon</transformRace>
+			<item_modify>
+				<item type="scrap" min="-150" max="-150" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="pilot" lvl="1" blue="false" max_group="1">
+		<text>Nevermind...</text>
+		<event load="STORAGE_CHECK" />
+	</choice>
+</event>
+<event name="STORAGE_CHECK_PROM_VATS_ROCKCRUSADER">
+	<text>What would you like to transform your Rock Crusader into?</text>
+	<choice req="rock_crusader" hidden="true">
+		<text>Convert your Rock Crusader into a Rock [Cost: 0~]</text>
+		<event>
+			<text>Your Rock Crusader has been sucessfully converted into a Rock.</text>
+			<transformRace class="rock_crusader">rock</transformRace>
+			<item_modify>
+				<item type="scrap" min="-0" max="-0" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice req="rock_crusader" hidden="true">
+		<text>Convert your Rock Crusader into a Rock Paladin [Cost: 100~]</text>
+		<event>
+			<text>Your Rock Crusader has been sucessfully converted into a Rock Paladin.</text>
+			<transformRace class="rock_crusader">rock_paladin</transformRace>
+			<item_modify>
+				<item type="scrap" min="-100" max="-100" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="pilot" lvl="1" blue="false" max_group="1">
+		<text>Nevermind...</text>
+		<event load="STORAGE_CHECK" />
+	</choice>
+</event>
+<event name="STORAGE_CHECK_PROM_VATS_ROCKPALADIN">
+	<text>What would you like to transform your Rock Paladin into?</text>
+	<choice req="rock_paladin" hidden="true">
+		<text>Convert your Rock Paladin into a Rock Crusader [Cost: 0~]</text>
+		<event>
+			<text>Your Rock Paladin has been sucessfully converted into a Rock Crusader.</text>
+			<transformRace class="rock_paladin">rock_crusader</transformRace>
+			<item_modify>
+				<item type="scrap" min="-0" max="-0" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice req="rock_paladin" hidden="true">
+		<text>Convert your Rock Paladin into a Rock Elder [Cost: 150~]</text>
+		<event>
+			<text>Your Rock Paladin has been sucessfully converted into a Rock Elder.</text>
+			<transformRace class="rock_paladin">rock_elder</transformRace>
+			<item_modify>
+				<item type="scrap" min="-150" max="-150" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="pilot" lvl="1" blue="false" max_group="1">
+		<text>Nevermind...</text>
+		<event load="STORAGE_CHECK" />
+	</choice>
+</event>
+<event name="STORAGE_CHECK_PROM_VATS_ROCKELDER">
+	<text>What would you like to transform your Rock Elder into?</text>
+	<choice req="rock_elder" hidden="true">
+		<text>Convert your Rock Elder into a Rock Paladin [Cost: 0~]</text>
+		<event>
+			<text>Your Rock Elder has been sucessfully converted into a Rock Paladin.</text>
+			<transformRace class="rock_elder">rock_paladin</transformRace>
+			<item_modify>
+				<item type="scrap" min="-0" max="-0" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="pilot" lvl="1" blue="false" max_group="1">
+		<text>Nevermind...</text>
+		<event load="STORAGE_CHECK" />
+	</choice>
+</event>
+<event name="STORAGE_CHECK_PROM_VATS_SYMBIOTE">
+	<text>What would you like to transform your Symbiote into?</text>
+	<choice req="symbiote" hidden="true">
+		<text>Convert your Symbiote into a Rock [Cost: 0~]</text>
+		<event>
+			<text>Your Symbiote has been sucessfully converted into a Rock.</text>
+			<transformRace class="symbiote">rock</transformRace>
+			<item_modify>
+				<item type="scrap" min="-0" max="-0" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="pilot" lvl="1" blue="false" max_group="1">
+		<text>Nevermind...</text>
+		<event load="STORAGE_CHECK" />
+	</choice>
+</event>
+<event name="STORAGE_CHECK_PROM_VATS_DREADPRIATE">
+	<text>What would you like to transform your Dread Priate into?</text>
+	<choice req="unique_tuco" hidden="true">
+		<text>Convert your Dread Priate into a Rock Outcast [Cost: 0~]</text>
+		<event>
+			<text>Your Dread Priate has been sucessfully converted into a Rock Outcast.</text>
+			<transformRace class="unique_tuco">rock_outcast</transformRace>
+			<item_modify>
+				<item type="scrap" min="-0" max="-0" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="pilot" lvl="1" blue="false" max_group="1">
+		<text>Nevermind...</text>
+		<event load="STORAGE_CHECK" />
+	</choice>
+</event>
+<event name="STORAGE_CHECK_PROM_VATS_LOSTSUNADMIRAL">
+	<text>What would you like to transform your Lost Sun Admiral into?</text>
+	<choice req="unique_ariadne" hidden="true">
+		<text>Convert your Lost Sun Admiral into a Lost Sun Commando [Cost: 0~]</text>
+		<event>
+			<text>Your Lost Sun Admiral has been sucessfully converted into a Lost Sun Commando.</text>
+			<transformRace class="unique_ariadne">rock_commando</transformRace>
+			<item_modify>
+				<item type="scrap" min="-0" max="-0" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="pilot" lvl="1" blue="false" max_group="1">
+		<text>Nevermind...</text>
+		<event load="STORAGE_CHECK" />
+	</choice>
+</event>
+<event name="STORAGE_CHECK_PROM_VATS_GRANDPRIEST">
+	<text>What would you like to transform your Grand Priest into?</text>
+	<choice req="unique_vortigon" hidden="true">
+		<text>Convert your Grand Priest into a Rock Cultist [Cost: 0~]</text>
+		<event>
+			<text>Your Grand Priest has been sucessfully converted into a Rock Cultist.</text>
+			<transformRace class="unique_vortigon">rock_cultist</transformRace>
+			<item_modify>
+				<item type="scrap" min="-0" max="-0" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="pilot" lvl="1" blue="false" max_group="1">
+		<text>Nevermind...</text>
+		<event load="STORAGE_CHECK" />
+	</choice>
+</event>
+<event name="STORAGE_CHECK_PROM_VATS_SELECT_MANTIS">
+	<text>Which Mantis would you like to transform?</text>
+	<choice req="mantis" hidden="true">
+		<text>Transform a Mantis.</text>
+		<event load="STORAGE_CHECK_PROM_VATS_MANTIS" />
+	</choice>
+	<choice req="mantis_free" hidden="true">
+		<text>Transform a Free Mantis.</text>
+		<event load="STORAGE_CHECK_PROM_VATS_FREEMANTIS" />
+	</choice>
+	<choice req="mantis_suzerain" hidden="true">
+		<text>Transform a Mantis Suzerain.</text>
+		<event load="STORAGE_CHECK_PROM_VATS_MANTISSUZERAIN" />
+	</choice>
+	<choice req="mantis_warlord" hidden="true">
+		<text>Transform a Free Mantis Warlord.</text>
+		<event load="STORAGE_CHECK_PROM_VATS_FREEMANTISWARLORD" />
+	</choice>
+	<choice req="mantis_bishop" hidden="true">
+		<text>Transform a Mantis Bishop.</text>
+		<event load="STORAGE_CHECK_PROM_VATS_MANTISBISHOP" />
+	</choice>
+	<choice req="unique_kaz" hidden="true">
+		<text>Transform a Legendary Thief.</text>
+		<event load="STORAGE_CHECK_PROM_VATS_LEGENDARYTHIEF" />
+	</choice>
+	<choice req="unique_freddy" hidden="true">
+		<text>Transform a Free Mantis Clan Leader.</text>
+		<event load="STORAGE_CHECK_PROM_VATS_FREEMANTISCLANLEADER" />
+	</choice>
+	<choice hidden="true" req="pilot" lvl="1" blue="false" max_group="1">
+		<text>Nevermind, do something else.</text>
+		<event load="STORAGE_CHECK" />
+	</choice>
+</event><event name="STORAGE_CHECK_PROM_VATS_MANTIS">
+	<text>What would you like to transform your Mantis into?</text>
+	<choice req="mantis" hidden="true">
+		<text>Convert your Mantis into a Free Mantis [Cost: 10~]</text>
+		<event>
+			<text>Your Mantis has been sucessfully converted into a Free Mantis.</text>
+			<transformRace class="mantis">mantis_free</transformRace>
+			<item_modify>
+				<item type="scrap" min="-10" max="-10" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice req="mantis" hidden="true">
+		<text>Convert your Mantis into a Mantis Suzerain [Cost: 70~]</text>
+		<event>
+			<text>Your Mantis has been sucessfully converted into a Mantis Suzerain.</text>
+			<transformRace class="mantis">mantis_suzerain</transformRace>
+			<item_modify>
+				<item type="scrap" min="-70" max="-70" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="pilot" lvl="1" blue="false" max_group="1">
+		<text>Nevermind...</text>
+		<event load="STORAGE_CHECK" />
+	</choice>
+</event>
+<event name="STORAGE_CHECK_PROM_VATS_FREEMANTIS">
+	<text>What would you like to transform your Free Mantis into?</text>
+	<choice req="mantis_free" hidden="true">
+		<text>Convert your Free Mantis into a Mantis [Cost: 10~]</text>
+		<event>
+			<text>Your Free Mantis has been sucessfully converted into a Mantis.</text>
+			<transformRace class="mantis_free">mantis</transformRace>
+			<item_modify>
+				<item type="scrap" min="-10" max="-10" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice req="mantis_free" hidden="true">
+		<text>Convert your Free Mantis into a Free Mantis Warlord [Cost: 70~]</text>
+		<event>
+			<text>Your Free Mantis has been sucessfully converted into a Free Mantis Warlord.</text>
+			<transformRace class="mantis_free">mantis_warlord</transformRace>
+			<item_modify>
+				<item type="scrap" min="-70" max="-70" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="pilot" lvl="1" blue="false" max_group="1">
+		<text>Nevermind...</text>
+		<event load="STORAGE_CHECK" />
+	</choice>
+</event>
+<event name="STORAGE_CHECK_PROM_VATS_MANTISSUZERAIN">
+	<text>What would you like to transform your Mantis Suzerain into?</text>
+	<choice req="mantis_suzerain" hidden="true">
+		<text>Convert your Mantis Suzerain into a Mantis [Cost: 0~]</text>
+		<event>
+			<text>Your Mantis Suzerain has been sucessfully converted into a Mantis.</text>
+			<transformRace class="mantis_suzerain">mantis</transformRace>
+			<item_modify>
+				<item type="scrap" min="-0" max="-0" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice req="mantis_suzerain" hidden="true">
+		<text>Convert your Mantis Suzerain into a Mantis Bishop [Cost: 100~]</text>
+		<event>
+			<text>Your Mantis Suzerain has been sucessfully converted into a Mantis Bishop.</text>
+			<transformRace class="mantis_suzerain">mantis_bishop</transformRace>
+			<item_modify>
+				<item type="scrap" min="-100" max="-100" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="pilot" lvl="1" blue="false" max_group="1">
+		<text>Nevermind...</text>
+		<event load="STORAGE_CHECK" />
+	</choice>
+</event>
+<event name="STORAGE_CHECK_PROM_VATS_FREEMANTISWARLORD">
+	<text>What would you like to transform your Free Mantis Warlord into?</text>
+	<choice req="mantis_warlord" hidden="true">
+		<text>Convert your Free Mantis Warlord into a Free Mantis [Cost: 0~]</text>
+		<event>
+			<text>Your Free Mantis Warlord has been sucessfully converted into a Free Mantis.</text>
+			<transformRace class="mantis_warlord">mantis_free</transformRace>
+			<item_modify>
+				<item type="scrap" min="-0" max="-0" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice req="mantis_warlord" hidden="true">
+		<text>Convert your Free Mantis Warlord into a Free Mantis Clan Leader [Cost: 150~]</text>
+		<event>
+			<text>Your Free Mantis Warlord has been sucessfully converted into a Free Mantis Clan Leader.</text>
+			<transformRace class="mantis_warlord">unique_freddy</transformRace>
+			<item_modify>
+				<item type="scrap" min="-150" max="-150" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="pilot" lvl="1" blue="false" max_group="1">
+		<text>Nevermind...</text>
+		<event load="STORAGE_CHECK" />
+	</choice>
+</event>
+<event name="STORAGE_CHECK_PROM_VATS_MANTISBISHOP">
+	<text>What would you like to transform your Mantis Bishop into?</text>
+	<choice req="mantis_bishop" hidden="true">
+		<text>Convert your Mantis Bishop into a Mantis Suzerain [Cost: 0~]</text>
+		<event>
+			<text>Your Mantis Bishop has been sucessfully converted into a Mantis Suzerain.</text>
+			<transformRace class="mantis_bishop">mantis_suzerain</transformRace>
+			<item_modify>
+				<item type="scrap" min="-0" max="-0" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice req="mantis_bishop" hidden="true">
+		<text>Convert your Mantis Bishop into a Legendary Thief [Cost: 150~]</text>
+		<event>
+			<text>Your Mantis Bishop has been sucessfully converted into a Legendary Thief.</text>
+			<transformRace class="mantis_bishop">unique_kaz</transformRace>
+			<item_modify>
+				<item type="scrap" min="-150" max="-150" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="pilot" lvl="1" blue="false" max_group="1">
+		<text>Nevermind...</text>
+		<event load="STORAGE_CHECK" />
+	</choice>
+</event>
+<event name="STORAGE_CHECK_PROM_VATS_LEGENDARYTHIEF">
+	<text>What would you like to transform your Legendary Thief into?</text>
+	<choice req="unique_kaz" hidden="true">
+		<text>Convert your Legendary Thief into a Mantis Bishop [Cost: 0~]</text>
+		<event>
+			<text>Your Legendary Thief has been sucessfully converted into a Mantis Bishop.</text>
+			<transformRace class="unique_kaz">mantis_bishop</transformRace>
+			<item_modify>
+				<item type="scrap" min="-0" max="-0" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="pilot" lvl="1" blue="false" max_group="1">
+		<text>Nevermind...</text>
+		<event load="STORAGE_CHECK" />
+	</choice>
+</event>
+<event name="STORAGE_CHECK_PROM_VATS_FREEMANTISCLANLEADER">
+	<text>What would you like to transform your Free Mantis Clan Leader into?</text>
+	<choice req="unique_freddy" hidden="true">
+		<text>Convert your Free Mantis Clan Leader into a Free Mantis Warlord [Cost: 0~]</text>
+		<event>
+			<text>Your Free Mantis Clan Leader has been sucessfully converted into a Free Mantis Warlord.</text>
+			<transformRace class="unique_freddy">mantis_warlord</transformRace>
+			<item_modify>
+				<item type="scrap" min="-0" max="-0" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="pilot" lvl="1" blue="false" max_group="1">
+		<text>Nevermind...</text>
+		<event load="STORAGE_CHECK" />
+	</choice>
+</event>
+<event name="STORAGE_CHECK_PROM_VATS_SELECT_CRYSTAL">
+	<text>Which Crystal would you like to transform?</text>
+	<choice req="crystal" hidden="true">
+		<text>Transform a Crystal.</text>
+		<event load="STORAGE_CHECK_PROM_VATS_CRYSTAL" />
+	</choice>
+	<choice req="crystal_liberator" hidden="true">
+		<text>Transform a Crystal Liberator.</text>
+		<event load="STORAGE_CHECK_PROM_VATS_CRYSTALLIBERATOR" />
+	</choice>
+	<choice req="crystal_sentinel" hidden="true">
+		<text>Transform a Crystal Sentinel.</text>
+		<event load="STORAGE_CHECK_PROM_VATS_CRYSTALSENTINEL" />
+	</choice>
+	<choice req="unique_ruwen" hidden="true">
+		<text>Transform a Crystal Ambassador.</text>
+		<event load="STORAGE_CHECK_PROM_VATS_CRYSTALAMBASSADOR" />
+	</choice>
+	<choice req="unique_dianesh" hidden="true">
+		<text>Transform a Crystal Royal.</text>
+		<event load="STORAGE_CHECK_PROM_VATS_CRYSTALROYAL" />
+	</choice>
+	<choice hidden="true" req="pilot" lvl="1" blue="false" max_group="1">
+		<text>Nevermind, do something else.</text>
+		<event load="STORAGE_CHECK" />
+	</choice>
+</event><event name="STORAGE_CHECK_PROM_VATS_CRYSTAL">
+	<text>What would you like to transform your Crystal into?</text>
+	<choice req="crystal" hidden="true">
+		<text>Convert your Crystal into a Crystal Liberator [Cost: 10~]</text>
+		<event>
+			<text>Your Crystal has been sucessfully converted into a Crystal Liberator.</text>
+			<transformRace class="crystal">crystal_liberator</transformRace>
+			<item_modify>
+				<item type="scrap" min="-10" max="-10" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice req="crystal" hidden="true">
+		<text>Convert your Crystal into a Crystal Sentinel [Cost: 70~]</text>
+		<event>
+			<text>Your Crystal has been sucessfully converted into a Crystal Sentinel.</text>
+			<transformRace class="crystal">crystal_sentinel</transformRace>
+			<item_modify>
+				<item type="scrap" min="-70" max="-70" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="pilot" lvl="1" blue="false" max_group="1">
+		<text>Nevermind...</text>
+		<event load="STORAGE_CHECK" />
+	</choice>
+</event>
+<event name="STORAGE_CHECK_PROM_VATS_CRYSTALLIBERATOR">
+	<text>What would you like to transform your Crystal Liberator into?</text>
+	<choice req="crystal_liberator" hidden="true">
+		<text>Convert your Crystal Liberator into a Crystal [Cost: 10~]</text>
+		<event>
+			<text>Your Crystal Liberator has been sucessfully converted into a Crystal.</text>
+			<transformRace class="crystal_liberator">crystal</transformRace>
+			<item_modify>
+				<item type="scrap" min="-10" max="-10" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="pilot" lvl="1" blue="false" max_group="1">
+		<text>Nevermind...</text>
+		<event load="STORAGE_CHECK" />
+	</choice>
+</event>
+<event name="STORAGE_CHECK_PROM_VATS_CRYSTALSENTINEL">
+	<text>What would you like to transform your Crystal Sentinel into?</text>
+	<choice req="crystal_sentinel" hidden="true">
+		<text>Convert your Crystal Sentinel into a Crystal [Cost: 0~]</text>
+		<event>
+			<text>Your Crystal Sentinel has been sucessfully converted into a Crystal.</text>
+			<transformRace class="crystal_sentinel">crystal</transformRace>
+			<item_modify>
+				<item type="scrap" min="-0" max="-0" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice req="crystal_sentinel" hidden="true">
+		<text>Convert your Crystal Sentinel into a Crystal Ambassador [Cost: 150~]</text>
+		<event>
+			<text>Your Crystal Sentinel has been sucessfully converted into a Crystal Ambassador.</text>
+			<transformRace class="crystal_sentinel">unique_ruwen</transformRace>
+			<item_modify>
+				<item type="scrap" min="-150" max="-150" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice req="crystal_sentinel" hidden="true">
+		<text>Convert your Crystal Sentinel into a Crystal Royal [Cost: 150~]</text>
+		<event>
+			<text>Your Crystal Sentinel has been sucessfully converted into a Crystal Royal.</text>
+			<transformRace class="crystal_sentinel">unique_dianesh</transformRace>
+			<item_modify>
+				<item type="scrap" min="-150" max="-150" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice req="crystal_sentinel" hidden="true">
+		<text>Convert your Crystal Sentinel into a Saltman [Cost: 150~]</text>
+		<event>
+			<text>Your Crystal Sentinel has been sucessfully converted into a Saltman.</text>
+			<transformRace class="crystal_sentinel">salt</transformRace>
+			<item_modify>
+				<item type="scrap" min="-150" max="-150" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="pilot" lvl="1" blue="false" max_group="1">
+		<text>Nevermind...</text>
+		<event load="STORAGE_CHECK" />
+	</choice>
+</event>
+<event name="STORAGE_CHECK_PROM_VATS_CRYSTALAMBASSADOR">
+	<text>What would you like to transform your Crystal Ambassador into?</text>
+	<choice req="unique_ruwen" hidden="true">
+		<text>Convert your Crystal Ambassador into a Crystal Sentinel [Cost: 0~]</text>
+		<event>
+			<text>Your Crystal Ambassador has been sucessfully converted into a Crystal Sentinel.</text>
+			<transformRace class="unique_ruwen">crystal_sentinel</transformRace>
+			<item_modify>
+				<item type="scrap" min="-0" max="-0" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="pilot" lvl="1" blue="false" max_group="1">
+		<text>Nevermind...</text>
+		<event load="STORAGE_CHECK" />
+	</choice>
+</event>
+<event name="STORAGE_CHECK_PROM_VATS_CRYSTALROYAL">
+	<text>What would you like to transform your Crystal Royal into?</text>
+	<choice req="unique_dianesh" hidden="true">
+		<text>Convert your Crystal Royal into a Crystal Sentinel [Cost: 0~]</text>
+		<event>
+			<text>Your Crystal Royal has been sucessfully converted into a Crystal Sentinel.</text>
+			<transformRace class="unique_dianesh">crystal_sentinel</transformRace>
+			<item_modify>
+				<item type="scrap" min="-0" max="-0" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="pilot" lvl="1" blue="false" max_group="1">
+		<text>Nevermind...</text>
+		<event load="STORAGE_CHECK" />
+	</choice>
+</event>
+
+<event name="STORAGE_CHECK_PROM_VATS_SELECT_SLUG">
+	<text>Which Slug would you like to transform?</text>
+	<choice req="slug" hidden="true">
+		<text>Transform a Slug.</text>
+		<event load="STORAGE_CHECK_PROM_VATS_SLUG" />
+	</choice>
+	<choice req="LIST_VARIANT_HEKTAR" hidden="true">
+		<text>Transform a Slug Employee.</text>
+		<event load="STORAGE_CHECK_PROM_VATS_SLUGEMPLOYEE" />
+	</choice>
+	<choice req="slug_clansman" hidden="true">
+		<text>Transform a Slug Clansman.</text>
+		<event load="STORAGE_CHECK_PROM_VATS_SLUGCLANSMAN" />
+	</choice>
+	<choice req="slug_saboteur" hidden="true">
+		<text>Transform a Slug Saboteur.</text>
+		<event load="STORAGE_CHECK_PROM_VATS_SLUGSABOTEUR" />
+	</choice>
+	<choice req="slug_knight" hidden="true">
+		<text>Transform a Slug Knight.</text>
+		<event load="STORAGE_CHECK_PROM_VATS_SLUGKNIGHT" />
+	</choice>
+	<choice req="slug_ranger" hidden="true">
+		<text>Transform a Slug Ranger.</text>
+		<event load="STORAGE_CHECK_PROM_VATS_SLUGRANGER" />
+	</choice>
+	<choice req="unique_nights" hidden="true">
+		<text>Transform a Knight Captain.</text>
+		<event load="STORAGE_CHECK_PROM_VATS_KNIGHTCAPTAIN" />
+	</choice>
+	<choice req="unique_slocknog" hidden="true">
+		<text>Transform a Slug Royal.</text>
+		<event load="STORAGE_CHECK_PROM_VATS_SLUGROYAL" />
+	</choice>
+	<choice req="unique_irwin" hidden="true">
+		<text>Transform a Slug Hunter.</text>
+		<event load="STORAGE_CHECK_PROM_VATS_SLUGHUNTER" />
+	</choice>
+	<choice req="LIST_VARIANT_BILLY" hidden="true">
+		<text>Transform a Slug CEO.</text>
+		<event load="STORAGE_CHECK_PROM_VATS_SLUGCEO" />
+	</choice>
+	<choice req="unique_sylvan" hidden="true">
+		<text>Transform a Traveling Merchant.</text>
+		<event load="STORAGE_CHECK_PROM_VATS_TRAVELINGMERCHANT" />
+	</choice>
+	<choice hidden="true" req="pilot" lvl="1" blue="false" max_group="1">
+		<text>Nevermind, do something else.</text>
+		<event load="STORAGE_CHECK" />
+	</choice>
+</event><event name="STORAGE_CHECK_PROM_VATS_SLUG">
+	<text>What would you like to transform your Slug into?</text>
+	<choice req="slug" hidden="true">
+		<text>Convert your Slug into a Slug Employee [Cost: 30~]</text>
+		<event>
+			<text>Your Slug has been sucessfully converted into a Slug Employee.</text>
+			<transformRace class="slug">slug_hektar</transformRace>
+			<item_modify>
+				<item type="scrap" min="-30" max="-30" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice req="slug" hidden="true">
+		<text>Convert your Slug into a Slug Clansman [Cost: 30~]</text>
+		<event>
+			<text>Your Slug has been sucessfully converted into a Slug Clansman.</text>
+			<transformRace class="slug">slug_clansman</transformRace>
+			<item_modify>
+				<item type="scrap" min="-30" max="-30" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice req="slug" hidden="true">
+		<text>Convert your Slug into a Slug Saboteur [Cost: 70~]</text>
+		<event>
+			<text>Your Slug has been sucessfully converted into a Slug Saboteur.</text>
+			<transformRace class="slug">slug_saboteur</transformRace>
+			<item_modify>
+				<item type="scrap" min="-70" max="-70" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="pilot" lvl="1" blue="false" max_group="1">
+		<text>Nevermind...</text>
+		<event load="STORAGE_CHECK" />
+	</choice>
+</event>
+<event name="STORAGE_CHECK_PROM_VATS_SLUGEMPLOYEE">
+	<text>What would you like to transform your Slug Employee into?</text>
+	<choice req="LIST_VARIANT_HEKTAR" hidden="true">
+		<text>Convert your Slug Employee into a Slug [Cost: 0~]</text>
+		<event>
+			<text>Your Slug Employee has been sucessfully converted into a Slug.</text>
+			<transformRace class="LIST_VARIANT_HEKTAR">slug</transformRace>
+			<item_modify>
+				<item type="scrap" min="-0" max="-0" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice req="LIST_VARIANT_HEKTAR" hidden="true">
+		<text>Convert your Slug Employee into a Slug Clansman [Cost: 10~]</text>
+		<event>
+			<text>Your Slug Employee has been sucessfully converted into a Slug Clansman.</text>
+			<transformRace class="LIST_VARIANT_HEKTAR">slug_clansman</transformRace>
+			<item_modify>
+				<item type="scrap" min="-10" max="-10" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice req="LIST_VARIANT_HEKTAR" hidden="true">
+		<text>Convert your Slug Employee into a Slug CEO [Cost: 150~]</text>
+		<event>
+			<text>Your Slug Employee has been sucessfully converted into a Slug CEO.</text>
+			<transformRace class="LIST_VARIANT_HEKTAR">unique_billy</transformRace>
+			<item_modify>
+				<item type="scrap" min="-150" max="-150" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="pilot" lvl="1" blue="false" max_group="1">
+		<text>Nevermind...</text>
+		<event load="STORAGE_CHECK" />
+	</choice>
+</event>
+<event name="STORAGE_CHECK_PROM_VATS_SLUGCLANSMAN">
+	<text>What would you like to transform your Slug Clansman into?</text>
+	<choice req="slug_clansman" hidden="true">
+		<text>Convert your Slug Clansman into a Slug [Cost: 0~]</text>
+		<event>
+			<text>Your Slug Clansman has been sucessfully converted into a Slug.</text>
+			<transformRace class="slug_clansman">slug</transformRace>
+			<item_modify>
+				<item type="scrap" min="-0" max="-0" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice req="slug_clansman" hidden="true">
+		<text>Convert your Slug Clansman into a Slug Employee [Cost: 10~]</text>
+		<event>
+			<text>Your Slug Clansman has been sucessfully converted into a Slug Employee.</text>
+			<transformRace class="slug_clansman">slug_hektar</transformRace>
+			<item_modify>
+				<item type="scrap" min="-10" max="-10" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice req="slug_clansman" hidden="true">
+		<text>Convert your Slug Clansman into a Slug Ranger [Cost: 100~]</text>
+		<event>
+			<text>Your Slug Clansman has been sucessfully converted into a Slug Ranger.</text>
+			<transformRace class="slug_clansman">slug_ranger</transformRace>
+			<item_modify>
+				<item type="scrap" min="-100" max="-100" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="pilot" lvl="1" blue="false" max_group="1">
+		<text>Nevermind...</text>
+		<event load="STORAGE_CHECK" />
+	</choice>
+</event>
+<event name="STORAGE_CHECK_PROM_VATS_SLUGSABOTEUR">
+	<text>What would you like to transform your Slug Saboteur into?</text>
+	<choice req="slug_saboteur" hidden="true">
+		<text>Convert your Slug Saboteur into a Slug [Cost: 0~]</text>
+		<event>
+			<text>Your Slug Saboteur has been sucessfully converted into a Slug.</text>
+			<transformRace class="slug_saboteur">slug</transformRace>
+			<item_modify>
+				<item type="scrap" min="-0" max="-0" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice req="slug_saboteur" hidden="true">
+		<text>Convert your Slug Saboteur into a Slug Knight [Cost: 100~]</text>
+		<event>
+			<text>Your Slug Saboteur has been sucessfully converted into a Slug Knight.</text>
+			<transformRace class="slug_saboteur">slug_knight</transformRace>
+			<item_modify>
+				<item type="scrap" min="-100" max="-100" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice req="slug_saboteur" hidden="true">
+		<text>Convert your Slug Saboteur into a Slug Royal [Cost: 150~]</text>
+		<event>
+			<text>Your Slug Saboteur has been sucessfully converted into a Slug Royal.</text>
+			<transformRace class="slug_saboteur">unique_slocknog</transformRace>
+			<item_modify>
+				<item type="scrap" min="-150" max="-150" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="pilot" lvl="1" blue="false" max_group="1">
+		<text>Nevermind...</text>
+		<event load="STORAGE_CHECK" />
+	</choice>
+</event>
+<event name="STORAGE_CHECK_PROM_VATS_SLUGKNIGHT">
+	<text>What would you like to transform your Slug Knight into?</text>
+	<choice req="slug_knight" hidden="true">
+		<text>Convert your Slug Knight into a Slug Saboteur [Cost: 0~]</text>
+		<event>
+			<text>Your Slug Knight has been sucessfully converted into a Slug Saboteur.</text>
+			<transformRace class="slug_knight">slug_saboteur</transformRace>
+			<item_modify>
+				<item type="scrap" min="-0" max="-0" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice req="slug_knight" hidden="true">
+		<text>Convert your Slug Knight into a Knight Captain [Cost: 150~]</text>
+		<event>
+			<text>Your Slug Knight has been sucessfully converted into a Knight Captain.</text>
+			<transformRace class="slug_knight">unique_nights</transformRace>
+			<item_modify>
+				<item type="scrap" min="-150" max="-150" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="pilot" lvl="1" blue="false" max_group="1">
+		<text>Nevermind...</text>
+		<event load="STORAGE_CHECK" />
+	</choice>
+</event>
+<event name="STORAGE_CHECK_PROM_VATS_SLUGRANGER">
+	<text>What would you like to transform your Slug Ranger into?</text>
+	<choice req="slug_ranger" hidden="true">
+		<text>Convert your Slug Ranger into a Slug Clansman [Cost: 0~]</text>
+		<event>
+			<text>Your Slug Ranger has been sucessfully converted into a Slug Clansman.</text>
+			<transformRace class="slug_ranger">slug_clansman</transformRace>
+			<item_modify>
+				<item type="scrap" min="-0" max="-0" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice req="slug_ranger" hidden="true">
+		<text>Convert your Slug Ranger into a Slug Hunter [Cost: 150~]</text>
+		<event>
+			<text>Your Slug Ranger has been sucessfully converted into a Slug Hunter.</text>
+			<transformRace class="slug_ranger">unique_irwin</transformRace>
+			<item_modify>
+				<item type="scrap" min="-150" max="-150" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice req="slug_ranger" hidden="true">
+		<text>Convert your Slug Ranger into a Traveling Merchant [Cost: 150~]</text>
+		<event>
+			<text>Your Slug Ranger has been sucessfully converted into a Traveling Merchant.</text>
+			<transformRace class="slug_ranger">unique_sylvan</transformRace>
+			<item_modify>
+				<item type="scrap" min="-150" max="-150" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="pilot" lvl="1" blue="false" max_group="1">
+		<text>Nevermind...</text>
+		<event load="STORAGE_CHECK" />
+	</choice>
+</event>
+<event name="STORAGE_CHECK_PROM_VATS_KNIGHTCAPTAIN">
+	<text>What would you like to transform your Knight Captain into?</text>
+	<choice req="unique_nights" hidden="true">
+		<text>Convert your Knight Captain into a Slug Knight [Cost: 0~]</text>
+		<event>
+			<text>Your Knight Captain has been sucessfully converted into a Slug Knight.</text>
+			<transformRace class="unique_nights">slug_knight</transformRace>
+			<item_modify>
+				<item type="scrap" min="-0" max="-0" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="pilot" lvl="1" blue="false" max_group="1">
+		<text>Nevermind...</text>
+		<event load="STORAGE_CHECK" />
+	</choice>
+</event>
+<event name="STORAGE_CHECK_PROM_VATS_SLUGROYAL">
+	<text>What would you like to transform your Slug Royal into?</text>
+	<choice req="unique_slocknog" hidden="true">
+		<text>Convert your Slug Royal into a Slug Saboteur [Cost: 0~]</text>
+		<event>
+			<text>Your Slug Royal has been sucessfully converted into a Slug Saboteur.</text>
+			<transformRace class="unique_slocknog">slug_saboteur</transformRace>
+			<item_modify>
+				<item type="scrap" min="-0" max="-0" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="pilot" lvl="1" blue="false" max_group="1">
+		<text>Nevermind...</text>
+		<event load="STORAGE_CHECK" />
+	</choice>
+</event>
+<event name="STORAGE_CHECK_PROM_VATS_SLUGHUNTER">
+	<text>What would you like to transform your Slug Hunter into?</text>
+	<choice req="unique_irwin" hidden="true">
+		<text>Convert your Slug Hunter into a Slug Ranger [Cost: 0~]</text>
+		<event>
+			<text>Your Slug Hunter has been sucessfully converted into a Slug Ranger.</text>
+			<transformRace class="unique_irwin">slug_ranger</transformRace>
+			<item_modify>
+				<item type="scrap" min="-0" max="-0" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="pilot" lvl="1" blue="false" max_group="1">
+		<text>Nevermind...</text>
+		<event load="STORAGE_CHECK" />
+	</choice>
+</event>
+<event name="STORAGE_CHECK_PROM_VATS_SLUGCEO">
+	<text>What would you like to transform your Slug CEO into?</text>
+	<choice req="LIST_VARIANT_BILLY" hidden="true">
+		<text>Convert your Slug CEO into a Slug Employee [Cost: 0~]</text>
+		<event>
+			<text>Your Slug CEO has been sucessfully converted into a Slug Employee.</text>
+			<transformRace class="LIST_VARIANT_BILLY">slug_hektar</transformRace>
+			<item_modify>
+				<item type="scrap" min="-0" max="-0" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="pilot" lvl="1" blue="false" max_group="1">
+		<text>Nevermind...</text>
+		<event load="STORAGE_CHECK" />
+	</choice>
+</event>
+<event name="STORAGE_CHECK_PROM_VATS_TRAVELINGMERCHANT">
+	<text>What would you like to transform your Traveling Merchant into?</text>
+	<choice req="unique_sylvan" hidden="true">
+		<text>Convert your Traveling Merchant into a Slug Ranger [Cost: 0~]</text>
+		<event>
+			<text>Your Traveling Merchant has been sucessfully converted into a Slug Ranger.</text>
+			<transformRace class="unique_sylvan">slug_ranger</transformRace>
+			<item_modify>
+				<item type="scrap" min="-0" max="-0" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="pilot" lvl="1" blue="false" max_group="1">
+		<text>Nevermind...</text>
+		<event load="STORAGE_CHECK" />
+	</choice>
+</event>
+<event name="STORAGE_CHECK_PROM_VATS_SELECT_SHELL">
+	<text>Which Shell would you like to transform?</text>
+	<choice req="shell" hidden="true">
+		<text>Transform a Shell.</text>
+		<event load="STORAGE_CHECK_PROM_VATS_SHELL" />
+	</choice>
+	<choice req="shell_scientist" hidden="true">
+		<text>Transform a Shell Scientist.</text>
+		<event load="STORAGE_CHECK_PROM_VATS_SHELLSCIENTIST" />
+	</choice>
+	<choice req="shell_mechanic" hidden="true">
+		<text>Transform a Shell Mechanic.</text>
+		<event load="STORAGE_CHECK_PROM_VATS_SHELLMECHANIC" />
+	</choice>
+	<choice req="shell_guardian" hidden="true">
+		<text>Transform a Shell Guardian.</text>
+		<event load="STORAGE_CHECK_PROM_VATS_SHELLGUARDIAN" />
+	</choice>
+	<choice req="shell_radiant" hidden="true">
+		<text>Transform a Shell Radiant.</text>
+		<event load="STORAGE_CHECK_PROM_VATS_SHELLRADIANT" />
+	</choice>
+	<choice req="unique_alkali" hidden="true">
+		<text>Transform a Head Scientist.</text>
+		<event load="STORAGE_CHECK_PROM_VATS_HEADSCIENTIST" />
+	</choice>
+	<choice hidden="true" req="pilot" lvl="1" blue="false" max_group="1">
+		<text>Nevermind, do something else.</text>
+		<event load="STORAGE_CHECK" />
+	</choice>
+</event><event name="STORAGE_CHECK_PROM_VATS_SHELL">
+	<text>What would you like to transform your Shell into?</text>
+	<choice req="shell" hidden="true">
+		<text>Convert your Shell into a Shell Scientist [Cost: 30~]</text>
+		<event>
+			<text>Your Shell has been sucessfully converted into a Shell Scientist.</text>
+			<transformRace class="shell">shell_scientist</transformRace>
+			<item_modify>
+				<item type="scrap" min="-30" max="-30" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice req="shell" hidden="true">
+		<text>Convert your Shell into a Shell Mechanic [Cost: 30~]</text>
+		<event>
+			<text>Your Shell has been sucessfully converted into a Shell Mechanic.</text>
+			<transformRace class="shell">shell_mechanic</transformRace>
+			<item_modify>
+				<item type="scrap" min="-30" max="-30" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice req="shell" hidden="true">
+		<text>Convert your Shell into a Shell Guardian [Cost: 30~]</text>
+		<event>
+			<text>Your Shell has been sucessfully converted into a Shell Guardian.</text>
+			<transformRace class="shell">shell_guardian</transformRace>
+			<item_modify>
+				<item type="scrap" min="-30" max="-30" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="pilot" lvl="1" blue="false" max_group="1">
+		<text>Nevermind...</text>
+		<event load="STORAGE_CHECK" />
+	</choice>
+</event>
+<event name="STORAGE_CHECK_PROM_VATS_SHELLSCIENTIST">
+	<text>What would you like to transform your Shell Scientist into?</text>
+	<choice req="shell_scientist" hidden="true">
+		<text>Convert your Shell Scientist into a Shell [Cost: 0~]</text>
+		<event>
+			<text>Your Shell Scientist has been sucessfully converted into a Shell.</text>
+			<transformRace class="shell_scientist">shell</transformRace>
+			<item_modify>
+				<item type="scrap" min="-0" max="-0" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice req="shell_scientist" hidden="true">
+		<text>Convert your Shell Scientist into a Shell Mechanic [Cost: 10~]</text>
+		<event>
+			<text>Your Shell Scientist has been sucessfully converted into a Shell Mechanic.</text>
+			<transformRace class="shell_scientist">shell_mechanic</transformRace>
+			<item_modify>
+				<item type="scrap" min="-10" max="-10" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice req="shell_scientist" hidden="true">
+		<text>Convert your Shell Scientist into a Shell Guardian [Cost: 10~]</text>
+		<event>
+			<text>Your Shell Scientist has been sucessfully converted into a Shell Guardian.</text>
+			<transformRace class="shell_scientist">shell_guardian</transformRace>
+			<item_modify>
+				<item type="scrap" min="-10" max="-10" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice req="shell_scientist" hidden="true">
+		<text>Convert your Shell Scientist into a Head Scientist [Cost: 150~]</text>
+		<event>
+			<text>Your Shell Scientist has been sucessfully converted into a Head Scientist.</text>
+			<transformRace class="shell_scientist">unique_alkali</transformRace>
+			<item_modify>
+				<item type="scrap" min="-150" max="-150" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="pilot" lvl="1" blue="false" max_group="1">
+		<text>Nevermind...</text>
+		<event load="STORAGE_CHECK" />
+	</choice>
+</event>
+<event name="STORAGE_CHECK_PROM_VATS_SHELLMECHANIC">
+	<text>What would you like to transform your Shell Mechanic into?</text>
+	<choice req="shell_mechanic" hidden="true">
+		<text>Convert your Shell Mechanic into a Shell [Cost: 0~]</text>
+		<event>
+			<text>Your Shell Mechanic has been sucessfully converted into a Shell.</text>
+			<transformRace class="shell_mechanic">shell</transformRace>
+			<item_modify>
+				<item type="scrap" min="-0" max="-0" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice req="shell_mechanic" hidden="true">
+		<text>Convert your Shell Mechanic into a Shell Scientist [Cost: 10~]</text>
+		<event>
+			<text>Your Shell Mechanic has been sucessfully converted into a Shell Scientist.</text>
+			<transformRace class="shell_mechanic">shell_scientist</transformRace>
+			<item_modify>
+				<item type="scrap" min="-10" max="-10" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice req="shell_mechanic" hidden="true">
+		<text>Convert your Shell Mechanic into a Shell Guardian [Cost: 10~]</text>
+		<event>
+			<text>Your Shell Mechanic has been sucessfully converted into a Shell Guardian.</text>
+			<transformRace class="shell_mechanic">shell_guardian</transformRace>
+			<item_modify>
+				<item type="scrap" min="-10" max="-10" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="pilot" lvl="1" blue="false" max_group="1">
+		<text>Nevermind...</text>
+		<event load="STORAGE_CHECK" />
+	</choice>
+</event>
+<event name="STORAGE_CHECK_PROM_VATS_SHELLGUARDIAN">
+	<text>What would you like to transform your Shell Guardian into?</text>
+	<choice req="shell_guardian" hidden="true">
+		<text>Convert your Shell Guardian into a Shell [Cost: 0~]</text>
+		<event>
+			<text>Your Shell Guardian has been sucessfully converted into a Shell.</text>
+			<transformRace class="shell_guardian">shell</transformRace>
+			<item_modify>
+				<item type="scrap" min="-0" max="-0" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice req="shell_guardian" hidden="true">
+		<text>Convert your Shell Guardian into a Shell Scientist [Cost: 10~]</text>
+		<event>
+			<text>Your Shell Guardian has been sucessfully converted into a Shell Scientist.</text>
+			<transformRace class="shell_guardian">shell_scientist</transformRace>
+			<item_modify>
+				<item type="scrap" min="-10" max="-10" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice req="shell_guardian" hidden="true">
+		<text>Convert your Shell Guardian into a Shell Mechanic [Cost: 10~]</text>
+		<event>
+			<text>Your Shell Guardian has been sucessfully converted into a Shell Mechanic.</text>
+			<transformRace class="shell_guardian">shell_mechanic</transformRace>
+			<item_modify>
+				<item type="scrap" min="-10" max="-10" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice req="shell_guardian" hidden="true">
+		<text>Convert your Shell Guardian into a Shell Radiant [Cost: 100~]</text>
+		<event>
+			<text>Your Shell Guardian has been sucessfully converted into a Shell Radiant.</text>
+			<transformRace class="shell_guardian">shell_radiant</transformRace>
+			<item_modify>
+				<item type="scrap" min="-100" max="-100" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="pilot" lvl="1" blue="false" max_group="1">
+		<text>Nevermind...</text>
+		<event load="STORAGE_CHECK" />
+	</choice>
+</event>
+<event name="STORAGE_CHECK_PROM_VATS_SHELLRADIANT">
+	<text>What would you like to transform your Shell Radiant into?</text>
+	<choice req="shell_radiant" hidden="true">
+		<text>Convert your Shell Radiant into a Shell Guardian [Cost: 0~]</text>
+		<event>
+			<text>Your Shell Radiant has been sucessfully converted into a Shell Guardian.</text>
+			<transformRace class="shell_radiant">shell_guardian</transformRace>
+			<item_modify>
+				<item type="scrap" min="-0" max="-0" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="pilot" lvl="1" blue="false" max_group="1">
+		<text>Nevermind...</text>
+		<event load="STORAGE_CHECK" />
+	</choice>
+</event>
+<event name="STORAGE_CHECK_PROM_VATS_HEADSCIENTIST">
+	<text>What would you like to transform your Head Scientist into?</text>
+	<choice req="unique_alkali" hidden="true">
+		<text>Convert your Head Scientist into a Shell Scientist [Cost: 0~]</text>
+		<event>
+			<text>Your Head Scientist has been sucessfully converted into a Shell Scientist.</text>
+			<transformRace class="unique_alkali">shell_scientist</transformRace>
+			<item_modify>
+				<item type="scrap" min="-0" max="-0" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="pilot" lvl="1" blue="false" max_group="1">
+		<text>Nevermind...</text>
+		<event load="STORAGE_CHECK" />
+	</choice>
+</event>
+<event name="STORAGE_CHECK_PROM_VATS_SELECT_LEECH">
+	<text>Which Leech would you like to transform?</text>
+	<choice req="leech" hidden="true">
+		<text>Transform a Leech.</text>
+		<event load="STORAGE_CHECK_PROM_VATS_LEECH" />
+	</choice>
+	<choice req="leech_ampere" hidden="true">
+		<text>Transform a Leech Ampere.</text>
+		<event load="STORAGE_CHECK_PROM_VATS_LEECHAMPERE" />
+	</choice>
+	<choice req="unique_tyrdeo" hidden="true">
+		<text>Transform a Ampere Admiral.</text>
+		<event load="STORAGE_CHECK_PROM_VATS_AMPEREADMIRAL" />
+	</choice>
+	<choice req="unique_alkram" hidden="true">
+		<text>Transform a Leech Revolutionary.</text>
+		<event load="STORAGE_CHECK_PROM_VATS_LEECHREVOLUTIONARY" />
+	</choice>
+	<choice req="unique_tonysr" hidden="true">
+		<text>Transform a Leech CEO.</text>
+		<event load="STORAGE_CHECK_PROM_VATS_LEECHCEO" />
+	</choice>
+	<choice hidden="true" req="pilot" lvl="1" blue="false" max_group="1">
+		<text>Nevermind, do something else.</text>
+		<event load="STORAGE_CHECK" />
+	</choice>
+</event><event name="STORAGE_CHECK_PROM_VATS_LEECH">
+	<text>What would you like to transform your Leech into?</text>
+	<choice req="leech" hidden="true">
+		<text>Convert your Leech into a Leech Ampere [Cost: 70~]</text>
+		<event>
+			<text>Your Leech has been sucessfully converted into a Leech Ampere.</text>
+			<transformRace class="leech">leech_ampere</transformRace>
+			<item_modify>
+				<item type="scrap" min="-70" max="-70" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="pilot" lvl="1" blue="false" max_group="1">
+		<text>Nevermind...</text>
+		<event load="STORAGE_CHECK" />
+	</choice>
+</event>
+<event name="STORAGE_CHECK_PROM_VATS_LEECHAMPERE">
+	<text>What would you like to transform your Leech Ampere into?</text>
+	<choice req="leech_ampere" hidden="true">
+		<text>Convert your Leech Ampere into a Leech [Cost: 0~]</text>
+		<event>
+			<text>Your Leech Ampere has been sucessfully converted into a Leech.</text>
+			<transformRace class="leech_ampere">leech</transformRace>
+			<item_modify>
+				<item type="scrap" min="-0" max="-0" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice req="leech_ampere" hidden="true">
+		<text>Convert your Leech Ampere into a Ampere Admiral [Cost: 150~]</text>
+		<event>
+			<text>Your Leech Ampere has been sucessfully converted into a Ampere Admiral.</text>
+			<transformRace class="leech_ampere">unique_tyrdeo</transformRace>
+			<item_modify>
+				<item type="scrap" min="-150" max="-150" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice req="leech_ampere" hidden="true">
+		<text>Convert your Leech Ampere into a Leech Revolutionary [Cost: 150~]</text>
+		<event>
+			<text>Your Leech Ampere has been sucessfully converted into a Leech Revolutionary.</text>
+			<transformRace class="leech_ampere">unique_alkram</transformRace>
+			<item_modify>
+				<item type="scrap" min="-150" max="-150" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice req="leech_ampere" hidden="true">
+		<text>Convert your Leech Ampere into a Leech CEO [Cost: 150~]</text>
+		<event>
+			<text>Your Leech Ampere has been sucessfully converted into a Leech CEO.</text>
+			<transformRace class="leech_ampere">unique_tonysr</transformRace>
+			<item_modify>
+				<item type="scrap" min="-150" max="-150" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="pilot" lvl="1" blue="false" max_group="1">
+		<text>Nevermind...</text>
+		<event load="STORAGE_CHECK" />
+	</choice>
+</event>
+<event name="STORAGE_CHECK_PROM_VATS_AMPEREADMIRAL">
+	<text>What would you like to transform your Ampere Admiral into?</text>
+	<choice req="unique_tyrdeo" hidden="true">
+		<text>Convert your Ampere Admiral into a Leech Ampere [Cost: 0~]</text>
+		<event>
+			<text>Your Ampere Admiral has been sucessfully converted into a Leech Ampere.</text>
+			<transformRace class="unique_tyrdeo">leech_ampere</transformRace>
+			<item_modify>
+				<item type="scrap" min="-0" max="-0" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="pilot" lvl="1" blue="false" max_group="1">
+		<text>Nevermind...</text>
+		<event load="STORAGE_CHECK" />
+	</choice>
+</event>
+<event name="STORAGE_CHECK_PROM_VATS_LEECHREVOLUTIONARY">
+	<text>What would you like to transform your Leech Revolutionary into?</text>
+	<choice req="unique_alkram" hidden="true">
+		<text>Convert your Leech Revolutionary into a Leech Ampere [Cost: 0~]</text>
+		<event>
+			<text>Your Leech Revolutionary has been sucessfully converted into a Leech Ampere.</text>
+			<transformRace class="unique_alkram">leech_ampere</transformRace>
+			<item_modify>
+				<item type="scrap" min="-0" max="-0" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="pilot" lvl="1" blue="false" max_group="1">
+		<text>Nevermind...</text>
+		<event load="STORAGE_CHECK" />
+	</choice>
+</event>
+<event name="STORAGE_CHECK_PROM_VATS_LEECHCEO">
+	<text>What would you like to transform your Leech CEO into?</text>
+	<choice req="unique_tonysr" hidden="true">
+		<text>Convert your Leech CEO into a Leech Ampere [Cost: 0~]</text>
+		<event>
+			<text>Your Leech CEO has been sucessfully converted into a Leech Ampere.</text>
+			<transformRace class="unique_tonysr">leech_ampere</transformRace>
+			<item_modify>
+				<item type="scrap" min="-0" max="-0" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="pilot" lvl="1" blue="false" max_group="1">
+		<text>Nevermind...</text>
+		<event load="STORAGE_CHECK" />
+	</choice>
+</event>
+<event name="STORAGE_CHECK_PROM_VATS_SELECT_LANIUS">
+	<text>Which Lanius would you like to transform?</text>
+	<choice req="lanius" hidden="true">
+		<text>Transform a Lanius.</text>
+		<event load="STORAGE_CHECK_PROM_VATS_LANIUS" />
+	</choice>
+	<choice req="lanius_augmented" hidden="true">
+		<text>Transform a Augmented Lanius.</text>
+		<event load="STORAGE_CHECK_PROM_VATS_AUGMENTEDLANIUS" />
+	</choice>
+	<choice req="lanius_welder" hidden="true">
+		<text>Transform a Lanius Welder.</text>
+		<event load="STORAGE_CHECK_PROM_VATS_LANIUSWELDER" />
+	</choice>
+	<choice req="unique_eater" hidden="true">
+		<text>Transform a Beacon Eater.</text>
+		<event load="STORAGE_CHECK_PROM_VATS_BEACONEATER" />
+	</choice>
+	<choice req="unique_anointed" hidden="true">
+		<text>Transform a Anointed.</text>
+		<event load="STORAGE_CHECK_PROM_VATS_ANOINTED" />
+	</choice>
+	<choice hidden="true" req="pilot" lvl="1" blue="false" max_group="1">
+		<text>Nevermind, do something else.</text>
+		<event load="STORAGE_CHECK" />
+	</choice>
+</event><event name="STORAGE_CHECK_PROM_VATS_LANIUS">
+	<text>What would you like to transform your Lanius into?</text>
+	<choice req="lanius" hidden="true">
+		<text>Convert your Lanius into a Augmented Lanius [Cost: 30~]</text>
+		<event>
+			<text>Your Lanius has been sucessfully converted into a Augmented Lanius.</text>
+			<transformRace class="lanius">lanius_augmented</transformRace>
+			<item_modify>
+				<item type="scrap" min="-30" max="-30" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice req="lanius" hidden="true">
+		<text>Convert your Lanius into a Lanius Welder [Cost: 70~]</text>
+		<event>
+			<text>Your Lanius has been sucessfully converted into a Lanius Welder.</text>
+			<transformRace class="lanius">lanius_welder</transformRace>
+			<item_modify>
+				<item type="scrap" min="-70" max="-70" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="pilot" lvl="1" blue="false" max_group="1">
+		<text>Nevermind...</text>
+		<event load="STORAGE_CHECK" />
+	</choice>
+</event>
+<event name="STORAGE_CHECK_PROM_VATS_AUGMENTEDLANIUS">
+	<text>What would you like to transform your Augmented Lanius into?</text>
+	<choice req="lanius_augmented" hidden="true">
+		<text>Convert your Augmented Lanius into a Lanius [Cost: 10~]</text>
+		<event>
+			<text>Your Augmented Lanius has been sucessfully converted into a Lanius.</text>
+			<transformRace class="lanius_augmented">lanius</transformRace>
+			<item_modify>
+				<item type="scrap" min="-10" max="-10" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice req="lanius_augmented" hidden="true">
+		<text>Convert your Augmented Lanius into a Anointed [Cost: 150~]</text>
+		<event>
+			<text>Your Augmented Lanius has been sucessfully converted into a Anointed.</text>
+			<transformRace class="lanius_augmented">unique_anointed</transformRace>
+			<item_modify>
+				<item type="scrap" min="-150" max="-150" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="pilot" lvl="1" blue="false" max_group="1">
+		<text>Nevermind...</text>
+		<event load="STORAGE_CHECK" />
+	</choice>
+</event>
+<event name="STORAGE_CHECK_PROM_VATS_LANIUSWELDER">
+	<text>What would you like to transform your Lanius Welder into?</text>
+	<choice req="lanius_welder" hidden="true">
+		<text>Convert your Lanius Welder into a Lanius [Cost: 0~]</text>
+		<event>
+			<text>Your Lanius Welder has been sucessfully converted into a Lanius.</text>
+			<transformRace class="lanius_welder">lanius</transformRace>
+			<item_modify>
+				<item type="scrap" min="-0" max="-0" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice req="lanius_welder" hidden="true">
+		<text>Convert your Lanius Welder into a Beacon Eater [Cost: 150~]</text>
+		<event>
+			<text>Your Lanius Welder has been sucessfully converted into a Beacon Eater.</text>
+			<transformRace class="lanius_welder">unique_eater</transformRace>
+			<item_modify>
+				<item type="scrap" min="-150" max="-150" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="pilot" lvl="1" blue="false" max_group="1">
+		<text>Nevermind...</text>
+		<event load="STORAGE_CHECK" />
+	</choice>
+</event>
+<event name="STORAGE_CHECK_PROM_VATS_BEACONEATER">
+	<text>What would you like to transform your Beacon Eater into?</text>
+	<choice req="unique_eater" hidden="true">
+		<text>Convert your Beacon Eater into a Lanius Welder [Cost: 0~]</text>
+		<event>
+			<text>Your Beacon Eater has been sucessfully converted into a Lanius Welder.</text>
+			<transformRace class="unique_eater">lanius_welder</transformRace>
+			<item_modify>
+				<item type="scrap" min="-0" max="-0" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="pilot" lvl="1" blue="false" max_group="1">
+		<text>Nevermind...</text>
+		<event load="STORAGE_CHECK" />
+	</choice>
+</event>
+<event name="STORAGE_CHECK_PROM_VATS_ANOINTED">
+	<text>What would you like to transform your Anointed into?</text>
+	<choice req="unique_anointed" hidden="true">
+		<text>Convert your Anointed into a Augmented Lanius [Cost: 0~]</text>
+		<event>
+			<text>Your Anointed has been sucessfully converted into a Augmented Lanius.</text>
+			<transformRace class="unique_anointed">lanius_augmented</transformRace>
+			<item_modify>
+				<item type="scrap" min="-0" max="-0" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="pilot" lvl="1" blue="false" max_group="1">
+		<text>Nevermind...</text>
+		<event load="STORAGE_CHECK" />
+	</choice>
+</event>
+<event name="STORAGE_CHECK_PROM_VATS_SELECT_GHOST">
+	<text>Which Ghost would you like to transform?</text>
+	<choice req="phantom" hidden="true">
+		<text>Transform a Phantom.</text>
+		<event load="STORAGE_CHECK_PROM_VATS_PHANTOM" />
+	</choice>
+	<choice req="phantom_goul" hidden="true">
+		<text>Transform a Goul.</text>
+		<event load="STORAGE_CHECK_PROM_VATS_GOUL" />
+	</choice>
+	<choice req="phantom_mare" hidden="true">
+		<text>Transform a Mare.</text>
+		<event load="STORAGE_CHECK_PROM_VATS_MARE" />
+	</choice>
+	<choice req="phantom_wraith" hidden="true">
+		<text>Transform a Wraith.</text>
+		<event load="STORAGE_CHECK_PROM_VATS_WRAITH" />
+	</choice>
+	<choice req="phantom_alpha" hidden="true">
+		<text>Transform a Phantom Alpha.</text>
+		<event load="STORAGE_CHECK_PROM_VATS_PHANTOMALPHA" />
+	</choice>
+	<choice req="phantom_goul_alpha" hidden="true">
+		<text>Transform a Goul Alpha.</text>
+		<event load="STORAGE_CHECK_PROM_VATS_GOULALPHA" />
+	</choice>
+	<choice req="phantom_mare_alpha" hidden="true">
+		<text>Transform a Mare Alpha.</text>
+		<event load="STORAGE_CHECK_PROM_VATS_MAREALPHA" />
+	</choice>
+	<choice req="phantom_wraith_alpha" hidden="true">
+		<text>Transform a Wraith Alpha.</text>
+		<event load="STORAGE_CHECK_PROM_VATS_WRAITHALPHA" />
+	</choice>
+	<choice req="gbeleanor" hidden="true">
+		<text>Transform a Eleanor Haunt.</text>
+		<event load="STORAGE_CHECK_PROM_VATS_ELEANORHAUNT" />
+	</choice>
+	<choice req="gbpsych" hidden="true">
+		<text>Transform a Psych Haunt.</text>
+		<event load="STORAGE_CHECK_PROM_VATS_PSYCHHAUNT" />
+	</choice>
+	<choice req="gbscoleri" hidden="true">
+		<text>Transform a Scoleri Haunt.</text>
+		<event load="STORAGE_CHECK_PROM_VATS_SCOLERIHAUNT" />
+	</choice>
+	<choice req="gbslimer" hidden="true">
+		<text>Transform a Slimer Haunt.</text>
+		<event load="STORAGE_CHECK_PROM_VATS_SLIMERHAUNT" />
+	</choice>
+	<choice req="gbvinz" hidden="true">
+		<text>Transform a Vinz Haunt.</text>
+		<event load="STORAGE_CHECK_PROM_VATS_VINZHAUNT" />
+	</choice>
+	<choice req="gbzuul" hidden="true">
+		<text>Transform a Zuul Haunt.</text>
+		<event load="STORAGE_CHECK_PROM_VATS_ZUULHAUNT" />
+	</choice>
+	<choice req="unique_dessius" hidden="true">
+		<text>Transform a Prime Reaper.</text>
+		<event load="STORAGE_CHECK_PROM_VATS_PRIMEREAPER" />
+	</choice>
+	<choice hidden="true" req="pilot" lvl="1" blue="false" max_group="1">
+		<text>Nevermind, do something else.</text>
+		<event load="STORAGE_CHECK" />
+	</choice>
+</event><event name="STORAGE_CHECK_PROM_VATS_PHANTOM">
+	<text>What would you like to transform your Phantom into?</text>
+	<choice req="phantom" hidden="true">
+		<text>Convert your Phantom into a Goul [Cost: 10~]</text>
+		<event>
+			<text>Your Phantom has been sucessfully converted into a Goul.</text>
+			<transformRace class="phantom">phantom_goul</transformRace>
+			<item_modify>
+				<item type="scrap" min="-10" max="-10" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice req="phantom" hidden="true">
+		<text>Convert your Phantom into a Mare [Cost: 10~]</text>
+		<event>
+			<text>Your Phantom has been sucessfully converted into a Mare.</text>
+			<transformRace class="phantom">phantom_mare</transformRace>
+			<item_modify>
+				<item type="scrap" min="-10" max="-10" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice req="phantom" hidden="true">
+		<text>Convert your Phantom into a Wraith [Cost: 10~]</text>
+		<event>
+			<text>Your Phantom has been sucessfully converted into a Wraith.</text>
+			<transformRace class="phantom">phantom_wraith</transformRace>
+			<item_modify>
+				<item type="scrap" min="-10" max="-10" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice req="phantom" hidden="true">
+		<text>Convert your Phantom into a Phantom Alpha [Cost: 70~]</text>
+		<event>
+			<text>Your Phantom has been sucessfully converted into a Phantom Alpha.</text>
+			<transformRace class="phantom">phantom_alpha</transformRace>
+			<item_modify>
+				<item type="scrap" min="-70" max="-70" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="pilot" lvl="1" blue="false" max_group="1">
+		<text>Nevermind...</text>
+		<event load="STORAGE_CHECK" />
+	</choice>
+</event>
+<event name="STORAGE_CHECK_PROM_VATS_GOUL">
+	<text>What would you like to transform your Goul into?</text>
+	<choice req="phantom_goul" hidden="true">
+		<text>Convert your Goul into a Phantom [Cost: 10~]</text>
+		<event>
+			<text>Your Goul has been sucessfully converted into a Phantom.</text>
+			<transformRace class="phantom_goul">phantom</transformRace>
+			<item_modify>
+				<item type="scrap" min="-10" max="-10" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice req="phantom_goul" hidden="true">
+		<text>Convert your Goul into a Mare [Cost: 10~]</text>
+		<event>
+			<text>Your Goul has been sucessfully converted into a Mare.</text>
+			<transformRace class="phantom_goul">phantom_mare</transformRace>
+			<item_modify>
+				<item type="scrap" min="-10" max="-10" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice req="phantom_goul" hidden="true">
+		<text>Convert your Goul into a Wraith [Cost: 10~]</text>
+		<event>
+			<text>Your Goul has been sucessfully converted into a Wraith.</text>
+			<transformRace class="phantom_goul">phantom_wraith</transformRace>
+			<item_modify>
+				<item type="scrap" min="-10" max="-10" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice req="phantom_goul" hidden="true">
+		<text>Convert your Goul into a Goul Alpha [Cost: 70~]</text>
+		<event>
+			<text>Your Goul has been sucessfully converted into a Goul Alpha.</text>
+			<transformRace class="phantom_goul">phantom_goul_alpha</transformRace>
+			<item_modify>
+				<item type="scrap" min="-70" max="-70" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="pilot" lvl="1" blue="false" max_group="1">
+		<text>Nevermind...</text>
+		<event load="STORAGE_CHECK" />
+	</choice>
+</event>
+<event name="STORAGE_CHECK_PROM_VATS_MARE">
+	<text>What would you like to transform your Mare into?</text>
+	<choice req="phantom_mare" hidden="true">
+		<text>Convert your Mare into a Phantom [Cost: 10~]</text>
+		<event>
+			<text>Your Mare has been sucessfully converted into a Phantom.</text>
+			<transformRace class="phantom_mare">phantom</transformRace>
+			<item_modify>
+				<item type="scrap" min="-10" max="-10" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice req="phantom_mare" hidden="true">
+		<text>Convert your Mare into a Goul [Cost: 10~]</text>
+		<event>
+			<text>Your Mare has been sucessfully converted into a Goul.</text>
+			<transformRace class="phantom_mare">phantom_goul</transformRace>
+			<item_modify>
+				<item type="scrap" min="-10" max="-10" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice req="phantom_mare" hidden="true">
+		<text>Convert your Mare into a Wraith [Cost: 10~]</text>
+		<event>
+			<text>Your Mare has been sucessfully converted into a Wraith.</text>
+			<transformRace class="phantom_mare">phantom_wraith</transformRace>
+			<item_modify>
+				<item type="scrap" min="-10" max="-10" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice req="phantom_mare" hidden="true">
+		<text>Convert your Mare into a Mare Alpha [Cost: 70~]</text>
+		<event>
+			<text>Your Mare has been sucessfully converted into a Mare Alpha.</text>
+			<transformRace class="phantom_mare">phantom_mare_alpha</transformRace>
+			<item_modify>
+				<item type="scrap" min="-70" max="-70" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="pilot" lvl="1" blue="false" max_group="1">
+		<text>Nevermind...</text>
+		<event load="STORAGE_CHECK" />
+	</choice>
+</event>
+<event name="STORAGE_CHECK_PROM_VATS_WRAITH">
+	<text>What would you like to transform your Wraith into?</text>
+	<choice req="phantom_wraith" hidden="true">
+		<text>Convert your Wraith into a Phantom [Cost: 10~]</text>
+		<event>
+			<text>Your Wraith has been sucessfully converted into a Phantom.</text>
+			<transformRace class="phantom_wraith">phantom</transformRace>
+			<item_modify>
+				<item type="scrap" min="-10" max="-10" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice req="phantom_wraith" hidden="true">
+		<text>Convert your Wraith into a Goul [Cost: 10~]</text>
+		<event>
+			<text>Your Wraith has been sucessfully converted into a Goul.</text>
+			<transformRace class="phantom_wraith">phantom_goul</transformRace>
+			<item_modify>
+				<item type="scrap" min="-10" max="-10" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice req="phantom_wraith" hidden="true">
+		<text>Convert your Wraith into a Mare [Cost: 10~]</text>
+		<event>
+			<text>Your Wraith has been sucessfully converted into a Mare.</text>
+			<transformRace class="phantom_wraith">phantom_mare</transformRace>
+			<item_modify>
+				<item type="scrap" min="-10" max="-10" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice req="phantom_wraith" hidden="true">
+		<text>Convert your Wraith into a Wraith Alpha [Cost: 70~]</text>
+		<event>
+			<text>Your Wraith has been sucessfully converted into a Wraith Alpha.</text>
+			<transformRace class="phantom_wraith">phantom_wraith_alpha</transformRace>
+			<item_modify>
+				<item type="scrap" min="-70" max="-70" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="pilot" lvl="1" blue="false" max_group="1">
+		<text>Nevermind...</text>
+		<event load="STORAGE_CHECK" />
+	</choice>
+</event>
+<event name="STORAGE_CHECK_PROM_VATS_PHANTOMALPHA">
+	<text>What would you like to transform your Phantom Alpha into?</text>
+	<choice req="phantom_alpha" hidden="true">
+		<text>Convert your Phantom Alpha into a Phantom [Cost: 0~]</text>
+		<event>
+			<text>Your Phantom Alpha has been sucessfully converted into a Phantom.</text>
+			<transformRace class="phantom_alpha">phantom</transformRace>
+			<item_modify>
+				<item type="scrap" min="-0" max="-0" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice req="phantom_alpha" hidden="true">
+		<text>Convert your Phantom Alpha into a Psych Haunt [Cost: 100~]</text>
+		<event>
+			<text>Your Phantom Alpha has been sucessfully converted into a Psych Haunt.</text>
+			<transformRace class="phantom_alpha">gbpsych</transformRace>
+			<item_modify>
+				<item type="scrap" min="-100" max="-100" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice req="phantom_alpha" hidden="true">
+		<text>Convert your Phantom Alpha into a Slimer Haunt [Cost: 100~]</text>
+		<event>
+			<text>Your Phantom Alpha has been sucessfully converted into a Slimer Haunt.</text>
+			<transformRace class="phantom_alpha">gbslimer</transformRace>
+			<item_modify>
+				<item type="scrap" min="-100" max="-100" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice req="phantom_alpha" hidden="true">
+		<text>Convert your Phantom Alpha into a Prime Reaper [Cost: 150~]</text>
+		<event>
+			<text>Your Phantom Alpha has been sucessfully converted into a Prime Reaper.</text>
+			<transformRace class="phantom_alpha">unique_dessius</transformRace>
+			<item_modify>
+				<item type="scrap" min="-150" max="-150" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="pilot" lvl="1" blue="false" max_group="1">
+		<text>Nevermind...</text>
+		<event load="STORAGE_CHECK" />
+	</choice>
+</event>
+<event name="STORAGE_CHECK_PROM_VATS_GOULALPHA">
+	<text>What would you like to transform your Goul Alpha into?</text>
+	<choice req="phantom_goul_alpha" hidden="true">
+		<text>Convert your Goul Alpha into a Goul [Cost: 0~]</text>
+		<event>
+			<text>Your Goul Alpha has been sucessfully converted into a Goul.</text>
+			<transformRace class="phantom_goul_alpha">phantom_goul</transformRace>
+			<item_modify>
+				<item type="scrap" min="-0" max="-0" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice req="phantom_goul_alpha" hidden="true">
+		<text>Convert your Goul Alpha into a Vinz Haunt [Cost: 100~]</text>
+		<event>
+			<text>Your Goul Alpha has been sucessfully converted into a Vinz Haunt.</text>
+			<transformRace class="phantom_goul_alpha">gbvinz</transformRace>
+			<item_modify>
+				<item type="scrap" min="-100" max="-100" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="pilot" lvl="1" blue="false" max_group="1">
+		<text>Nevermind...</text>
+		<event load="STORAGE_CHECK" />
+	</choice>
+</event>
+<event name="STORAGE_CHECK_PROM_VATS_MAREALPHA">
+	<text>What would you like to transform your Mare Alpha into?</text>
+	<choice req="phantom_mare_alpha" hidden="true">
+		<text>Convert your Mare Alpha into a Mare [Cost: 0~]</text>
+		<event>
+			<text>Your Mare Alpha has been sucessfully converted into a Mare.</text>
+			<transformRace class="phantom_mare_alpha">phantom_mare</transformRace>
+			<item_modify>
+				<item type="scrap" min="-0" max="-0" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice req="phantom_mare_alpha" hidden="true">
+		<text>Convert your Mare Alpha into a Eleanor Haunt [Cost: 100~]</text>
+		<event>
+			<text>Your Mare Alpha has been sucessfully converted into a Eleanor Haunt.</text>
+			<transformRace class="phantom_mare_alpha">gbeleanor</transformRace>
+			<item_modify>
+				<item type="scrap" min="-100" max="-100" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice req="phantom_mare_alpha" hidden="true">
+		<text>Convert your Mare Alpha into a Zuul Haunt [Cost: 100~]</text>
+		<event>
+			<text>Your Mare Alpha has been sucessfully converted into a Zuul Haunt.</text>
+			<transformRace class="phantom_mare_alpha">gbzuul</transformRace>
+			<item_modify>
+				<item type="scrap" min="-100" max="-100" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="pilot" lvl="1" blue="false" max_group="1">
+		<text>Nevermind...</text>
+		<event load="STORAGE_CHECK" />
+	</choice>
+</event>
+<event name="STORAGE_CHECK_PROM_VATS_WRAITHALPHA">
+	<text>What would you like to transform your Wraith Alpha into?</text>
+	<choice req="phantom_wraith_alpha" hidden="true">
+		<text>Convert your Wraith Alpha into a Wraith [Cost: 0~]</text>
+		<event>
+			<text>Your Wraith Alpha has been sucessfully converted into a Wraith.</text>
+			<transformRace class="phantom_wraith_alpha">phantom_wraith</transformRace>
+			<item_modify>
+				<item type="scrap" min="-0" max="-0" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice req="phantom_wraith_alpha" hidden="true">
+		<text>Convert your Wraith Alpha into a Scoleri Haunt [Cost: 100~]</text>
+		<event>
+			<text>Your Wraith Alpha has been sucessfully converted into a Scoleri Haunt.</text>
+			<transformRace class="phantom_wraith_alpha">gbscoleri</transformRace>
+			<item_modify>
+				<item type="scrap" min="-100" max="-100" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="pilot" lvl="1" blue="false" max_group="1">
+		<text>Nevermind...</text>
+		<event load="STORAGE_CHECK" />
+	</choice>
+</event>
+<event name="STORAGE_CHECK_PROM_VATS_ELEANORHAUNT">
+	<text>What would you like to transform your Eleanor Haunt into?</text>
+	<choice req="gbeleanor" hidden="true">
+		<text>Convert your Eleanor Haunt into a Mare Alpha [Cost: 0~]</text>
+		<event>
+			<text>Your Eleanor Haunt has been sucessfully converted into a Mare Alpha.</text>
+			<transformRace class="gbeleanor">phantom_mare_alpha</transformRace>
+			<item_modify>
+				<item type="scrap" min="-0" max="-0" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="pilot" lvl="1" blue="false" max_group="1">
+		<text>Nevermind...</text>
+		<event load="STORAGE_CHECK" />
+	</choice>
+</event>
+<event name="STORAGE_CHECK_PROM_VATS_PSYCHHAUNT">
+	<text>What would you like to transform your Psych Haunt into?</text>
+	<choice req="gbpsych" hidden="true">
+		<text>Convert your Psych Haunt into a Phantom Alpha [Cost: 0~]</text>
+		<event>
+			<text>Your Psych Haunt has been sucessfully converted into a Phantom Alpha.</text>
+			<transformRace class="gbpsych">phantom_alpha</transformRace>
+			<item_modify>
+				<item type="scrap" min="-0" max="-0" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="pilot" lvl="1" blue="false" max_group="1">
+		<text>Nevermind...</text>
+		<event load="STORAGE_CHECK" />
+	</choice>
+</event>
+<event name="STORAGE_CHECK_PROM_VATS_SCOLERIHAUNT">
+	<text>What would you like to transform your Scoleri Haunt into?</text>
+	<choice req="gbscoleri" hidden="true">
+		<text>Convert your Scoleri Haunt into a Wraith Alpha [Cost: 0~]</text>
+		<event>
+			<text>Your Scoleri Haunt has been sucessfully converted into a Wraith Alpha.</text>
+			<transformRace class="gbscoleri">phantom_wraith_alpha</transformRace>
+			<item_modify>
+				<item type="scrap" min="-0" max="-0" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="pilot" lvl="1" blue="false" max_group="1">
+		<text>Nevermind...</text>
+		<event load="STORAGE_CHECK" />
+	</choice>
+</event>
+<event name="STORAGE_CHECK_PROM_VATS_SLIMERHAUNT">
+	<text>What would you like to transform your Slimer Haunt into?</text>
+	<choice req="gbslimer" hidden="true">
+		<text>Convert your Slimer Haunt into a Phantom Alpha [Cost: 0~]</text>
+		<event>
+			<text>Your Slimer Haunt has been sucessfully converted into a Phantom Alpha.</text>
+			<transformRace class="gbslimer">phantom_alpha</transformRace>
+			<item_modify>
+				<item type="scrap" min="-0" max="-0" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="pilot" lvl="1" blue="false" max_group="1">
+		<text>Nevermind...</text>
+		<event load="STORAGE_CHECK" />
+	</choice>
+</event>
+<event name="STORAGE_CHECK_PROM_VATS_VINZHAUNT">
+	<text>What would you like to transform your Vinz Haunt into?</text>
+	<choice req="gbvinz" hidden="true">
+		<text>Convert your Vinz Haunt into a Goul Alpha [Cost: 0~]</text>
+		<event>
+			<text>Your Vinz Haunt has been sucessfully converted into a Goul Alpha.</text>
+			<transformRace class="gbvinz">phantom_goul_alpha</transformRace>
+			<item_modify>
+				<item type="scrap" min="-0" max="-0" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="pilot" lvl="1" blue="false" max_group="1">
+		<text>Nevermind...</text>
+		<event load="STORAGE_CHECK" />
+	</choice>
+</event>
+<event name="STORAGE_CHECK_PROM_VATS_ZUULHAUNT">
+	<text>What would you like to transform your Zuul Haunt into?</text>
+	<choice req="gbzuul" hidden="true">
+		<text>Convert your Zuul Haunt into a Mare Alpha [Cost: 0~]</text>
+		<event>
+			<text>Your Zuul Haunt has been sucessfully converted into a Mare Alpha.</text>
+			<transformRace class="gbzuul">phantom_mare_alpha</transformRace>
+			<item_modify>
+				<item type="scrap" min="-0" max="-0" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="pilot" lvl="1" blue="false" max_group="1">
+		<text>Nevermind...</text>
+		<event load="STORAGE_CHECK" />
+	</choice>
+</event>
+<event name="STORAGE_CHECK_PROM_VATS_PRIMEREAPER">
+	<text>What would you like to transform your Prime Reaper into?</text>
+	<choice req="unique_dessius" hidden="true">
+		<text>Convert your Prime Reaper into a Phantom Alpha [Cost: 0~]</text>
+		<event>
+			<text>Your Prime Reaper has been sucessfully converted into a Phantom Alpha.</text>
+			<transformRace class="unique_dessius">phantom_alpha</transformRace>
+			<item_modify>
+				<item type="scrap" min="-0" max="-0" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="pilot" lvl="1" blue="false" max_group="1">
+		<text>Nevermind...</text>
+		<event load="STORAGE_CHECK" />
+	</choice>
+</event>
+<event name="STORAGE_CHECK_PROM_VATS_SELECT_ANCIENT">
+	<text>Which Ancient would you like to transform?</text>
+	<choice req="obelisk" hidden="true">
+		<text>Transform a Obelisk.</text>
+		<event load="STORAGE_CHECK_PROM_VATS_OBELISK" />
+	</choice>
+	<choice req="obelisk_royal" hidden="true">
+		<text>Transform a Obelisk Royal.</text>
+		<event load="STORAGE_CHECK_PROM_VATS_OBELISKROYAL" />
+	</choice>
+	<choice req="unique_wither" hidden="true">
+		<text>Transform a Obelisk Traveler.</text>
+		<event load="STORAGE_CHECK_PROM_VATS_OBELISKTRAVELER" />
+	</choice>
+	<choice req="LIST_CREW_COGNITIVE" hidden="true">
+		<text>Transform a Cognitive.</text>
+		<event load="STORAGE_CHECK_PROM_VATS_COGNITIVE" />
+	</choice>
+	<choice req="LIST_CREW_RCOGNITIVE" hidden="true">
+		<text>Transform a Royal Cognitive.</text>
+		<event load="STORAGE_CHECK_PROM_VATS_ROYALCOGNITIVE" />
+	</choice>
+	<choice hidden="true" req="pilot" lvl="1" blue="false" max_group="1">
+		<text>Nevermind, do something else.</text>
+		<event load="STORAGE_CHECK" />
+	</choice>
+</event><event name="STORAGE_CHECK_PROM_VATS_OBELISK">
+	<text>What would you like to transform your Obelisk into?</text>
+	<choice req="obelisk" hidden="true">
+		<text>Convert your Obelisk into a Obelisk Royal [Cost: 70~]</text>
+		<event>
+			<text>Your Obelisk has been sucessfully converted into a Obelisk Royal.</text>
+			<transformRace class="obelisk">obelisk_royal</transformRace>
+			<item_modify>
+				<item type="scrap" min="-70" max="-70" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice req="obelisk" hidden="true">
+		<text>Convert your Obelisk into a Obelisk Traveler [Cost: 70~]</text>
+		<event>
+			<text>Your Obelisk has been sucessfully converted into a Obelisk Traveler.</text>
+			<transformRace class="obelisk">unique_wither</transformRace>
+			<item_modify>
+				<item type="scrap" min="-70" max="-70" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="pilot" lvl="1" blue="false" max_group="1">
+		<text>Nevermind...</text>
+		<event load="STORAGE_CHECK" />
+	</choice>
+</event>
+<event name="STORAGE_CHECK_PROM_VATS_OBELISKROYAL">
+	<text>What would you like to transform your Obelisk Royal into?</text>
+	<choice req="obelisk_royal" hidden="true">
+		<text>Convert your Obelisk Royal into a Obelisk [Cost: 0~]</text>
+		<event>
+			<text>Your Obelisk Royal has been sucessfully converted into a Obelisk.</text>
+			<transformRace class="obelisk_royal">obelisk</transformRace>
+			<item_modify>
+				<item type="scrap" min="-0" max="-0" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice req="obelisk_royal" hidden="true">
+		<text>Convert your Obelisk Royal into a Obelisk Traveler [Cost: 10~]</text>
+		<event>
+			<text>Your Obelisk Royal has been sucessfully converted into a Obelisk Traveler.</text>
+			<transformRace class="obelisk_royal">unique_wither</transformRace>
+			<item_modify>
+				<item type="scrap" min="-10" max="-10" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="pilot" lvl="1" blue="false" max_group="1">
+		<text>Nevermind...</text>
+		<event load="STORAGE_CHECK" />
+	</choice>
+</event>
+<event name="STORAGE_CHECK_PROM_VATS_OBELISKTRAVELER">
+	<text>What would you like to transform your Obelisk Traveler into?</text>
+	<choice req="unique_wither" hidden="true">
+		<text>Convert your Obelisk Traveler into a Obelisk [Cost: 0~]</text>
+		<event>
+			<text>Your Obelisk Traveler has been sucessfully converted into a Obelisk.</text>
+			<transformRace class="unique_wither">obelisk</transformRace>
+			<item_modify>
+				<item type="scrap" min="-0" max="-0" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice req="unique_wither" hidden="true">
+		<text>Convert your Obelisk Traveler into a Obelisk Royal [Cost: 10~]</text>
+		<event>
+			<text>Your Obelisk Traveler has been sucessfully converted into a Obelisk Royal.</text>
+			<transformRace class="unique_wither">obelisk_royal</transformRace>
+			<item_modify>
+				<item type="scrap" min="-10" max="-10" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="pilot" lvl="1" blue="false" max_group="1">
+		<text>Nevermind...</text>
+		<event load="STORAGE_CHECK" />
+	</choice>
+</event>
+<event name="STORAGE_CHECK_PROM_VATS_COGNITIVE">
+	<text>What would you like to transform your Cognitive into?</text>
+	<choice req="LIST_CREW_COGNITIVE" hidden="true">
+		<text>Convert your Cognitive into a Royal Cognitive [Cost: 70~]</text>
+		<event>
+			<text>Your Cognitive has been sucessfully converted into a Royal Cognitive.</text>
+			<transformRace class="LIST_CREW_COGNITIVE">cognitive_advanced</transformRace>
+			<item_modify>
+				<item type="scrap" min="-70" max="-70" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="pilot" lvl="1" blue="false" max_group="1">
+		<text>Nevermind...</text>
+		<event load="STORAGE_CHECK" />
+	</choice>
+</event>
+<event name="STORAGE_CHECK_PROM_VATS_ROYALCOGNITIVE">
+	<text>What would you like to transform your Royal Cognitive into?</text>
+	<choice req="LIST_CREW_RCOGNITIVE" hidden="true">
+		<text>Convert your Royal Cognitive into a Cognitive [Cost: 0~]</text>
+		<event>
+			<text>Your Royal Cognitive has been sucessfully converted into a Cognitive.</text>
+			<transformRace class="LIST_CREW_RCOGNITIVE">cognitive</transformRace>
+			<item_modify>
+				<item type="scrap" min="-0" max="-0" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="pilot" lvl="1" blue="false" max_group="1">
+		<text>Nevermind...</text>
+		<event load="STORAGE_CHECK" />
+	</choice>
+</event>
+<event name="STORAGE_CHECK_PROM_VATS_SELECT_SPIDER">
+	<text>Which Spider would you like to transform?</text>
+	<choice req="spider_hatch" hidden="true">
+		<text>Transform a Hatchling.</text>
+		<event load="STORAGE_CHECK_PROM_VATS_HATCHLING" />
+	</choice>
+	<choice req="spider" hidden="true">
+		<text>Transform a Spider.</text>
+		<event load="STORAGE_CHECK_PROM_VATS_SPIDER" />
+	</choice>
+	<choice req="spider_weaver" hidden="true">
+		<text>Transform a Weaver.</text>
+		<event load="STORAGE_CHECK_PROM_VATS_WEAVER" />
+	</choice>
+	<choice req="LIST_CREW_QUEEN" hidden="true">
+		<text>Transform a Spider Queen.</text>
+		<event load="STORAGE_CHECK_PROM_VATS_SPIDERQUEEN" />
+	</choice>
+	<choice hidden="true" req="pilot" lvl="1" blue="false" max_group="1">
+		<text>Nevermind, do something else.</text>
+		<event load="STORAGE_CHECK" />
+	</choice>
+</event><event name="STORAGE_CHECK_PROM_VATS_HATCHLING">
+	<text>What would you like to transform your Hatchling into?</text>
+	<choice req="spider_hatch" hidden="true">
+		<text>Convert your Hatchling into a Spider [Cost: 20~]</text>
+		<event>
+			<text>Your Hatchling has been sucessfully converted into a Spider.</text>
+			<transformRace class="spider_hatch">spider</transformRace>
+			<item_modify>
+				<item type="scrap" min="-20" max="-20" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="pilot" lvl="1" blue="false" max_group="1">
+		<text>Nevermind...</text>
+		<event load="STORAGE_CHECK" />
+	</choice>
+</event>
+<event name="STORAGE_CHECK_PROM_VATS_SPIDER">
+	<text>What would you like to transform your Spider into?</text>
+	<choice req="spider" hidden="true">
+		<text>Convert your Spider into a Hatchling [Cost: 0~]</text>
+		<event>
+			<text>Your Spider has been sucessfully converted into a Hatchling.</text>
+			<transformRace class="spider">spider_hatch</transformRace>
+			<item_modify>
+				<item type="scrap" min="-0" max="-0" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice req="spider" hidden="true">
+		<text>Convert your Spider into a Weaver [Cost: 50~]</text>
+		<event>
+			<text>Your Spider has been sucessfully converted into a Weaver.</text>
+			<transformRace class="spider">spider_weaver</transformRace>
+			<item_modify>
+				<item type="scrap" min="-50" max="-50" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="pilot" lvl="1" blue="false" max_group="1">
+		<text>Nevermind...</text>
+		<event load="STORAGE_CHECK" />
+	</choice>
+</event>
+<event name="STORAGE_CHECK_PROM_VATS_WEAVER">
+	<text>What would you like to transform your Weaver into?</text>
+	<choice req="spider_weaver" hidden="true">
+		<text>Convert your Weaver into a Spider [Cost: 0~]</text>
+		<event>
+			<text>Your Weaver has been sucessfully converted into a Spider.</text>
+			<transformRace class="spider_weaver">spider</transformRace>
+			<item_modify>
+				<item type="scrap" min="-0" max="-0" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice req="spider_weaver" hidden="true">
+		<text>Convert your Weaver into a Spider Queen [Cost: 150~]</text>
+		<event>
+			<text>Your Weaver has been sucessfully converted into a Spider Queen.</text>
+			<transformRace class="spider_weaver">unique_queen</transformRace>
+			<item_modify>
+				<item type="scrap" min="-150" max="-150" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="pilot" lvl="1" blue="false" max_group="1">
+		<text>Nevermind...</text>
+		<event load="STORAGE_CHECK" />
+	</choice>
+</event>
+<event name="STORAGE_CHECK_PROM_VATS_SPIDERQUEEN">
+	<text>What would you like to transform your Spider Queen into?</text>
+	<choice req="LIST_CREW_QUEEN" hidden="true">
+		<text>Convert your Spider Queen into a Weaver [Cost: 0~]</text>
+		<event>
+			<text>Your Spider Queen has been sucessfully converted into a Weaver.</text>
+			<transformRace class="LIST_CREW_QUEEN">spider_weaver</transformRace>
+			<item_modify>
+				<item type="scrap" min="-0" max="-0" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="pilot" lvl="1" blue="false" max_group="1">
+		<text>Nevermind...</text>
+		<event load="STORAGE_CHECK" />
+	</choice>
+</event>
+<event name="STORAGE_CHECK_PROM_VATS_SELECT_HORSE">
+	<text>Which Horse would you like to transform?</text>
+	<choice req="pony_tamed" hidden="true">
+		<text>Transform a Tamed Equanoid.</text>
+		<event load="STORAGE_CHECK_PROM_VATS_TAMEDEQUANOID" />
+	</choice>
+	<choice req="ponyc" hidden="true">
+		<text>Transform a Crystalline Equanoid.</text>
+		<event load="STORAGE_CHECK_PROM_VATS_CRYSTALLINEEQUANOID" />
+	</choice>
+	<choice hidden="true" req="pilot" lvl="1" blue="false" max_group="1">
+		<text>Nevermind, do something else.</text>
+		<event load="STORAGE_CHECK" />
+	</choice>
+</event><event name="STORAGE_CHECK_PROM_VATS_TAMEDEQUANOID">
+	<text>What would you like to transform your Tamed Equanoid into?</text>
+	<choice req="pony_tamed" hidden="true">
+		<text>Convert your Tamed Equanoid into a Crystalline Equanoid [Cost: 70~]</text>
+		<event>
+			<text>Your Tamed Equanoid has been sucessfully converted into a Crystalline Equanoid.</text>
+			<transformRace class="pony_tamed">ponyc</transformRace>
+			<item_modify>
+				<item type="scrap" min="-70" max="-70" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="pilot" lvl="1" blue="false" max_group="1">
+		<text>Nevermind...</text>
+		<event load="STORAGE_CHECK" />
+	</choice>
+</event>
+<event name="STORAGE_CHECK_PROM_VATS_CRYSTALLINEEQUANOID">
+	<text>What would you like to transform your Crystalline Equanoid into?</text>
+	<choice req="ponyc" hidden="true">
+		<text>Convert your Crystalline Equanoid into a Tamed Equanoid [Cost: 0~]</text>
+		<event>
+			<text>Your Crystalline Equanoid has been sucessfully converted into a Tamed Equanoid.</text>
+			<transformRace class="ponyc">pony_tamed</transformRace>
+			<item_modify>
+				<item type="scrap" min="-0" max="-0" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="pilot" lvl="1" blue="false" max_group="1">
+		<text>Nevermind...</text>
+		<event load="STORAGE_CHECK" />
+	</choice>
+</event>
+<event name="STORAGE_CHECK_PROM_VATS_SELECT_MORPH">
+	<text>Which Morph would you like to transform?</text>
+	<choice req="LIST_CREW_MORPH_NORMAL" hidden="true">
+		<text>Transform a Morph.</text>
+		<event load="STORAGE_CHECK_PROM_VATS_MORPH" />
+	</choice>
+	<choice req="LIST_CREW_TECHNOPATH" hidden="true">
+		<text>Transform a Technopath.</text>
+		<event load="STORAGE_CHECK_PROM_VATS_TECHNOPATH" />
+	</choice>
+	<choice req="LIST_CHECKCREW_GOLD" hidden="true">
+		<text>Transform a Malform.</text>
+		<event load="STORAGE_CHECK_PROM_VATS_MALFORM" />
+	</choice>
+	<choice req="unique_ooj" hidden="true">
+		<text>Transform a Morph Agglomeration.</text>
+		<event load="STORAGE_CHECK_PROM_VATS_MORPHAGGLOMERATION" />
+	</choice>
+	<choice hidden="true" req="pilot" lvl="1" blue="false" max_group="1">
+		<text>Nevermind, do something else.</text>
+		<event load="STORAGE_CHECK" />
+	</choice>
+</event><event name="STORAGE_CHECK_PROM_VATS_MORPH">
+	<text>What would you like to transform your Morph into?</text>
+	<choice req="LIST_CREW_MORPH_NORMAL" hidden="true">
+		<text>Convert your Morph into a Technopath [Cost: 30~]</text>
+		<event>
+			<text>Your Morph has been sucessfully converted into a Technopath.</text>
+			<transformRace class="LIST_CREW_MORPH_NORMAL">techno</transformRace>
+			<item_modify>
+				<item type="scrap" min="-30" max="-30" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice req="LIST_CREW_MORPH_NORMAL" hidden="true">
+		<text>Convert your Morph into a Malform [Cost: 70~]</text>
+		<event>
+			<text>Your Morph has been sucessfully converted into a Malform.</text>
+			<transformRace class="LIST_CREW_MORPH_NORMAL">gold</transformRace>
+			<item_modify>
+				<item type="scrap" min="-70" max="-70" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="pilot" lvl="1" blue="false" max_group="1">
+		<text>Nevermind...</text>
+		<event load="STORAGE_CHECK" />
+	</choice>
+</event>
+<event name="STORAGE_CHECK_PROM_VATS_TECHNOPATH">
+	<text>What would you like to transform your Technopath into?</text>
+	<choice req="LIST_CREW_TECHNOPATH" hidden="true">
+		<text>Convert your Technopath into a Morph [Cost: 10~]</text>
+		<event>
+			<text>Your Technopath has been sucessfully converted into a Morph.</text>
+			<transformRace class="LIST_CREW_TECHNOPATH">blob</transformRace>
+			<item_modify>
+				<item type="scrap" min="-10" max="-10" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice req="LIST_CREW_TECHNOPATH" hidden="true">
+		<text>Convert your Technopath into a Obelisk [Cost: 70~]</text>
+		<event>
+			<text>Your Technopath has been sucessfully converted into a Obelisk.</text>
+			<transformRace class="LIST_CREW_TECHNOPATH">obelisk</transformRace>
+			<item_modify>
+				<item type="scrap" min="-70" max="-70" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice req="LIST_CREW_TECHNOPATH" hidden="true">
+		<text>Convert your Technopath into a Cognitive [Cost: 70~]</text>
+		<event>
+			<text>Your Technopath has been sucessfully converted into a Cognitive.</text>
+			<transformRace class="LIST_CREW_TECHNOPATH">cognitive</transformRace>
+			<item_modify>
+				<item type="scrap" min="-70" max="-70" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="pilot" lvl="1" blue="false" max_group="1">
+		<text>Nevermind...</text>
+		<event load="STORAGE_CHECK" />
+	</choice>
+</event>
+<event name="STORAGE_CHECK_PROM_VATS_MALFORM">
+	<text>What would you like to transform your Malform into?</text>
+	<choice req="LIST_CHECKCREW_GOLD" hidden="true">
+		<text>Convert your Malform into a Morph [Cost: 0~]</text>
+		<event>
+			<text>Your Malform has been sucessfully converted into a Morph.</text>
+			<transformRace class="LIST_CHECKCREW_GOLD">blob</transformRace>
+			<item_modify>
+				<item type="scrap" min="-0" max="-0" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice req="LIST_CHECKCREW_GOLD" hidden="true">
+		<text>Convert your Malform into a Morph Agglomeration [Cost: 150~]</text>
+		<event>
+			<text>Your Malform has been sucessfully converted into a Morph Agglomeration.</text>
+			<transformRace class="LIST_CHECKCREW_GOLD">unique_ooj</transformRace>
+			<item_modify>
+				<item type="scrap" min="-150" max="-150" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="pilot" lvl="1" blue="false" max_group="1">
+		<text>Nevermind...</text>
+		<event load="STORAGE_CHECK" />
+	</choice>
+</event>
+<event name="STORAGE_CHECK_PROM_VATS_MORPHAGGLOMERATION">
+	<text>What would you like to transform your Morph Agglomeration into?</text>
+	<choice req="unique_ooj" hidden="true">
+		<text>Convert your Morph Agglomeration into a Malform [Cost: 0~]</text>
+		<event>
+			<text>Your Morph Agglomeration has been sucessfully converted into a Malform.</text>
+			<transformRace class="unique_ooj">gold</transformRace>
+			<item_modify>
+				<item type="scrap" min="-0" max="-0" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="pilot" lvl="1" blue="false" max_group="1">
+		<text>Nevermind...</text>
+		<event load="STORAGE_CHECK" />
+	</choice>
+</event>
+<event name="STORAGE_CHECK_PROM_VATS_SELECT_LIZARD">
+	<text>Which Lizard would you like to transform?</text>
+	<choice req="lizard" hidden="true">
+		<text>Transform a Lizard.</text>
+		<event load="STORAGE_CHECK_PROM_VATS_LIZARD" />
+	</choice>
+	<choice req="traitor" hidden="true">
+		<text>Transform a Lizard Manager.</text>
+		<event load="STORAGE_CHECK_PROM_VATS_LIZARDMANAGER" />
+	</choice>
+	<choice req="unique_guntput" hidden="true">
+		<text>Transform a Lizard Shaman.</text>
+		<event load="STORAGE_CHECK_PROM_VATS_LIZARDSHAMAN" />
+	</choice>
+	<choice hidden="true" req="pilot" lvl="1" blue="false" max_group="1">
+		<text>Nevermind, do something else.</text>
+		<event load="STORAGE_CHECK" />
+	</choice>
+</event><event name="STORAGE_CHECK_PROM_VATS_LIZARD">
+	<text>What would you like to transform your Lizard into?</text>
+	<choice req="lizard" hidden="true">
+		<text>Convert your Lizard into a Lizard Manager [Cost: 150~]</text>
+		<event>
+			<text>Your Lizard has been sucessfully converted into a Lizard Manager.</text>
+			<transformRace class="lizard">traitor</transformRace>
+			<item_modify>
+				<item type="scrap" min="-150" max="-150" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice req="lizard" hidden="true">
+		<text>Convert your Lizard into a Lizard Shaman [Cost: 150~]</text>
+		<event>
+			<text>Your Lizard has been sucessfully converted into a Lizard Shaman.</text>
+			<transformRace class="lizard">unique_guntput</transformRace>
+			<item_modify>
+				<item type="scrap" min="-150" max="-150" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="pilot" lvl="1" blue="false" max_group="1">
+		<text>Nevermind...</text>
+		<event load="STORAGE_CHECK" />
+	</choice>
+</event>
+<event name="STORAGE_CHECK_PROM_VATS_LIZARDMANAGER">
+	<text>What would you like to transform your Lizard Manager into?</text>
+	<choice req="traitor" hidden="true">
+		<text>Convert your Lizard Manager into a Lizard [Cost: 0~]</text>
+		<event>
+			<text>Your Lizard Manager has been sucessfully converted into a Lizard.</text>
+			<transformRace class="traitor">lizard</transformRace>
+			<item_modify>
+				<item type="scrap" min="-0" max="-0" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="pilot" lvl="1" blue="false" max_group="1">
+		<text>Nevermind...</text>
+		<event load="STORAGE_CHECK" />
+	</choice>
+</event>
+<event name="STORAGE_CHECK_PROM_VATS_LIZARDSHAMAN">
+	<text>What would you like to transform your Lizard Shaman into?</text>
+	<choice req="unique_guntput" hidden="true">
+		<text>Convert your Lizard Shaman into a Lizard [Cost: 0~]</text>
+		<event>
+			<text>Your Lizard Shaman has been sucessfully converted into a Lizard.</text>
+			<transformRace class="unique_guntput">lizard</transformRace>
+			<item_modify>
+				<item type="scrap" min="-0" max="-0" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="pilot" lvl="1" blue="false" max_group="1">
+		<text>Nevermind...</text>
+		<event load="STORAGE_CHECK" />
+	</choice>
+</event>
+<event name="STORAGE_CHECK_PROM_VATS_SELECT_ORCHID">
+	<text>Which Orchid would you like to transform?</text>
+	<choice req="orchid" hidden="true">
+		<text>Transform a Orchid.</text>
+		<event load="STORAGE_CHECK_PROM_VATS_ORCHID" />
+	</choice>
+	<choice req="orchid_vampweed" hidden="true">
+		<text>Transform a Vampweed.</text>
+		<event load="STORAGE_CHECK_PROM_VATS_VAMPWEED" />
+	</choice>
+	<choice req="orchid_chieftain" hidden="true">
+		<text>Transform a Orchid Chieftain.</text>
+		<event load="STORAGE_CHECK_PROM_VATS_ORCHIDCHIEFTAIN" />
+	</choice>
+	<choice hidden="true" req="pilot" lvl="1" blue="false" max_group="1">
+		<text>Nevermind, do something else.</text>
+		<event load="STORAGE_CHECK" />
+	</choice>
+</event><event name="STORAGE_CHECK_PROM_VATS_ORCHID">
+	<text>What would you like to transform your Orchid into?</text>
+	<choice req="orchid" hidden="true">
+		<text>Convert your Orchid into a Vampweed [Cost: 10~]</text>
+		<event>
+			<text>Your Orchid has been sucessfully converted into a Vampweed.</text>
+			<transformRace class="orchid">orchid_vampweed</transformRace>
+			<item_modify>
+				<item type="scrap" min="-10" max="-10" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice req="orchid" hidden="true">
+		<text>Convert your Orchid into a Orchid Chieftain [Cost: 70~]</text>
+		<event>
+			<text>Your Orchid has been sucessfully converted into a Orchid Chieftain.</text>
+			<transformRace class="orchid">orchid_chieftain</transformRace>
+			<item_modify>
+				<item type="scrap" min="-70" max="-70" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="pilot" lvl="1" blue="false" max_group="1">
+		<text>Nevermind...</text>
+		<event load="STORAGE_CHECK" />
+	</choice>
+</event>
+<event name="STORAGE_CHECK_PROM_VATS_VAMPWEED">
+	<text>What would you like to transform your Vampweed into?</text>
+	<choice req="orchid_vampweed" hidden="true">
+		<text>Convert your Vampweed into a Orchid [Cost: 10~]</text>
+		<event>
+			<text>Your Vampweed has been sucessfully converted into a Orchid.</text>
+			<transformRace class="orchid_vampweed">orchid</transformRace>
+			<item_modify>
+				<item type="scrap" min="-10" max="-10" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="pilot" lvl="1" blue="false" max_group="1">
+		<text>Nevermind...</text>
+		<event load="STORAGE_CHECK" />
+	</choice>
+</event>
+<event name="STORAGE_CHECK_PROM_VATS_ORCHIDCHIEFTAIN">
+	<text>What would you like to transform your Orchid Chieftain into?</text>
+	<choice req="orchid_chieftain" hidden="true">
+		<text>Convert your Orchid Chieftain into a Orchid [Cost: 0~]</text>
+		<event>
+			<text>Your Orchid Chieftain has been sucessfully converted into a Orchid.</text>
+			<transformRace class="orchid_chieftain">orchid</transformRace>
+			<item_modify>
+				<item type="scrap" min="-0" max="-0" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="pilot" lvl="1" blue="false" max_group="1">
+		<text>Nevermind...</text>
+		<event load="STORAGE_CHECK" />
+	</choice>
+</event>

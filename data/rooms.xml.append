@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Niko Ships-->
+<roomLayout name="tnc_engines_niko_1">
+	<computerGlow x="2" y="44" dir="LEFT" />
+</roomLayout>
+<roomLayout name="tnc_piloting_niko_1">
+	<computerGlow name="glow_pilot" x="19" y="9" dir="RIGHT" />
+</roomLayout>
+<roomLayout name="tnc_shields_niko_1">
+	<computerGlow x="7" y="17" dir="DOWN" />
+</roomLayout>
+<roomLayout name="tnc_weapons_niko_1">
+	<computerGlow x="40" y="0" dir="UP" />
+</roomLayout>
+
+<!-- Jawbreaker -->
+
+<roomLayout name="tnc_engines_jawbreaker_1">
+	<computerGlow x="44" y="54" dir="DOWN" />
+</roomLayout>
+<!--<roomLayout name="pilot">
+	<computerGlow name="glow_pilot" x="19" y="9" dir="RIGHT" />
+</roomLayout>-->
+<roomLayout name="tnc_shields_jawbreaker_1">
+	<computerGlow x="13" y="1" dir="UP" />
+</roomLayout>
+<!--<roomLayout name="weapons">
+	<computerGlow x="40" y="0" dir="UP" />
+</roomLayout>-->
+<!--Fire Stealth-->
+<roomLayout name="tnc_shields_fire_1">
+	<computerGlow x="6" y="1" dir="UP" />
+</roomLayout>
+<roomLayout name="tnc_weapons_niko_2">
+	<computerGlow x="8" y="19" dir="DOWN" />
+</roomLayout>
+
+<!--<roomLayout name="engines_8">
+	<computerGlow x="0" y="44" dir="LEFT" />
+</roomLayout>
+<roomLayout name="pilot">
+	<computerGlow name="glow_pilot" x="19" y="9" dir="RIGHT" />
+</roomLayout>-->
+

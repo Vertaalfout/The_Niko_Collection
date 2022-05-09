@@ -1,0 +1,1140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<shipBlueprint name="PLAYER_SHIP_NIKO1" layout="tnc_player_ship_niko_1" img="tnc_player_ship_niko_1">
+	<class>Niko Cruiser</class>
+	<name>Homebound</name>
+	<desc>After filling up on a breakfast of delicious pancakes, Niko took to the stars for the greatest adventure yet!</desc>
+	<systemList>
+		<artillery power="1" room="11" start="false" weapon="ARTILLERY_FED" img="room_tnc_artillery_niko_1" />
+		<battery power="1" max = "2" room="13" start="false" img="room_tnc_battery_niko_1" />
+		<cloaking power="1" room="6" start="false" img="room_tnc_cloaking_niko_1" />
+		<clonebay power="1" room="2" start="true">
+			<slot>
+				<number>1</number>
+			</slot>
+		</clonebay>
+		<doors power="2" room="3" start="true" img="room_tnc_doors_niko_1">
+			<slot>
+				<direction>up</direction>
+				<number>1</number>
+			</slot>
+		</doors>
+		<drones power="2" room="10" max = "6" start="false" img="room_tnc_drones_niko_1" />
+		<engines power="1" room="15" start="true" img="room_tnc_engines_niko_1">
+			<slot>
+				<direction>left</direction>
+				<number>1</number>
+			</slot>
+		</engines>
+		<hacking power="1" room="8" start="false" img="room_tnc_hacking_niko_1" />
+		<medbay power="1" room="2" start="true" img="room_tnc_medbay_niko_1">
+			<slot>
+				<number>-2</number>
+			</slot>
+		</medbay>
+		<mind power="1" room="4" start="false" img="room_tnc_mind_niko_1" />
+		<oxygen power="1" room="14" start="true" img="room_tnc_oxygen_niko_1" />
+		<pilot power="1" room="0" start="true" img="room_tnc_piloting_niko_1">
+			<slot>
+				<direction>right</direction>
+				<number>0</number>
+			</slot>
+		</pilot>
+		<sensors power="2" room="7" start="true" img="room_tnc_sensors_niko_1">
+			<slot>
+				<direction>down</direction>
+				<number>1</number>
+			</slot>
+		</sensors>
+		<shields power="2" room="5" max = "8"  start="true" img="room_tnc_shields_niko_1">
+			<slot>
+				<direction>down</direction>
+				<number>0</number>
+			</slot>
+		</shields>
+		<teleporter power="1" room="1" start="true" />
+		<weapons power="2" room="9" max = "6" start="true" img="room_tnc_weapons_niko_1">
+			<slot>
+				<direction>up</direction>
+				<number>1</number>
+			</slot>
+		</weapons>
+		<temporal power="1" room="12" start="false" img="room_tnc_temporal_niko_1" />
+	</systemList>
+	<weaponSlots>2</weaponSlots>
+	<droneSlots>2</droneSlots>
+	<weaponList missiles="4" count="1">
+		<weapon name="LASER_FIRE" />
+	</weaponList>
+	<droneList drones="3" count="0" />
+	<health amount="20" />
+	<maxPower amount="7" />
+	<crewCount amount="1" class="engi_separatist" />
+	<crewCount amount="1" class="engi_separatist" />
+	<crewCount amount="1" class="orchid" />
+	<aug name="WHOLESOME_SHIELD"/>
+</shipBlueprint>
+
+<shipBlueprint name="PLAYER_SHIP_JAWBREAKER" layout="tnc_jawbreaker_elite" img="tnc_jawbreaker_elite">
+	<class>Jawbreaker Cruiser</class>
+	<name>Jaw Crusher</name>
+	<desc>This Unique vessel is plated with a strange, dense plating that can withstand many fights without as much as a scratch.</desc>
+	<systemList>
+		<artillery power="1" room="8" start="false" weapon="ARTILLERY_FED" img="room_tnc_artillery_jawbreaker_1" />
+		<battery power="1" max="2" room="13" start="false" img="room_tnc_battery_jawbreaker_1" />
+		<cloaking power="2" max="5" room="17" start="true" img="room_cloaking" />
+		<clonebay power="2" room="12" start="false">
+			<slot>
+				<number>1</number>
+			</slot>
+		</clonebay>
+		<doors power="1" max="3" room="16" start="true" img="room_doors">
+			<slot>
+				<direction>up</direction>
+				<number>1</number>
+			</slot>
+		</doors>
+		<drones power="2" max="8" room="6" start="false" img="room_drones_6" />
+		<engines power="3" max="8" room="11" start="true" img="room_tnc_engines_jawbreaker_1">
+			<slot>
+				<direction>down</direction>
+				<number>3</number>
+			</slot>
+		</engines>
+		<hacking power="1" max="3" room="15" start="false" img="room_tnc_hacking_jawbreaker_1" />
+		<medbay power="2" max="3" room="12" start="true" img="room_medbay_2">
+			<slot>
+				<number>-2</number>
+			</slot>
+		</medbay>
+		<mind power="1" max="3" room="4" start="false" img="room_tnc_mind_jawbreaker_1" />
+		<oxygen power="1" max="4" room="0" start="true" img="room_tnc_oxygen_jawbreaker_1" />
+		<pilot power="2" max="3" room="7" start="true" img="room_pilot">
+			<slot>
+				<direction>right</direction>
+				<number>0</number>
+			</slot>
+		</pilot>
+		<sensors power="2" max="3" room="14" start="true" img="room_tnc_sensors_jawbreaker_1">
+			<slot>
+				<direction>down</direction>
+				<number>3</number>
+			</slot>
+		</sensors>
+		<shields power="2" max="8" room="5" start="false" img="room_tnc_shields_jawbreaker_1">
+			<slot>
+				<direction>up</direction>
+				<number>0</number>
+			</slot>
+		</shields>
+		<teleporter power="3" max="4" room="9" start="true" />
+		<weapons power="2" max="8" room="10" start="true" img="room_weapons">
+			<slot>
+				<direction>up</direction>
+				<number>1</number>
+			</slot>
+		</weapons>
+	</systemList>
+	<weaponSlots>4</weaponSlots>
+	<droneSlots>2</droneSlots>
+	<weaponList missiles="20" count="4">
+		<weapon name="MISSILES_FIRE" />
+	</weaponList>
+	<droneList drones="7" count="2" />
+	<health amount="30" />
+	<maxPower amount="7" />
+	<aug name="JAWBREAKER_ARMOR" />
+	<aug name="THICC_PUNCH_1"/>
+	<aug name="EX_MEDBAY_NANO"/>
+</shipBlueprint>
+
+<shipBlueprint name="PLAYER_SHIP_NIKO1_2" layout="tnc_player_ship_niko_1" img="tnc_player_ship_niko_1_2">
+	<class>Niko Cruiser</class>
+	<name>Lightbringer</name>
+	<desc>After learning how dangerous the Multiverse can be, Niko found some strong friends to help keep her ship safe! This ship is a powerful boarding vessel, but still struggles with offensive capacity.</desc>
+	<systemList>
+		<artillery power="1" room="11" start="false" weapon="ARTILLERY_FED" img="room_tnc_artillery_niko_1" />
+		<battery power="1" max = "2" room="13" start="false" img="room_tnc_battery_niko_1" />
+		<cloaking power="1" room="6" start="false" img="room_tnc_cloaking_niko_1" />
+		<clonebay power="1" room="2" start="true">
+			<slot>
+				<number>1</number>
+			</slot>
+		</clonebay>
+		<doors power="2" room="3" start="true" img="room_tnc_doors_niko_1">
+			<slot>
+				<direction>up</direction>
+				<number>1</number>
+			</slot>
+		</doors>
+		<drones power="2" room="10" max = "6" start="false" img="room_tnc_drones_niko_1" />
+		<engines power="1" room="15" start="true" img="room_tnc_engines_niko_1">
+			<slot>
+				<direction>left</direction>
+				<number>1</number>
+			</slot>
+		</engines>
+		<hacking power="1" room="8" start="false" img="room_tnc_hacking_niko_1" />
+		<medbay power="1" room="2" start="true" img="room_tnc_medbay_niko_1">
+			<slot>
+				<number>-2</number>
+			</slot>
+		</medbay>
+		<mind power="1" room="4" start="true" img="room_tnc_mind_niko_1" />
+		<oxygen power="1" room="14" start="true" img="room_tnc_oxygen_niko_1" />
+		<pilot power="1" room="0" start="true" img="room_tnc_piloting_niko_1">
+			<slot>
+				<direction>right</direction>
+				<number>0</number>
+			</slot>
+		</pilot>
+		<sensors power="3" room="7" start="true" img="room_tnc_sensors_niko_1">
+			<slot>
+				<direction>down</direction>
+				<number>1</number>
+			</slot>
+		</sensors>
+		<shields power="2" room="5" max = "8"  start="true" img="room_tnc_shields_niko_1">
+			<slot>
+				<direction>down</direction>
+				<number>0</number>
+			</slot>
+		</shields>
+		<teleporter power="1" room="1" start="true" />
+		<weapons power="2" room="9" max = "6" start="true" img="room_tnc_weapons_niko_1">
+			<slot>
+				<direction>up</direction>
+				<number>1</number>
+			</slot>
+		</weapons>
+		<temporal power="1" room="12" start="false" img="room_tnc_temporal_niko_1" />
+	</systemList>
+	<weaponSlots>2</weaponSlots>
+	<droneSlots>2</droneSlots>
+	<weaponList missiles="9" count="2">
+		<weapon name="BOMB_FIRE" />
+		<weapon name="LASER_STUN"/>
+	</weaponList>
+	<droneList drones="3" count="0" />
+	<health amount="20" />
+	<maxPower amount="7" />
+	<crewCount amount="1" class="rock_outcast" />
+	<crewCount amount="1" class="rock_outcast" />
+	<crewCount amount="1" class="mantis_free" />
+	<crewCount amount="1" class="phantom" />
+	<aug name="WHOLESOME_SHIELD"/>
+	<aug name="CREW_FIREARMS"/>
+</shipBlueprint>
+
+<shipBlueprint name="PLAYER_SHIP_NIKO1_3" layout="tnc_player_ship_niko_1" img="tnc_player_ship_niko_1_3">
+	<class>Niko Cruiser</class>
+	<name>Solstice</name>
+	<desc>Realizing that defense was her ship's greatest strength, Niko invested in a cloaking system powerful enough to mask the glow of the sunbulb! With her leftover scrap, she managed to acquire a powerful fire weapon, as well as some drones.</desc>
+	<systemList>
+		<artillery power="1" room="11" start="false" weapon="ARTILLERY_FED" img="room_tnc_artillery_niko_1" />
+		<battery power="1" max = "2" room="13" start="false" img="room_tnc_battery_niko_1" />
+		<cloaking power="1" room="6" start="true" img="room_tnc_cloaking_niko_1" />
+		<clonebay power="1" room="2" start="true">
+			<slot>
+				<number>1</number>
+			</slot>
+		</clonebay>
+		<doors power="2" room="3" start="true" img="room_tnc_doors_niko_1">
+			<slot>
+				<direction>up</direction>
+				<number>1</number>
+			</slot>
+		</doors>
+		<drones power="3" room="10" max = "6" start="true" img="room_tnc_drones_niko_1" />
+		<engines power="1" room="15" start="true" img="room_tnc_engines_niko_1">
+			<slot>
+				<direction>left</direction>
+				<number>1</number>
+			</slot>
+		</engines>
+		<hacking power="1" room="8" start="false" img="room_tnc_hacking_niko_1" />
+		<medbay power="1" room="2" start="true" img="room_tnc_medbay_niko_1">
+			<slot>
+				<number>-2</number>
+			</slot>
+		</medbay>
+		<mind power="1" room="4" start="false" img="room_tnc_mind_niko_1" />
+		<oxygen power="1" room="14" start="true" img="room_tnc_oxygen_niko_1" />
+		<pilot power="3" room="0" start="true" img="room_tnc_piloting_niko_1">
+			<slot>
+				<direction>right</direction>
+				<number>0</number>
+			</slot>
+		</pilot>
+		<sensors power="2" room="7" start="true" img="room_tnc_sensors_niko_1">
+			<slot>
+				<direction>down</direction>
+				<number>1</number>
+			</slot>
+		</sensors>
+		<shields power="2" room="5" max = "8"  start="true" img="room_tnc_shields_niko_1">
+			<slot>
+				<direction>down</direction>
+				<number>0</number>
+			</slot>
+		</shields>
+		<teleporter power="1" room="1" start="false" />
+		<weapons power="2" room="9" max = "6" start="true" img="room_tnc_weapons_niko_1">
+			<slot>
+				<direction>up</direction>
+				<number>1</number>
+			</slot>
+		</weapons>
+		<temporal power="1" room="12" start="false" img="room_tnc_temporal_niko_1" />
+	</systemList>
+	<weaponSlots>2</weaponSlots>
+	<droneSlots>2</droneSlots>
+	<weaponList missiles="4" count="1">
+		<weapon name="PHASER_FIRE" />
+	</weaponList>
+	<droneList drones="11" count="2" >
+	<drone name="COMBAT_CONSERVATIVE_LASER" />
+	<drone name="ENERGY_1_AMP2" />
+	</droneList>
+	<health amount="20" />
+	<maxPower amount="7" />
+	<crewCount amount="1" class="human_engineer" />
+	<crewCount amount="1" class="lanius" />
+	<aug name="WHOLESOME_SHIELD"/>
+	<aug name="DRONE_RECOVERY"/>
+</shipBlueprint>
+
+<shipBlueprint name="PLAYER_SHIP_TNC_CALLIEHUNTER1" layout="tnc_calliehunter_1" img="tnc_calliehunter_1">
+	<class>Student Cruiser</class>
+	<name>The Negative</name>
+	<desc>An accurate description of their collective IQ, this ship is an old and nearly broken kestrel that a roving band of free mantis took over. These free mantis don't just want to help the federation, they want to learn! While they can't add 1+1, they did manage to jury rig a device to signal for a teacher throughout the multiverse! And one calculating proctor seems to always answer!</desc>
+	<systemList>
+		<artillery power="1" room="7" start="false" weapon="ARTILLERY_BEAM" img="room_artillery" />
+		<battery power="1" max="2" room="6" start="false" img="room_battery_14" />
+		<cloaking power="1" room="16" start="false" img="room_cloaking_10" />
+		<clonebay power="1" room="10" start="false">
+			<slot>
+				<number>3</number>
+			</slot>
+		</clonebay>
+		<doors power="2" room="2" start="true" img="room_doors">
+			<slot>
+				<direction>up</direction>
+				<number>1</number>
+			</slot>
+		</doors>
+		<drones power="2" max="8" room="1" start="false" img="room_drones" />
+		<engines power="2" room="8" start="true" img="room_engines_9">
+			<slot>
+				<direction>up</direction>
+				<number>1</number>
+			</slot>
+		</engines>
+		<hacking power="1" room="5" start="false" img="room_hacking_5" />
+		<medbay power="1" room="10" start="true" img="room_medbay_FM_1">
+			<slot>
+				<number>-2</number>
+			</slot>
+		</medbay>
+		<mind power="1" room="18" start="false" img="room_mind_12" />
+		<oxygen power="1" room="4" start="true" img="room_oxygen_2" />
+		<pilot power="1" room="0" start="true" img="room_pilot">
+			<slot>
+				<direction>right</direction>
+				<number>0</number>
+			</slot>
+		</pilot>
+		<sensors power="2" room="3" start="true" img="room_sensors">
+			<slot>
+				<direction>down</direction>
+				<number>1</number>
+			</slot>
+		</sensors>
+		<shields power="2" max="8" room="9" start="true" img="room_shields_3">
+			<slot>
+				<direction>left</direction>
+				<number>2</number>
+			</slot>
+		</shields>
+		<teleporter power="1" room="17" start="true" />
+		<weapons power="3" max="8" room="11" start="true" img="room_weapons">
+			<slot>
+				<direction>up</direction>
+				<number>1</number>
+			</slot>
+		</weapons>
+	</systemList>
+	<weaponSlots>4</weaponSlots>
+	<droneSlots>2</droneSlots>
+	<weaponList missiles="11" count="4">
+		<weapon name="RUSTY_LASER_BURST_5" />
+	</weaponList>
+	<droneList drones="6" count="2" />
+	<health amount="30" />
+	<maxPower amount="7" />
+	<crewCount amount="1" class="mantis_free" />
+	<crewCount amount="1" class="mantis_free" />
+	<crewCount amount="1" class="mantis_free" />
+	<crewCount amount="1" class="mantis_free" />
+	<aug name="TNC_CALLIE_DRIVE_HACKER"/>
+</shipBlueprint>
+
+<shipBlueprint name="PLAYER_SHIP_TNC_CALLIEHUNTER1_2" layout="tnc_calliehunter_2" img="tnc_calliehunter_2">
+	<class>Student Cruiser</class>
+	<name>The Rounded</name>
+	<desc>This ship was taken over by some Suzerains, but to their surpise it was already inhabited by a duo of strange machines! They seem happy enough to work alongside you for now.</desc>
+	<systemList>
+		<artillery power="1" room="15" start="false" weapon="ARTILLERY_FED" img="room_artillery_7" />
+		<battery power="1" max="2" room="14" start="false" img="room_battery_2" />
+		<cloaking power="1" room="2" start="true" img="room_cloaking_orchid_2" />
+		<clonebay power="1" room="8" start="false">
+			<slot>
+				<number>3</number>
+			</slot>
+		</clonebay>
+		<doors power="1" room="13" start="true" img="room_doors_2">
+			<slot>
+				<direction>down</direction>
+				<number>0</number>
+			</slot>
+		</doors>
+		<drones power="1" max="8" room="1" start="false" img="room_drones_orchid_3" />
+		<engines power="2" room="11" start="true" img="room_engines_5">
+			<slot>
+				<direction>up</direction>
+				<number>0</number>
+			</slot>
+		</engines>
+		<hacking power="1" room="10" start="false" img="room_hacking_6" />
+		<medbay power="1" room="8" start="true" img="room_tnc_medbay_6">
+			<slot>
+				<number>-2</number>
+			</slot>
+		</medbay>
+		<mind power="1" room="6" start="false" img="room_mind_6" />
+		<oxygen power="1" room="12" start="true" img="room_oxygen_2" />
+		<pilot power="1" room="0" start="true" img="room_pilot">
+			<slot>
+				<direction>right</direction>
+				<number>0</number>
+			</slot>
+		</pilot>
+		<sensors power="1" room="3" start="true" img="room_sensors_2">
+			<slot>
+				<direction>up</direction>
+				<number>0</number>
+			</slot>
+		</sensors>
+		<shields power="2" max="8" room="4" start="false" img="room_shields">
+			<slot>
+				<direction>left</direction>
+				<number>0</number>
+			</slot>
+		</shields>
+		<teleporter power="1" room="9" start="true" />
+		<weapons power="3" max="8" room="5" start="true" img="room_shields">
+			<slot>
+				<direction>up</direction>
+				<number>1</number>
+			</slot>
+		</weapons>
+	</systemList>
+	<weaponSlots>4</weaponSlots>
+	<droneSlots>2</droneSlots>
+	<weaponList missiles="15" count="4">
+		<weapon name="RUSTY_LASER_BURST_3" />
+		<weapon name="RUSTY_MISSILES_2" />
+	</weaponList>
+	<droneList drones="7" count="2" />
+	<health amount="30" />
+	<maxPower amount="7" />
+	<crewCount amount="1" class="engi" />
+	<crewCount amount="1" class="mantis_suzerain" />
+	<crewCount amount="1" class="obelisk_math_add" />
+	<crewCount amount="1" class="obelisk_math_add" />
+	<aug name="TNC_CALLIE_DRIVE_HACKER" />
+</shipBlueprint>
+
+<shipBlueprint name="PLAYER_SHIP_TNC_CALLIEHUNTER1_3" layout="tnc_calliehunter_3" img="tnc_calliehunter_3">
+	<class>Student Cruiser</class>
+	<name>The Modulus</name>
+	<desc>This odd vessel can barely support its crew, but its onboard calculators are far better than most, allowing it to perform certain tasks without crew assistance. It's also equiped with a strange flak weapon, engraved with &lt;STUDENT NAME&gt;.</desc>
+	<systemList>
+		<artillery power="1" room="17" start="false" weapon="ARTILLERY_FED" img="room_artillery" />
+		<battery power="1" max="2" room="13" start="false" img="room_battery_15" />
+		<cloaking power="1" room="8" start="false" img="room_cloaking_5" />
+		<clonebay power="1" room="10" start="true">
+			<slot>
+				<number>1</number>
+			</slot>
+		</clonebay>
+		<doors power="1" room="1" start="true" img="room_doors">
+			<slot>
+				<direction>up</direction>
+				<number>1</number>
+			</slot>
+		</doors>
+		<drones power="2" max="8" room="5" start="false" img="room_drones" />
+		<engines power="1" room="12" start="true" img="room_engines_2">
+			<slot>
+				<direction>down</direction>
+				<number>2</number>
+			</slot>
+		</engines>
+		<hacking power="1" room="9" start="true" img="room_hacking_8" />
+		<medbay power="1" room="10" start="false" img="room_tnc_medbay_6_2">
+			<slot>
+				<number>-2</number>
+			</slot>
+		</medbay>
+		<mind power="1" room="7" start="false" img="room_mind_6" />
+		<oxygen power="1" room="15" start="false" img="room_oxygen_2x1bottomside" />
+		<pilot power="1" room="0" start="true" img="room_pilot">
+			<slot>
+				<direction>right</direction>
+				<number>0</number>
+			</slot>
+		</pilot>
+		<sensors power="1" room="4" start="true" img="room_sensors_2">
+			<slot>
+				<direction>up</direction>
+				<number>0</number>
+			</slot>
+		</sensors>
+		<shields power="2" max="8" room="14" start="true" img="room_shields_4">
+			<slot>
+				<direction>left</direction>
+				<number>0</number>
+			</slot>
+		</shields>
+		<teleporter power="1" room="11" start="false" />
+		<weapons power="4" max="8" room="6" start="true" img="room_weapons">
+			<slot>
+				<direction>up</direction>
+				<number>1</number>
+			</slot>
+		</weapons>
+	</systemList>
+	<weaponSlots>4</weaponSlots>
+	<droneSlots>2</droneSlots>
+	<weaponList missiles="3" count="4">
+		<weapon name="MATH_SHOTGUN_TOGGLE_ADDER" />
+	</weaponList>
+	<droneList drones="10" count="2" />
+	<health amount="30" />
+	<maxPower amount="7" />
+	<crewCount amount="1" class="lanius" />
+	<crewCount amount="1" class="phantom_mare_alpha" />
+	<aug name="TNC_CALLIE_DRIVE_HACKER" />
+	<aug name="NO_GHOST" />
+</shipBlueprint>
+
+
+
+
+<shipBlueprint name="PLAYER_SHIP_FIRESTEALTH" layout="tnc_player_ship_firestealth" img="tnc_player_ship_firestealth">
+	<class>Ignis Stealth Cruiser</class>
+	<name>The Svarog</name>
+	<desc>This stealth ship is designed to burn enemy ships to the ground in mere moments, and eliminate threats before they become dangerous.</desc>
+	<systemList>
+		<artillery power="2" max ="5" room="5" start="true" weapon="TNC_FIRE_PINPOINT_ARTILLERY" img="tnc_3x1_invis"/>
+		<artillery power="2" max ="5" room="6" start="true" weapon="TNC_FIRE_PINPOINT_ARTILLERY" img="tnc_3x1_invis"/>
+		<battery power="1" max ="2" room="16" start="false" img="room_battery_3" />
+		<cloaking power="2" room="8" start="true" img="room_cloaking_3" />
+		<clonebay power="1" room="3" start="false">
+			<slot>
+				<number>1</number>
+			</slot>
+		</clonebay>
+		<doors power="2" room="17" start="true" img="room_doors_2">
+			<slot>
+				<direction>down</direction>
+				<number>0</number>
+			</slot>
+		</doors>
+		<drones power="2" max ="8" room="14" start="false" img="room_drones_orchid_3" />
+		<engines power="3" room="11" start="true" img="room_engines_8">
+			<slot>
+				<direction>left</direction>
+				<number>1</number>
+			</slot>
+		</engines>
+		<hacking power="1" room="9" start="false" img="room_hacking_2" />
+		<medbay power="1" room="3" start="true" img="room_medbay_8">
+			<slot>
+				<number>-2</number>
+			</slot>
+		</medbay>
+		<mind power="1" room="10" start="true" img="room_mind_9" />
+		<oxygen power="1" room="13" start="true" img="room_oxygen_2x1bottomside" />
+		<pilot power="1" room="0" start="true" img="room_pilot">
+			<slot>
+				<direction>right</direction>
+				<number>0</number>
+			</slot>
+		</pilot>
+		<sensors power="2" room="1" start="true" img="room_sensors">
+			<slot>
+				<direction>down</direction>
+				<number>1</number>
+			</slot>
+		</sensors>
+		<shields power="2" max ="8" room="15" start="false" img="room_tnc_shields_fire_1">
+			<slot>
+				<direction>up</direction>
+				<number>0</number>
+			</slot>
+		</shields>
+		<teleporter power="1" room="4" start="false" />
+		<weapons power="1" max ="8" room="12" start="true" img="room_tnc_weapons_niko_2">
+			<slot>
+				<direction>down</direction>
+				<number>0</number>
+			</slot>
+		</weapons>
+		<temporal power="2" room="7" start="true" img="tnc_room_temporal_fire_1" />
+	</systemList>
+	<weaponSlots>2</weaponSlots>
+	<droneSlots>3</droneSlots>
+	<weaponList missiles="10" count="2">
+		<weapon name="MISSILES_FIRE_PLAYER" />
+	</weaponList>
+	<droneList drones="10" count="3" />
+	<health amount="30" />
+	<maxPower amount="10" />
+	<crewCount amount="1" class="slug_saboteur" />
+	<crewCount amount="1" class="human_medic" />
+	<crewCount amount="1" class="engi_separatist" />
+</shipBlueprint>
+
+<shipBlueprint name="PLAYER_SHIP_TNC_BLACKRAVEN" layout="tnc_blackraven_1" img="tnc_blackraven_1">
+	<class>Blackbird Cruiser</class>
+	<name>The Blackbird</name>
+	<desc>This ship is commanded by powerful crew, with the potential to improve their abilites further still.</desc>
+	<systemList>
+		<artillery power="1" room="5" start="false" weapon="ARTILLERY_FED" img="room_artillery_2" />
+		<battery power="1" room="19" max="2" start="false" img="room_battery_2" />
+		<cloaking power="1" room="2" start="false" img="room_cloaking_3" />
+		<clonebay power="1" room="11" start="true">
+			<slot>
+				<number>1</number>
+			</slot>
+		</clonebay>
+		<doors power="1" room="6" start="true" img="room_doors">
+			<slot>
+				<direction>up</direction>
+				<number>1</number>
+			</slot>
+		</doors>
+		<drones power="2" max="8" room="12" start="false" img="room_drones_14" />
+		<engines power="2" room="13" start="true" img="room_engines">
+			<slot>
+				<direction>down</direction>
+				<number>2</number>
+			</slot>
+		</engines>
+		<hacking power="1" room="14" start="false" img="room_hacking_3" />
+		<medbay power="1" room="11" start="false" img="room_tnc_medbay_niko_1">
+			<slot>
+				<number>-2</number>
+			</slot>
+		</medbay>
+		<mind power="1" room="15" start="false" img="room_mind_7" />
+		<oxygen power="1" room="10" start="true" img="room_oxygen_orchid_2" />
+		<pilot power="1" room="0" start="true" img="room_pilot">
+			<slot>
+				<direction>right</direction>
+				<number>0</number>
+			</slot>
+		</pilot>
+		<sensors power="1" room="7" start="true" img="room_sensors">
+			<slot>
+				<direction>down</direction>
+				<number>1</number>
+			</slot>
+		</sensors>
+		<shields power="2" max="8" room="3" start="true" img="room_shields_7">
+			<slot>
+				<direction>up</direction>
+				<number>1</number>
+			</slot>
+		</shields>
+		<teleporter power="1" room="8" start="true" />
+		<weapons power="2" max="8" room="4" start="true" img="room_weapons_7">
+			<slot>
+				<direction>up</direction>
+				<number>1</number>
+			</slot>
+		</weapons>
+	</systemList>
+	<weaponSlots>4</weaponSlots>
+	<droneSlots>2</droneSlots>
+	<weaponList missiles="15" count="4">
+		<weapon name="LASER_HULL_CHAINGUN" />
+		<weapon name="BOMB_BUFF" />
+	</weaponList>
+	<droneList drones="10" count="2" />
+	<health amount="30" />
+	<maxPower amount="6" />
+	<crewCount amount="1" class="human_mfk" />
+	<crewCount amount="1" class="gold" />
+	<aug name="SECRET_SAUCE"/>
+</shipBlueprint>
+
+<!-- Augments -->
+
+<augBlueprint name="WHOLESOME_SHIELD">
+    <title>The Sunbulb</title>
+    <desc>A powerful sentient Lightbulb protecting all under its care, that Niko requested to be installed into the ship. Seems to have been a good idea, as it now provides a powerful array of effects, such as a 1 layer energy shield, passive health regen for all crew across both ships, extra max health and doubled heal speed, and 50% less fire damage taken. Power is diverted from weapons to power shields, increasing shield recharge rate by 15%, but increasing weapon cooldown by 20%. Being near it makes you feel warm and fuzzy.</desc>
+    <cost>130</cost>
+    <rarity>0</rarity>
+    <stackable>false</stackable>
+</augBlueprint> 
+
+<augBlueprint name="JAWBREAKER_ARMOR">
+    <title>Jawbreaker Armor</title>
+    <desc>An elite hull plating with a large 70% hull resistance chance, making it nigh impenetrable. When something does break through the armour however, a scattering of shards will break off from your vessel. The crew is also made hardy, gaining 10% damage resistance and 33% health, but slowing their movement speed by 40%.</desc>
+    <cost>75</cost>
+    <rarity>0</rarity>
+    <stackable>false</stackable>
+</augBlueprint> 
+
+<weaponBlueprint name="JAWBREAKER_ARMOR_PROJ_SHATTER">
+	<type>MISSILES</type>
+	<title>Crystal Shard</title>
+	<short>Crystal</short>
+	<desc>CRYSTAL VENG PROJECTILE</desc>
+	<tooltip>Should Never See This Description.</tooltip>
+	<cost>0</cost>
+	<damage>2</damage>
+	<accuracyMod>100</accuracyMod>
+	<missiles>0</missiles>
+	<shots>2</shots>
+	<sp>2</sp>
+	<fireChance>0</fireChance>
+	<breachChance>10</breachChance>
+	<stunChance>2</stunChance>
+	<cooldown>0</cooldown>
+	<power>0</power>
+	<bp>2</bp>
+	<rarity>0</rarity>
+	<image>crystal_shard2</image>
+	<launchSounds>
+		<sound>smallMissile1</sound>
+		<sound>smallMissile2</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>crystalExplosion_small</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>hitShield1</sound>
+		<sound>hitShield2</sound>
+		<sound>hitShield3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<explosion>explosion_crystal_2</explosion>
+	<weaponArt>crystal_shard</weaponArt>
+</weaponBlueprint>
+
+
+
+
+
+
+
+<augBlueprint name="THICC_PUNCH_1">
+	<title>Jawbreaker Punch [Level 1]</title>
+	<desc>[Level 1] All of your Rock, Crusader and Paladin crew gain a powerful punch ability that does heavy crew, hull, and system damage to the enemy ship! Can be upgraded to level five.</desc>
+	<cost>0</cost>
+	<rarity>0</rarity>
+	<stackable>false</stackable>
+</augBlueprint>
+
+<augBlueprint name="THICC_PUNCH_2">
+	<title>Jawbreaker Punch [Level 2]</title>
+	<desc>[Level 2] All of your Rock, Crusader and Paladin crew gain a powerful punch ability that does heavy crew, hull, and system damage to the enemy ship! Can be upgraded to level five.</desc>
+	<cost>0</cost>
+	<rarity>0</rarity>
+	<stackable>false</stackable>
+</augBlueprint>
+
+<augBlueprint name="THICC_PUNCH_3">
+	<title>Jawbreaker Punch [Level 3]</title>
+	<desc>[Level 3] All of your Rock, Crusader and Paladin crew gain a powerful punch ability that does heavy crew, hull, and system damage to the enemy ship! Can be upgraded to level five.</desc>
+	<cost>0</cost>
+	<rarity>0</rarity>
+	<stackable>false</stackable>
+</augBlueprint>
+
+<augBlueprint name="THICC_PUNCH_4">
+	<title>Jawbreaker Punch [Level 4]</title>
+	<desc>[Level 4] All of your Rock, Crusader and Paladin crew gain a powerful punch ability that does heavy crew, hull, and system damage to the enemy ship! Can be upgraded to level five.</desc>
+	<cost>0</cost>
+	<rarity>0</rarity>
+	<stackable>false</stackable>
+</augBlueprint>
+
+<augBlueprint name="THICC_PUNCH_5">
+	<title>Jawbreaker Punch [Level 5]</title>
+	<desc>[Level 5] All of your Rock, Crusader and Paladin crew gain a powerful punch ability that does heavy crew, hull, and system damage to the enemy ship! Can be upgraded to level five.</desc>
+	<cost>0</cost>
+	<rarity>0</rarity>
+	<stackable>false</stackable>
+</augBlueprint>
+
+<augBlueprint name="TNC_CALLIE_DRIVE_HACKER">
+	<title>Study Beacon</title>
+	<desc>A baffling piece of technology, designed by the most simple-minded engineers this side of the Multiverse. Built by a group of simple yet studious Free Mantis, this piece of jury-rigged tech allows them to chase down those with more knowledge, so that they can continue their lifelong wish of learning. Right now, they're locked onto any source of mathematical knowledge they can find, though so far they've only been able to find one teacher...</desc>
+	<cost>100</cost>
+	<rarity>0</rarity>
+	<stackable>false</stackable>
+	<bp>0</bp>
+</augBlueprint>
+
+<augBlueprint name="TNC_MATH_RELOADER">
+	<title>Math Reloader</title>
+	<desc>Full disclosure, you shouldn't be seeing this augment. It's either a bug or you did something funky. What are you even doing anyway? I'd like to know. Anyway, have a 1% reloader.</desc>
+	<cost>0</cost>
+	<rarity>0</rarity>
+	<stackable>true</stackable>
+	<bp>0</bp>
+</augBlueprint>
+
+<augBlueprint name="SECRET_SAUCE">
+	<title>Promotion Vats</title>
+	<desc>This highly advanced piece of technology is the secret weapon of the Black Ravens. Using advanced genetic augmentation and neural data transference, crew can be swapped between subtypes and even upgraded for a price! The Promotion Vats also enhance your cloning technology, acting as a DNA bank and even preventing crew from losing skills when being cloned!</desc>
+	<cost>250</cost>
+	<rarity>0</rarity>
+	<stackable>false</stackable>
+</augBlueprint>
+
+
+<!-- Weapons -->
+<weaponBlueprint name="PHASER_FIRE">
+	<type>LASER</type>
+	<flavorType>Ion Blast</flavorType>
+	<title>Fire Phaser</title>
+	<short>Fire Phase</short>
+	<tip>tip_ion_fire</tip>
+	<locked>1</locked>
+	<desc>This heavily modified Ion starts fires, as well as piercing all shields. A deadly weapon, for such an unassuming ship. </desc>
+	<tooltip>Fires a single blast that does 1 ion damage. Can hit and disable shields as well as systems.</tooltip>
+	<damage>0</damage>
+	<spin>720</spin>
+	<ion>2</ion>
+	<speed>35</speed>
+	<shots>1</shots>
+	<sp>10</sp>
+	<fireChance>10</fireChance>
+	<breachChance>0</breachChance>
+	<stunChance>1</stunChance>
+	<cooldown>13</cooldown>
+	<power>2</power>
+	<cost>55</cost>
+	<bp>3</bp>
+	<rarity>0</rarity>
+	<image>ion_fire</image>
+	<explosion>explosion_small_ion_fire</explosion>
+	<launchSounds>
+		<sound>ionShoot1</sound>
+		<sound>ionShoot2</sound>
+		<sound>ionShoot3</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>ionHit1</sound>
+		<sound>ionHit2</sound>
+		<sound>ionHit3</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>ionShields1</sound>
+		<sound>ionShields2</sound>
+		<sound>ionShields3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>phaser_fire</weaponArt>
+	<iconImage>ion</iconImage>
+</weaponBlueprint>
+
+<weaponBlueprint name="TNC_FIRE_PINPOINT_ARTILLERY">
+    <type>BEAM</type>
+    <flavorType>Pinpoint</flavorType>
+    <tip>tip_focus</tip>
+    <title>Fire Pinpoint Artillery</title>
+    <short>Artillery</short>
+    <desc>Artillery: Powers a fast firing-pinpoint that pierces all shields, and always starts a fire.
+	Base Cooldown: 25</desc>
+    <tooltip>Artillery: Powers a fast firing-pinpoint that pierces all shields, and always starts a fire.</tooltip>
+    <damage>0</damage>
+    <sp>10</sp>
+    <fireChance>10</fireChance>
+    <breachChance>0</breachChance>
+    <cooldown>25</cooldown>
+    <speed>1</speed>
+    <power>0</power>
+    <cost>80</cost>
+    <bp>2</bp>
+    <rarity>0</rarity>
+    <image>beam_contact</image>
+    <length>1</length>
+    <launchSounds>
+        <sound>focus_strong</sound>
+    </launchSounds>
+    <iconImage>beam</iconImage>
+	<weaponArt>artillery_fed</weaponArt>
+</weaponBlueprint>
+
+
+
+<weaponBlueprint name="MATH_SHOTGUN_TOGGLE_ADDER">
+	<type>BURST</type>
+	<flavorType>Toggling Weapon</flavorType>
+	<drone_targetable>1</drone_targetable>
+	<title>Toggle Math Flak [Adder]</title>
+	<short>Toggle [A]</short>
+	<tip>tip_flak</tip>
+	<desc>[Current Mode: Adder] A special Flak weapon which can switch between three modes.</desc>
+	<tooltip>Fires a blast of debris across a random area doing up to 12 damage.</tooltip>
+	<radius>70</radius>
+	<damage>1</damage>
+	<spin>0</spin>
+	<shots>1</shots>
+	<sp>0</sp>
+	<fireChance>0</fireChance>
+	<breachChance>2</breachChance>
+	<stunChance>2</stunChance>
+	<cooldown>21</cooldown>
+	<power>4</power>
+	<cost>100</cost>
+	<bp>10</bp>
+	<speed>26</speed>
+	<rarity>0</rarity>
+	<projectiles>
+		<projectile count="5" fake="false">laser_hull</projectile>
+		<projectile count="7" fake="false">laser_stun</projectile>
+		<projectile count="6" fake="true">laser_bio</projectile>
+	</projectiles>
+	<launchSounds>
+		<sound>flak</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>flakImpact1</sound>
+		<sound>flakImpact2</sound>
+		<sound>flakImpact3</sound>
+		<sound>flakImpact4</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>hitShield1</sound>
+		<sound>hitShield2</sound>
+		<sound>hitShield3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>toggle_math_flak_adder</weaponArt> 
+	<iconImage>flak</iconImage>
+</weaponBlueprint>
+
+
+<weaponBlueprint name="MATH_SHOTGUN_TOGGLE_GREATER_THAN">
+	<type>BURST</type>
+	<flavorType>Toggling Weapon</flavorType>
+	<drone_targetable>1</drone_targetable>
+	<title>Toggle Math Flak [Greater Than]</title>
+	<short>Toggle [GT]</short>
+	<tip>tip_flak</tip>
+	<desc>[Current Mode: Greater Than] A special Flak weapon which can switch between three modes.</desc>
+	<tooltip>Fires a blast of disruptive projectiles across a random area, causing major damage to enemy shields and systems, as well as debuffing enemy crew.</tooltip>
+	<radius>52</radius>
+	<damage>0</damage>
+	<ion>1</ion>
+	<sysDamage>1</sysDamage>
+	<persDamage>1</persDamage>
+	<spin>0</spin>
+	<shots>1</shots>
+	<sp>0</sp>
+	<fireChance>5</fireChance>
+	<breachChance>10</breachChance>
+	<cooldown>20</cooldown>
+	<stun>5</stun>
+	<power>4</power>
+	<cost>100</cost>
+	
+	<statBoosts>
+		<statBoost name="moveSpeedMultiplier">
+			<boostType>MULT</boostType>
+			<amount>0.33</amount>
+			<shipTarget>ALL</shipTarget>
+			<crewTarget>ALL</crewTarget>
+			<affectsSelf>true</affectsSelf>
+			<maxStacks>1</maxStacks>
+			<duration>10</duration>
+			<boostAnim>bio_poison</boostAnim>
+		</statBoost>
+		<statBoost name="stunMultiplier">
+			<boostType>MULT</boostType>
+			<amount>1.75</amount>
+			<shipTarget>ALL</shipTarget>
+			<crewTarget>ALL</crewTarget>
+			<affectsSelf>true</affectsSelf>
+			<maxStacks>1</maxStacks>
+			<duration>10</duration>
+		</statBoost>
+		<statBoost name="repairSpeed">
+			<boostType>MULT</boostType>
+			<amount>0.33</amount>
+			<shipTarget>ALL</shipTarget>
+			<crewTarget>ALL</crewTarget>
+			<affectsSelf>true</affectsSelf>
+			<maxStacks>1</maxStacks>
+			<duration>10</duration>
+		</statBoost>
+	</statBoosts>
+	
+	<bp>10</bp>
+	<speed>26</speed>
+	<rarity>0</rarity>
+	<projectiles>
+		<projectile count="5" fake="false">missile_cloak_burst</projectile>
+		<projectile count="3" fake="true">laser_bio</projectile>
+	</projectiles>
+	<launchSounds>
+		<sound>flak</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>flakImpact1</sound>
+		<sound>flakImpact2</sound>
+		<sound>flakImpact3</sound>
+		<sound>flakImpact4</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>hitShield1</sound>
+		<sound>hitShield2</sound>
+		<sound>hitShield3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>toggle_math_flak_greater_than</weaponArt> 
+	<iconImage>flak</iconImage>
+</weaponBlueprint>
+
+<weaponBlueprint name="MATH_SHOTGUN_TOGGLE_MULTIPLIER">
+	<type>BURST</type>
+	<flavorType>Toggling Weapon</flavorType>
+	<drone_targetable>1</drone_targetable>
+	<title>Toggle Math Flak [Multiplier]</title>
+	<short>Toggle [M]</short>
+	<tip>tip_flak</tip>
+	<desc>[Current Mode: Multiplier] A special Flak weapon which can switch between three modes.</desc>
+	<tooltip>Fires a blast of debris across a random area doing up to 7 damage.</tooltip>
+	<radius>52</radius>
+	<damage>1</damage>
+	<spin>720</spin>
+	<shots>1</shots>
+	<sp>0</sp>
+	<fireChance>0</fireChance>
+	<breachChance>2</breachChance>
+	<stunChance>2</stunChance>
+	<cooldown>20</cooldown>
+	<power>4</power>
+	<cost>100</cost>
+	<bp>10</bp>
+	<speed>26</speed>
+	<rarity>0</rarity>
+	<projectiles>
+		<projectile count="7" fake="false">debris_large</projectile>
+		<projectile count="5" fake="true">debris_small</projectile>
+	</projectiles>
+	<boost>
+		<type>cooldown</type>
+		<amount>4</amount>
+		<count>3</count>
+	</boost>
+	<launchSounds>
+		<sound>flak</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>flakImpact1</sound>
+		<sound>flakImpact2</sound>
+		<sound>flakImpact3</sound>
+		<sound>flakImpact4</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>hitShield1</sound>
+		<sound>hitShield2</sound>
+		<sound>hitShield3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>toggle_math_flak_multiplier</weaponArt> 
+	<iconImage>flak</iconImage>
+</weaponBlueprint>
+
+
+
+<!--Math Obelisk Crew Blueprints-->
+
+<crewBlueprint name="obelisk_math_add">
+	<title>Calcon Adder</title>
+	<short>Calcon Adder</short>
+	<desc>A strange race of machines with an uncanny affinity for numbers and specialization. This one is extremely durable.</desc>
+	<cost>70</cost>
+	<bp>2</bp>
+	<rarity>0</rarity>
+	<powerList>
+		<power>Max Health is increased to 300</power>
+		<power>0.75x combat damage and repair speed</power>
+		<power>0.5x movement speed, stun, and fire damage taken</power>
+		<power>Cannot suffocate, resists mind control</power>
+	</powerList>
+</crewBlueprint>
+
+<crewBlueprint name="obelisk_math_subtract">
+	<title>Calcon Subtractor</title>
+	<short>Calcon Subtractor</short>
+	<desc>A strange race of machines with an uncanny affinity for numbers and specialization. This one seems to excel at combat.</desc>
+	<cost>70</cost>
+	<bp>2</bp>
+	<rarity>0</rarity>
+	<powerList>
+		<power>Max Health is decreased to 75</power>
+		<power>0.5x fire damage taken, cannot suffocate</power>
+		<power>0.5x repair speed, 3x combat damage and movement speed</power>
+		<power>2x ranged combat damage multiplier</power>
+	</powerList>
+</crewBlueprint>
+
+<crewBlueprint name="obelisk_math_multiply">
+	<title>Calcon Multiplier</title>
+	<short>Calcon Multiplier</short>
+	<desc>A strange race of machines with an uncanny affinity for numbers and specialization. This one seems to be very good at repair and ship maintenance.</desc>
+	<cost>70</cost>
+	<bp>2</bp>
+	<rarity>0</rarity>
+	<powerList>
+		<power>Max Health is increased to 125</power>
+		<power>3x repair speed, cannot fight or sabotage</power>
+		<power>0.75x movement speed, cannot burn or suffocate</power>
+	</powerList>
+</crewBlueprint>
+
+<crewBlueprint name="obelisk_math_divide">
+	<title>Calcon Divider</title>
+	<short>Calcon Divider</short>
+	<desc>A strange race of machines with an uncanny affinity for numbers and specialization. This one seems to be proficient in debuffing the enemy and causing chaos aboard their ship.</desc>
+	<cost>70</cost>
+	<bp>2</bp>
+	<rarity>0</rarity>
+	<powerList>
+		<power>0.5x fire damage taken, cannot suffocate</power>
+		<power>Cannot fight, sabotages at 3x speed</power>
+		<power>Moves at 1.5x speed, breaks doors rapidly.</power>
+		<power>Enemy crew in the same room lose 15% of their Max Health and move 25% slower</power>
+		<power>Sees adjacent rooms, NOT immune to mind control.</power>
+	</powerList>
+</crewBlueprint>

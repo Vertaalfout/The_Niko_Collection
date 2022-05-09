@@ -1,0 +1,569 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<FTL>
+
+
+<!-- Weapons -->
+<animSheet name="phaser_fire" w="360" h="67" fw="36" fh="67">weapon_ion/phaser_fire.png</animSheet>
+<weaponAnim name="phaser_fire">
+	<sheet>phaser_fire</sheet>
+	<desc length="10" x="0" y="0"/>
+	<chargedFrame>1</chargedFrame>
+	<fireFrame>2</fireFrame>
+	<firePoint  x="69" y="5"/>
+	<mountPoint x="4" y="46"/>
+	<chargeImage>weapon_ion/phaser_fire_glow.png</chargeImage>
+</weaponAnim>
+
+
+
+<animSheet name="toggle_math_flak_adder" w="1072" h="79" fw="67" fh="79">weapon_math/toggle_math_flak_adder.png</animSheet>
+<weaponAnim name="toggle_math_flak_adder">
+	<sheet>toggle_math_flak_adder</sheet>
+	<desc length="16" x="0" y="0"/>
+	<chargedFrame>1</chargedFrame>
+	<fireFrame>8</fireFrame>
+	<firePoint  x="31" y="20"/>
+	<mountPoint x="6" y="51"/>
+	<chargeImage>weapon_math/toggle_math_flak_adder_glow.png</chargeImage>
+</weaponAnim>
+<animSheet name="toggle_math_flak_greater_than" w="1072" h="79" fw="67" fh="79">weapon_math/toggle_math_flak_greater_than.png</animSheet>
+<weaponAnim name="toggle_math_flak_greater_than">
+	<sheet>toggle_math_flak_greater_than</sheet>
+	<desc length="16" x="0" y="0"/>
+	<chargedFrame>1</chargedFrame>
+	<fireFrame>8</fireFrame>
+	<firePoint  x="31" y="20"/>
+	<mountPoint x="6" y="51"/>
+	<chargeImage>weapon_math/toggle_math_flak_greater_than_glow.png</chargeImage>
+</weaponAnim>
+<animSheet name="toggle_math_flak_multiplier" w="1072" h="79" fw="67" fh="79">weapon_math/toggle_math_flak_multiplier.png</animSheet>
+<weaponAnim name="toggle_math_flak_multiplier">
+	<sheet>toggle_math_flak_multiplier</sheet>
+	<desc length="16" x="0" y="0"/>
+	<chargedFrame>1</chargedFrame>
+	<fireFrame>8</fireFrame>
+	<firePoint  x="31" y="20"/>
+	<mountPoint x="6" y="51"/>
+	<chargeImage>weapon_math/toggle_math_flak_multiplier_glow.png</chargeImage>
+</weaponAnim>
+
+
+
+</FTL>
+
+<FTL>
+<!--Room Animations-->
+<animSheet name="tnc_room_artillery_fire_1" w="105" h="35" fw="105" fh="35">ship/interior/tnc_room_artillery_fire_1.png</animSheet>
+<anim name="tnc_room_artillery_fire_1">
+	<sheet>tnc_room_artillery_fire_1</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1</time>
+</anim>
+
+<animSheet name="tnc_room_artillery_fire_2" w="105" h="35" fw="105" fh="35">ship/interior/tnc_room_artillery_fire_2.png</animSheet>
+<anim name="tnc_room_artillery_fire_2">
+	<sheet>tnc_room_artillery_fire_2</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1</time>
+</anim>
+
+</FTL>
+
+<FTL>
+<!--Crew Animations-->
+<animSheet name="obelisk_math_add" w="560" h="455" fw="35" fh="35">people/obelisk_math_add_base.png</animSheet>
+<anim name="obelisk_math_add_clone">
+	<sheet>obelisk_math_add</sheet>
+	<desc length="6" x="0" y="2" />
+	<time>0.75</time>
+</anim>
+<anim name="obelisk_math_add_death_right">
+	<sheet>obelisk_math_add</sheet>
+	<desc length="14" x="2" y="0" />
+	<time>2</time>
+</anim>
+<anim name="obelisk_math_add_death_left">
+	<sheet>obelisk_math_add</sheet>
+	<desc length="14" x="0" y="2" />
+	<time>0.75</time>
+</anim>
+<anim name="obelisk_math_add_walk_down">
+	<sheet>obelisk_math_add</sheet>
+	<desc length="8" x="0" y="12" />
+	<time>1.0</time>
+</anim>
+<anim name="obelisk_math_add_walk_right">
+	<sheet>obelisk_math_add</sheet>
+	<desc length="8" x="8" y="12" />
+	<time>1.0</time>
+</anim>
+<anim name="obelisk_math_add_walk_up">
+	<sheet>obelisk_math_add</sheet>
+	<desc length="8" x="0" y="11" />
+	<time>1.0</time>
+</anim>
+<anim name="obelisk_math_add_walk_left">
+	<sheet>obelisk_math_add</sheet>
+	<desc length="8" x="8" y="11" />
+	<time>1.0</time>
+</anim>
+<anim name="obelisk_math_add_shoot_down">
+	<sheet>obelisk_math_add</sheet>
+	<desc length="3" x="0" y="10" />
+	<time>1.0</time>
+</anim>
+<anim name="obelisk_math_add_shoot_right">
+	<sheet>obelisk_math_add</sheet>
+	<desc length="3" x="3" y="10" />
+	<time>1.0</time>
+</anim>
+<anim name="obelisk_math_add_shoot_up">
+	<sheet>obelisk_math_add</sheet>
+	<desc length="3" x="6" y="10" />
+	<time>1.0</time>
+</anim>
+<anim name="obelisk_math_add_shoot_left">
+	<sheet>obelisk_math_add</sheet>
+	<desc length="3" x="0" y="1" />
+	<time>1.0</time>
+</anim>
+<anim name="obelisk_math_add_fire_down">
+	<sheet>obelisk_math_add</sheet>
+	<desc length="8" x="0" y="9" />
+	<time>1.0</time>
+</anim>
+<anim name="obelisk_math_add_fire_right">
+	<sheet>obelisk_math_add</sheet>
+	<desc length="8" x="8" y="9" />
+	<time>1.0</time>
+</anim>
+<anim name="obelisk_math_add_fire_up">
+	<sheet>obelisk_math_add</sheet>
+	<desc length="8" x="0" y="8" />
+	<time>1.0</time>
+</anim>
+<anim name="obelisk_math_add_fire_left">
+	<sheet>obelisk_math_add</sheet>
+	<desc length="8" x="8" y="8" />
+	<time>1.0</time>
+</anim>
+<anim name="obelisk_math_add_repair">
+	<sheet>obelisk_math_add</sheet>
+	<desc length="16" x="0" y="7" />
+	<time>1.75</time>
+</anim>
+<anim name="obelisk_math_add_punch_up">
+	<sheet>obelisk_math_add</sheet>
+	<desc length="12" x="3" y="1" />
+	<time>1.5</time>
+</anim>
+<anim name="obelisk_math_add_punch_down">
+	<sheet>obelisk_math_add</sheet>
+	<desc length="12" x="3" y="6" />
+	<time>1.5</time>
+</anim>
+<anim name="obelisk_math_add_teleport">
+	<sheet>obelisk_math_add</sheet>
+	<desc length="16" x="0" y="3" />
+	<time>0.5</time>
+</anim>
+<anim name="obelisk_math_add_type_right">
+	<sheet>obelisk_math_add</sheet>
+	<desc length="8" x="0" y="5" />
+	<time>2.0</time>
+</anim>
+<anim name="obelisk_math_add_type_left">
+	<sheet>obelisk_math_add</sheet>
+	<desc length="8" x="8" y="5" />
+	<time>2.0</time>
+</anim>
+<anim name="obelisk_math_add_type_up">
+	<sheet>obelisk_math_add</sheet>
+	<desc length="8" x="0" y="4" />
+	<time>2.0</time>
+</anim>
+<anim name="obelisk_math_add_type_down">
+	<sheet>obelisk_math_add</sheet>
+	<desc length="8" x="8" y="4" />
+	<time>2.0</time>
+</anim>
+<anim name="obelisk_math_add_portrait">
+	<sheet>obelisk_math_add</sheet>
+	<desc length="1" x="0" y="0" />
+	<time>1</time>
+</anim>
+
+
+
+<animSheet name="obelisk_math_subtract" w="560" h="455" fw="35" fh="35">people/obelisk_math_subtract_base.png</animSheet>
+<anim name="obelisk_math_subtract_clone">
+	<sheet>obelisk_math_subtract</sheet>
+	<desc length="6" x="0" y="2" />
+	<time>0.75</time>
+</anim>
+<anim name="obelisk_math_subtract_death_right">
+	<sheet>obelisk_math_subtract</sheet>
+	<desc length="14" x="2" y="0" />
+	<time>2</time>
+</anim>
+<anim name="obelisk_math_subtract_death_left">
+	<sheet>obelisk_math_subtract</sheet>
+	<desc length="14" x="0" y="2" />
+	<time>0.75</time>
+</anim>
+<anim name="obelisk_math_subtract_walk_down">
+	<sheet>obelisk_math_subtract</sheet>
+	<desc length="8" x="0" y="12" />
+	<time>1.0</time>
+</anim>
+<anim name="obelisk_math_subtract_walk_right">
+	<sheet>obelisk_math_subtract</sheet>
+	<desc length="8" x="8" y="12" />
+	<time>1.0</time>
+</anim>
+<anim name="obelisk_math_subtract_walk_up">
+	<sheet>obelisk_math_subtract</sheet>
+	<desc length="8" x="0" y="11" />
+	<time>1.0</time>
+</anim>
+<anim name="obelisk_math_subtract_walk_left">
+	<sheet>obelisk_math_subtract</sheet>
+	<desc length="8" x="8" y="11" />
+	<time>1.0</time>
+</anim>
+<anim name="obelisk_math_subtract_shoot_down">
+	<sheet>obelisk_math_subtract</sheet>
+	<desc length="3" x="0" y="10" />
+	<time>1.0</time>
+</anim>
+<anim name="obelisk_math_subtract_shoot_right">
+	<sheet>obelisk_math_subtract</sheet>
+	<desc length="3" x="3" y="10" />
+	<time>1.0</time>
+</anim>
+<anim name="obelisk_math_subtract_shoot_up">
+	<sheet>obelisk_math_subtract</sheet>
+	<desc length="3" x="6" y="10" />
+	<time>1.0</time>
+</anim>
+<anim name="obelisk_math_subtract_shoot_left">
+	<sheet>obelisk_math_subtract</sheet>
+	<desc length="3" x="0" y="1" />
+	<time>1.0</time>
+</anim>
+<anim name="obelisk_math_subtract_fire_down">
+	<sheet>obelisk_math_subtract</sheet>
+	<desc length="8" x="0" y="9" />
+	<time>1.0</time>
+</anim>
+<anim name="obelisk_math_subtract_fire_right">
+	<sheet>obelisk_math_subtract</sheet>
+	<desc length="8" x="8" y="9" />
+	<time>1.0</time>
+</anim>
+<anim name="obelisk_math_subtract_fire_up">
+	<sheet>obelisk_math_subtract</sheet>
+	<desc length="8" x="0" y="8" />
+	<time>1.0</time>
+</anim>
+<anim name="obelisk_math_subtract_fire_left">
+	<sheet>obelisk_math_subtract</sheet>
+	<desc length="8" x="8" y="8" />
+	<time>1.0</time>
+</anim>
+<anim name="obelisk_math_subtract_repair">
+	<sheet>obelisk_math_subtract</sheet>
+	<desc length="16" x="0" y="7" />
+	<time>1.75</time>
+</anim>
+<anim name="obelisk_math_subtract_punch_up">
+	<sheet>obelisk_math_subtract</sheet>
+	<desc length="12" x="3" y="1" />
+	<time>1.5</time>
+</anim>
+<anim name="obelisk_math_subtract_punch_down">
+	<sheet>obelisk_math_subtract</sheet>
+	<desc length="12" x="3" y="6" />
+	<time>1.5</time>
+</anim>
+<anim name="obelisk_math_subtract_teleport">
+	<sheet>obelisk_math_subtract</sheet>
+	<desc length="16" x="0" y="3" />
+	<time>0.5</time>
+</anim>
+<anim name="obelisk_math_subtract_type_right">
+	<sheet>obelisk_math_subtract</sheet>
+	<desc length="8" x="0" y="5" />
+	<time>2.0</time>
+</anim>
+<anim name="obelisk_math_subtract_type_left">
+	<sheet>obelisk_math_subtract</sheet>
+	<desc length="8" x="8" y="5" />
+	<time>2.0</time>
+</anim>
+<anim name="obelisk_math_subtract_type_up">
+	<sheet>obelisk_math_subtract</sheet>
+	<desc length="8" x="0" y="4" />
+	<time>2.0</time>
+</anim>
+<anim name="obelisk_math_subtract_type_down">
+	<sheet>obelisk_math_subtract</sheet>
+	<desc length="8" x="8" y="4" />
+	<time>2.0</time>
+</anim>
+<anim name="obelisk_math_subtract_portrait">
+	<sheet>obelisk_math_subtract</sheet>
+	<desc length="1" x="0" y="0" />
+	<time>1</time>
+</anim>
+
+
+
+<animSheet name="obelisk_math_multiply" w="560" h="455" fw="35" fh="35">people/obelisk_math_multiply_base.png</animSheet>
+<anim name="obelisk_math_multiply_clone">
+	<sheet>obelisk_math_multiply</sheet>
+	<desc length="6" x="0" y="2" />
+	<time>0.75</time>
+</anim>
+<anim name="obelisk_math_multiply_death_right">
+	<sheet>obelisk_math_multiply</sheet>
+	<desc length="14" x="2" y="0" />
+	<time>2</time>
+</anim>
+<anim name="obelisk_math_multiply_death_left">
+	<sheet>obelisk_math_multiply</sheet>
+	<desc length="14" x="0" y="2" />
+	<time>0.75</time>
+</anim>
+<anim name="obelisk_math_multiply_walk_down">
+	<sheet>obelisk_math_multiply</sheet>
+	<desc length="8" x="0" y="12" />
+	<time>1.0</time>
+</anim>
+<anim name="obelisk_math_multiply_walk_right">
+	<sheet>obelisk_math_multiply</sheet>
+	<desc length="8" x="8" y="12" />
+	<time>1.0</time>
+</anim>
+<anim name="obelisk_math_multiply_walk_up">
+	<sheet>obelisk_math_multiply</sheet>
+	<desc length="8" x="0" y="11" />
+	<time>1.0</time>
+</anim>
+<anim name="obelisk_math_multiply_walk_left">
+	<sheet>obelisk_math_multiply</sheet>
+	<desc length="8" x="8" y="11" />
+	<time>1.0</time>
+</anim>
+<anim name="obelisk_math_multiply_shoot_down">
+	<sheet>obelisk_math_multiply</sheet>
+	<desc length="3" x="0" y="10" />
+	<time>1.0</time>
+</anim>
+<anim name="obelisk_math_multiply_shoot_right">
+	<sheet>obelisk_math_multiply</sheet>
+	<desc length="3" x="3" y="10" />
+	<time>1.0</time>
+</anim>
+<anim name="obelisk_math_multiply_shoot_up">
+	<sheet>obelisk_math_multiply</sheet>
+	<desc length="3" x="6" y="10" />
+	<time>1.0</time>
+</anim>
+<anim name="obelisk_math_multiply_shoot_left">
+	<sheet>obelisk_math_multiply</sheet>
+	<desc length="3" x="0" y="1" />
+	<time>1.0</time>
+</anim>
+<anim name="obelisk_math_multiply_fire_down">
+	<sheet>obelisk_math_multiply</sheet>
+	<desc length="8" x="0" y="9" />
+	<time>1.0</time>
+</anim>
+<anim name="obelisk_math_multiply_fire_right">
+	<sheet>obelisk_math_multiply</sheet>
+	<desc length="8" x="8" y="9" />
+	<time>1.0</time>
+</anim>
+<anim name="obelisk_math_multiply_fire_up">
+	<sheet>obelisk_math_multiply</sheet>
+	<desc length="8" x="0" y="8" />
+	<time>1.0</time>
+</anim>
+<anim name="obelisk_math_multiply_fire_left">
+	<sheet>obelisk_math_multiply</sheet>
+	<desc length="8" x="8" y="8" />
+	<time>1.0</time>
+</anim>
+<anim name="obelisk_math_multiply_repair">
+	<sheet>obelisk_math_multiply</sheet>
+	<desc length="16" x="0" y="7" />
+	<time>1.75</time>
+</anim>
+<anim name="obelisk_math_multiply_punch_up">
+	<sheet>obelisk_math_multiply</sheet>
+	<desc length="12" x="3" y="1" />
+	<time>1.5</time>
+</anim>
+<anim name="obelisk_math_multiply_punch_down">
+	<sheet>obelisk_math_multiply</sheet>
+	<desc length="12" x="3" y="6" />
+	<time>1.5</time>
+</anim>
+<anim name="obelisk_math_multiply_teleport">
+	<sheet>obelisk_math_multiply</sheet>
+	<desc length="16" x="0" y="3" />
+	<time>0.5</time>
+</anim>
+<anim name="obelisk_math_multiply_type_right">
+	<sheet>obelisk_math_multiply</sheet>
+	<desc length="8" x="0" y="5" />
+	<time>2.0</time>
+</anim>
+<anim name="obelisk_math_multiply_type_left">
+	<sheet>obelisk_math_multiply</sheet>
+	<desc length="8" x="8" y="5" />
+	<time>2.0</time>
+</anim>
+<anim name="obelisk_math_multiply_type_up">
+	<sheet>obelisk_math_multiply</sheet>
+	<desc length="8" x="0" y="4" />
+	<time>2.0</time>
+</anim>
+<anim name="obelisk_math_multiply_type_down">
+	<sheet>obelisk_math_multiply</sheet>
+	<desc length="8" x="8" y="4" />
+	<time>2.0</time>
+</anim>
+<anim name="obelisk_math_multiply_portrait">
+	<sheet>obelisk_math_multiply</sheet>
+	<desc length="1" x="0" y="0" />
+	<time>1</time>
+</anim>
+
+
+
+<animSheet name="obelisk_math_divide" w="560" h="455" fw="35" fh="35">people/obelisk_math_divide_base.png</animSheet>
+<anim name="obelisk_math_divide_clone">
+	<sheet>obelisk_math_divide</sheet>
+	<desc length="6" x="0" y="2" />
+	<time>0.75</time>
+</anim>
+<anim name="obelisk_math_divide_death_right">
+	<sheet>obelisk_math_divide</sheet>
+	<desc length="14" x="2" y="0" />
+	<time>2</time>
+</anim>
+<anim name="obelisk_math_divide_death_left">
+	<sheet>obelisk_math_divide</sheet>
+	<desc length="14" x="0" y="2" />
+	<time>0.75</time>
+</anim>
+<anim name="obelisk_math_divide_walk_down">
+	<sheet>obelisk_math_divide</sheet>
+	<desc length="8" x="0" y="12" />
+	<time>1.0</time>
+</anim>
+<anim name="obelisk_math_divide_walk_right">
+	<sheet>obelisk_math_divide</sheet>
+	<desc length="8" x="8" y="12" />
+	<time>1.0</time>
+</anim>
+<anim name="obelisk_math_divide_walk_up">
+	<sheet>obelisk_math_divide</sheet>
+	<desc length="8" x="0" y="11" />
+	<time>1.0</time>
+</anim>
+<anim name="obelisk_math_divide_walk_left">
+	<sheet>obelisk_math_divide</sheet>
+	<desc length="8" x="8" y="11" />
+	<time>1.0</time>
+</anim>
+<anim name="obelisk_math_divide_shoot_down">
+	<sheet>obelisk_math_divide</sheet>
+	<desc length="3" x="0" y="10" />
+	<time>1.0</time>
+</anim>
+<anim name="obelisk_math_divide_shoot_right">
+	<sheet>obelisk_math_divide</sheet>
+	<desc length="3" x="3" y="10" />
+	<time>1.0</time>
+</anim>
+<anim name="obelisk_math_divide_shoot_up">
+	<sheet>obelisk_math_divide</sheet>
+	<desc length="3" x="6" y="10" />
+	<time>1.0</time>
+</anim>
+<anim name="obelisk_math_divide_shoot_left">
+	<sheet>obelisk_math_divide</sheet>
+	<desc length="3" x="0" y="1" />
+	<time>1.0</time>
+</anim>
+<anim name="obelisk_math_divide_fire_down">
+	<sheet>obelisk_math_divide</sheet>
+	<desc length="8" x="0" y="9" />
+	<time>1.0</time>
+</anim>
+<anim name="obelisk_math_divide_fire_right">
+	<sheet>obelisk_math_divide</sheet>
+	<desc length="8" x="8" y="9" />
+	<time>1.0</time>
+</anim>
+<anim name="obelisk_math_divide_fire_up">
+	<sheet>obelisk_math_divide</sheet>
+	<desc length="8" x="0" y="8" />
+	<time>1.0</time>
+</anim>
+<anim name="obelisk_math_divide_fire_left">
+	<sheet>obelisk_math_divide</sheet>
+	<desc length="8" x="8" y="8" />
+	<time>1.0</time>
+</anim>
+<anim name="obelisk_math_divide_repair">
+	<sheet>obelisk_math_divide</sheet>
+	<desc length="16" x="0" y="7" />
+	<time>1.75</time>
+</anim>
+<anim name="obelisk_math_divide_punch_up">
+	<sheet>obelisk_math_divide</sheet>
+	<desc length="12" x="3" y="1" />
+	<time>1.5</time>
+</anim>
+<anim name="obelisk_math_divide_punch_down">
+	<sheet>obelisk_math_divide</sheet>
+	<desc length="12" x="3" y="6" />
+	<time>1.5</time>
+</anim>
+<anim name="obelisk_math_divide_teleport">
+	<sheet>obelisk_math_divide</sheet>
+	<desc length="16" x="0" y="3" />
+	<time>0.5</time>
+</anim>
+<anim name="obelisk_math_divide_type_right">
+	<sheet>obelisk_math_divide</sheet>
+	<desc length="8" x="0" y="5" />
+	<time>2.0</time>
+</anim>
+<anim name="obelisk_math_divide_type_left">
+	<sheet>obelisk_math_divide</sheet>
+	<desc length="8" x="8" y="5" />
+	<time>2.0</time>
+</anim>
+<anim name="obelisk_math_divide_type_up">
+	<sheet>obelisk_math_divide</sheet>
+	<desc length="8" x="0" y="4" />
+	<time>2.0</time>
+</anim>
+<anim name="obelisk_math_divide_type_down">
+	<sheet>obelisk_math_divide</sheet>
+	<desc length="8" x="8" y="4" />
+	<time>2.0</time>
+</anim>
+<anim name="obelisk_math_divide_portrait">
+	<sheet>obelisk_math_divide</sheet>
+	<desc length="1" x="0" y="0" />
+	<time>1</time>
+</anim>
+
+</FTL>
