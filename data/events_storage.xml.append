@@ -6,14 +6,14 @@
 		<event load="STORAGE_CHECK_PROM_VATS"/>
 	</mod-append:choice>
 	
-	<mod-append:choice req="TNC_CALLIE_DRIVE_HACKER">
+	<mod-append:choice req="DSN_CALLIE_DRIVE_HACKER">
 		<text>(Study Beacon) Arrange a study session.</text>
-		<event load="TNC_CALLIE_DRIVE_HACKER_QUEUE"/>
+		<event load="DSN_CALLIE_DRIVE_HACKER_QUEUE"/>
 	</mod-append:choice>
 	
 	<mod-append:choice req="HS_LIST_CALIIE_RELOADER">
 		<text>(Study Beacon) Use one of Callie's weapons to improve the numbers on your weapons. (gives +1% weapon speed, no limit on stacking)</text>
-		<event load="TNC_CALLIE_RELOADER"/>
+		<event load="DSN_CALLIE_RELOADER"/>
 	</mod-append:choice>
 
 	<mod-append:choice req="THICC_PUNCH_LIST">
@@ -262,79 +262,79 @@
 </event>
 
 <!--Code for Callie Drive Hacker events-->	
-<event name="TNC_CALLIE_DRIVE_HACKER_QUEUE">
+<event name="DSN_CALLIE_DRIVE_HACKER_QUEUE">
 	<loadEventList first="true">
-		<event load="STORAGE_CHECK_TNC_CALLIE_DRIVE_HACKER_11" req="tnc_callie_fight_counter" lvl="10"/>
-		<event load="STORAGE_CHECK_TNC_CALLIE_DRIVE_HACKER_10" req="tnc_callie_fight_counter" lvl="9" max_level="9"/>
-		<event load="STORAGE_CHECK_TNC_CALLIE_DRIVE_HACKER_9" req="tnc_callie_fight_counter" lvl="8" max_level="8"/>
-		<event load="STORAGE_CHECK_TNC_CALLIE_DRIVE_HACKER_8" req="tnc_callie_fight_counter" lvl="7" max_level="7"/>
-		<event load="STORAGE_CHECK_TNC_CALLIE_DRIVE_HACKER_7" req="tnc_callie_fight_counter" lvl="6" max_level="6"/>
-		<event load="STORAGE_CHECK_TNC_CALLIE_DRIVE_HACKER_6" req="tnc_callie_fight_counter" lvl="5" max_level="5"/>
-		<event load="STORAGE_CHECK_TNC_CALLIE_DRIVE_HACKER_5" req="tnc_callie_fight_counter" lvl="4" max_level="4"/>
-		<event load="STORAGE_CHECK_TNC_CALLIE_DRIVE_HACKER_4" req="tnc_callie_fight_counter" lvl="3" max_level="3"/>
-		<event load="STORAGE_CHECK_TNC_CALLIE_DRIVE_HACKER_3" req="tnc_callie_fight_counter" lvl="2" max_level="2"/>
-		<event load="STORAGE_CHECK_TNC_CALLIE_DRIVE_HACKER_2" req="tnc_callie_fight_counter" lvl="1" max_level="1"/>
-		<event load="STORAGE_CHECK_TNC_CALLIE_DRIVE_HACKER_1" req="tnc_callie_fight_counter" lvl="0"/>
+		<event load="STORAGE_CHECK_DSN_CALLIE_DRIVE_HACKER_11" req="DSN_callie_fight_counter" lvl="10"/>
+		<event load="STORAGE_CHECK_DSN_CALLIE_DRIVE_HACKER_10" req="DSN_callie_fight_counter" lvl="9" max_level="9"/>
+		<event load="STORAGE_CHECK_DSN_CALLIE_DRIVE_HACKER_9" req="DSN_callie_fight_counter" lvl="8" max_level="8"/>
+		<event load="STORAGE_CHECK_DSN_CALLIE_DRIVE_HACKER_8" req="DSN_callie_fight_counter" lvl="7" max_level="7"/>
+		<event load="STORAGE_CHECK_DSN_CALLIE_DRIVE_HACKER_7" req="DSN_callie_fight_counter" lvl="6" max_level="6"/>
+		<event load="STORAGE_CHECK_DSN_CALLIE_DRIVE_HACKER_6" req="DSN_callie_fight_counter" lvl="5" max_level="5"/>
+		<event load="STORAGE_CHECK_DSN_CALLIE_DRIVE_HACKER_5" req="DSN_callie_fight_counter" lvl="4" max_level="4"/>
+		<event load="STORAGE_CHECK_DSN_CALLIE_DRIVE_HACKER_4" req="DSN_callie_fight_counter" lvl="3" max_level="3"/>
+		<event load="STORAGE_CHECK_DSN_CALLIE_DRIVE_HACKER_3" req="DSN_callie_fight_counter" lvl="2" max_level="2"/>
+		<event load="STORAGE_CHECK_DSN_CALLIE_DRIVE_HACKER_2" req="DSN_callie_fight_counter" lvl="1" max_level="1"/>
+		<event load="STORAGE_CHECK_DSN_CALLIE_DRIVE_HACKER_1" req="DSN_callie_fight_counter" lvl="0"/>
 	</loadEventList>
 </event>
 
 
-<event name="STORAGE_CHECK_TNC_CALLIE_DRIVE_HACKER_1">
+<event name="STORAGE_CHECK_DSN_CALLIE_DRIVE_HACKER_1">
 	<text>You have no idea if this will really work, it’s less a piece of pristine tech and more just whatever bits of scrap and radio transmitters your mantis crew could stick together. Still, it transits a message throughout several universes. You press the button, and wait to see if your request for teaching will be answered.</text>
-	<quest event="TNC_CALLIE_QUEST_1"/>
+	<quest event="DSN_CALLIE_QUEST_1"/>
 </event>
 
-<event name="STORAGE_CHECK_TNC_CALLIE_DRIVE_HACKER_2">
+<event name="STORAGE_CHECK_DSN_CALLIE_DRIVE_HACKER_2">
 	<text>Your first lesson was ended a tad prematurely by Callie’s ship sadly blowing up, you tune the signal towards the communication waves Callie had responde on, if she was really multiversally known maybe there are other versions of her out there? Even with your admittedly slow brain, it does make enough sense to try!</text>
-	<quest event="TNC_CALLIE_QUEST_2"/>
+	<quest event="DSN_CALLIE_QUEST_2"/>
 </event>
 
-<event name="STORAGE_CHECK_TNC_CALLIE_DRIVE_HACKER_3">
+<event name="STORAGE_CHECK_DSN_CALLIE_DRIVE_HACKER_3">
 	<text>Callie’s lessons must be paying off! Your crew have stopped trying to chew into your reactor’s wiring, and are instead using the designated chewing wires! Sure, you might every once in a while hear sparking, but it’s better than your weapons going offline. You hit the button again, accepting the risk that she might kill you.</text>
-	<quest event="TNC_CALLIE_QUEST_3"/>
+	<quest event="DSN_CALLIE_QUEST_3"/>
 </event>
 
-<event name="STORAGE_CHECK_TNC_CALLIE_DRIVE_HACKER_4">
+<event name="STORAGE_CHECK_DSN_CALLIE_DRIVE_HACKER_4">
 	<text>It seems you are disappointing your teacher a tad, but every good teacher can forgive their student! You do feel a bit bad about destroying every body she sends after you, but you can’t learn if you’re dead! You’re pretty sure at least, well, unless you get cloned. Is that you though? Concluding you’re not yet smart enough to deal with those questions, you send out radio waves for Callie.</text>
-	<quest event="TNC_CALLIE_QUEST_4"/>
+	<quest event="DSN_CALLIE_QUEST_4"/>
 </event>
 
-<event name="STORAGE_CHECK_TNC_CALLIE_DRIVE_HACKER_5">
+<event name="STORAGE_CHECK_DSN_CALLIE_DRIVE_HACKER_5">
 	<text>Now, how will middle school math questions teach you things like how to pilot a ship or defeat the rebel fleet? You aren’t entirely sure, but that’s for the math to teach you! Sure, Callie is getting more and more thirsty for your blood, but you intend on keeping it all in your body! Throwing safety to the wind, you purposefully summon an AI that has shown murderous tendencies each time you met it.</text>
-	<quest event="TNC_CALLIE_QUEST_5"/>
+	<quest event="DSN_CALLIE_QUEST_5"/>
 </event>
 
-<event name="STORAGE_CHECK_TNC_CALLIE_DRIVE_HACKER_6">
+<event name="STORAGE_CHECK_DSN_CALLIE_DRIVE_HACKER_6">
 	<text>You call out for one of your crew to tell you how many times you’ve summoned Callie, it takes them a long time, every agonizing second dragging on as they mutter out every 1+1 they do, but eventually they come on the answer of 11,111, and with a sigh you hit the button for Callie once more, hoping they’ll learn by your example of answering her questions.</text>
-	<quest event="TNC_CALLIE_QUEST_6"/>
+	<quest event="DSN_CALLIE_QUEST_6"/>
 </event>
 
-<event name="STORAGE_CHECK_TNC_CALLIE_DRIVE_HACKER_7">
+<event name="STORAGE_CHECK_DSN_CALLIE_DRIVE_HACKER_7">
 	<text>So Callie is running out of patience with you? Well, that’s not an issue at all! You’ll just have to be patient with her, wait until she stops trying to kill you and you can sit down and finally ask her some of your most burning questions. Like how do you teach people who’s only math question is what one tastes like? Honestly, that one had  you stumped for a bit… It still has you stumped, so you send a summons for Callie again, knowing you won’t find an answer, but at least the thrill of combat will distract you!</text>
-	<quest event="TNC_CALLIE_QUEST_7"/>
+	<quest event="DSN_CALLIE_QUEST_7"/>
 </event>
 
-<event name="STORAGE_CHECK_TNC_CALLIE_DRIVE_HACKER_8">
+<event name="STORAGE_CHECK_DSN_CALLIE_DRIVE_HACKER_8">
 	<text>Where is Callie even procuring half of this equipment? She seems to be a glitchy mess who always has a corrupted question, but she has weaponry that would rival the finest of rebel and federation technology. You ask your crew, but the only theories you receive is that math is simply that powerful. You would argue against them, but you’re pretty sure if you did their small minds would explode. You hit the button for Callie again, wondering if she’ll come equipped with the same power as before.</text>
-	<quest event="TNC_CALLIE_QUEST_8"/>
+	<quest event="DSN_CALLIE_QUEST_8"/>
 </event>
 
-<event name="STORAGE_CHECK_TNC_CALLIE_DRIVE_HACKER_9">
+<event name="STORAGE_CHECK_DSN_CALLIE_DRIVE_HACKER_9">
 	<text>It seems the robot isn’t the best at math either, considering it still considers answering your calls for a teacher despite the losses it receives each time. Though you still summon it despite the fact that some of your crew have only ever completed the calculation of 2+1 once. They didn’t get it right, just completed it. With a heavy heart and a sigh, you summon Callie again.</text>
-	<quest event="TNC_CALLIE_QUEST_9"/>
+	<quest event="DSN_CALLIE_QUEST_9"/>
 </event>
 
-<event name="STORAGE_CHECK_TNC_CALLIE_DRIVE_HACKER_10">
+<event name="STORAGE_CHECK_DSN_CALLIE_DRIVE_HACKER_10">
 	<text>Callie is tired of you, and by now it's obvious your crew haven’t learned a single thing. Still, you keep receiving fire power, and you can convince your crew it's a great idea to fight this autoship each time, after all they’re learning! Plus you’re looting what’s left every time.</text>
-	<quest event="TNC_CALLIE_QUEST_10"/>
+	<quest event="DSN_CALLIE_QUEST_10"/>
 </event>
 
-<event name="STORAGE_CHECK_TNC_CALLIE_DRIVE_HACKER_11">
+<event name="STORAGE_CHECK_DSN_CALLIE_DRIVE_HACKER_11">
 	<text>You’ll never get a smart crew, and Callie won’t ever have a star pupil. You still summon her regardless, because you like her weapons.</text>
-	<quest event="TNC_CALLIE_QUEST_11"/>
+	<quest event="DSN_CALLIE_QUEST_11"/>
 </event>
 
-<event name="TNC_CALLIE_QUEST_1">
+<event name="DSN_CALLIE_QUEST_1">
 	<beaconType text="STUDY SESSION" global="true">
 		<color r="153" g="255" b="31" a="1.0"/>
 		<unvisitedTooltip>You have a study session planned here.</unvisitedTooltip>
@@ -343,7 +343,7 @@
 	</beaconType>
 	<text>"You called for a teacher and here I am! Callie, the Multiverse-renowned math tutor, here to solve all of your knowledge needs! First off, let’s get a good gauge for your skill! These questions are all pretty easy so don’t get a single one wrong! What is 1+4?"</text>
 	<metaVariable name="prof_callie_encounters" op="add" val="1"/>
-	<ship load="TNC_SHIP_MATH_AUTO" hostile="false"/>
+	<ship load="DSN_SHIP_MATH_AUTO" hostile="false"/>
 	<choice hidden="true">
 		<text>5</text>
 		<event>
@@ -386,7 +386,7 @@
 	</choice>
 </event>
 
-<event name="TNC_CALLIE_QUEST_2">
+<event name="DSN_CALLIE_QUEST_2">
 	<beaconType text="STUDY SESSION" global="true">
 		<color r="153" g="255" b="31" a="1.0"/>
 		<unvisitedTooltip>You have a study session planned here.</unvisitedTooltip>
@@ -395,7 +395,7 @@
 	</beaconType>
 	<text>"Hello again my C- student! You seem to have trashed one of my other bodies, but what teacher hasn’t dealt with a rowdy student? You at least seem good at calculating your shot trajectory! Let’s see if you’ve gotten better at your basic math! What’s 6-1?"</text>
 	<metaVariable name="prof_callie_encounters" op="add" val="1"/>
-	<ship load="TNC_SHIP_MATH_AUTO" hostile="false"/>
+	<ship load="DSN_SHIP_MATH_AUTO" hostile="false"/>
 	<choice hidden="true">
 		<text>5</text>
 		<event>
@@ -438,7 +438,7 @@
 	</choice>
 </event>
 
-<event name="TNC_CALLIE_QUEST_3">
+<event name="DSN_CALLIE_QUEST_3">
 	<beaconType text="STUDY SESSION" global="true">
 		<color r="153" g="255" b="31" a="1.0"/>
 		<unvisitedTooltip>You have a study session planned here.</unvisitedTooltip>
@@ -447,7 +447,7 @@
 	</beaconType>
 	<text>"I might have to drop you from a C- to a F at this rate! You’re not exactly learning much if you keep breaking me! I assume you’re calling me in good faith though, after all who doesn’t want to answer questions and dodge projectiles? Though feel free to be hit by them, every student needs punishment for being wrong! What is the square root of 25?"</text>
 	<metaVariable name="prof_callie_encounters" op="add" val="1"/>
-	<ship load="TNC_SHIP_MATH_AUTO" hostile="false"/>
+	<ship load="DSN_SHIP_MATH_AUTO" hostile="false"/>
 	<choice hidden="true">
 		<text>5</text>
 		<event>
@@ -490,7 +490,7 @@
 	</choice>
 </event>
 
-<event name="TNC_CALLIE_QUEST_4">
+<event name="DSN_CALLIE_QUEST_4">
 	<beaconType text="STUDY SESSION" global="true">
 		<color r="153" g="255" b="31" a="1.0"/>
 		<unvisitedTooltip>You have a study session planned here.</unvisitedTooltip>
@@ -499,7 +499,7 @@
 	</beaconType>
 	<text>"You’re doing terrible! Remedial lessons are always helpful though, even if no matter how many times I ask you can never get them all right, you’ll have to learn eventually!  An infinite multiverse means infinite opportunities to teach you with high-powered weaponry! Of course, we could always hit the limit of your hull’s integrity! What is 14-9?"</text>
 	<metaVariable name="prof_callie_encounters" op="add" val="1"/>
-	<ship load="TNC_SHIP_MATH_AUTO" hostile="false"/>
+	<ship load="DSN_SHIP_MATH_AUTO" hostile="false"/>
 	<choice hidden="true">
 		<text>5</text>
 		<event>
@@ -542,7 +542,7 @@
 	</choice>
 </event>
 
-<event name="TNC_CALLIE_QUEST_5">
+<event name="DSN_CALLIE_QUEST_5">
 	<beaconType text="STUDY SESSION" global="true">
 		<color r="153" g="255" b="31" a="1.0"/>
 		<unvisitedTooltip>You have a study session planned here.</unvisitedTooltip>
@@ -551,7 +551,7 @@
 	</beaconType>
 	<text>"A harsher teacher would use their biggest weapons on a delinquent like you, but your favorite auto is nicer than that! Keep answering my questions, but please get a few more right! I don’t want to quit on a student, but it’s like you don’t even have a single brain in that ship! What is 100 divided by 20?"</text>
 	<metaVariable name="prof_callie_encounters" op="add" val="1"/>
-	<ship load="TNC_SHIP_MATH_AUTO" hostile="false"/>
+	<ship load="DSN_SHIP_MATH_AUTO" hostile="false"/>
 	<choice hidden="true">
 		<text>5</text>
 		<event>
@@ -594,7 +594,7 @@
 	</choice>
 </event>
 
-<event name="TNC_CALLIE_QUEST_6">
+<event name="DSN_CALLIE_QUEST_6">
 	<beaconType text="STUDY SESSION" global="true">
 		<color r="153" g="255" b="31" a="1.0"/>
 		<unvisitedTooltip>You have a study session planned here.</unvisitedTooltip>
@@ -603,7 +603,7 @@
 	</beaconType>
 	<text>"My patience value is rapidly dropping my most hated student! Out of all my charges you are the only one who proceeds with your wrong answers despite numerous attempts at discipline, I still believe in you though! Just try not to be an idiot this time! Surely you can tell me, what is 5x1?"</text>
 	<metaVariable name="prof_callie_encounters" op="add" val="1"/>
-	<ship load="TNC_SHIP_MATH_AUTO" hostile="false"/>
+	<ship load="DSN_SHIP_MATH_AUTO" hostile="false"/>
 	<choice hidden="true">
 		<text>5</text>
 		<event>
@@ -646,7 +646,7 @@
 	</choice>
 </event>
 
-<event name="TNC_CALLIE_QUEST_7">
+<event name="DSN_CALLIE_QUEST_7">
 	<beaconType text="STUDY SESSION" global="true">
 		<color r="153" g="255" b="31" a="1.0"/>
 		<unvisitedTooltip>You have a study session planned here.</unvisitedTooltip>
@@ -655,7 +655,7 @@
 	</beaconType>
 	<text>"You just can’t do this! It truly is shocking, statistically you should have answered my third question right twice by now! Even if you are truly just guessing! Though I supposed seeing how stupid you are you’re probably just answering however you want and stumbling on the right answer! Let’s see if a few more questions finally fix this, or we’ll have to add more holes to your hull! What is 2+3?"</text>
 	<metaVariable name="prof_callie_encounters" op="add" val="1"/>
-	<ship load="TNC_SHIP_MATH_AUTO" hostile="false"/>
+	<ship load="DSN_SHIP_MATH_AUTO" hostile="false"/>
 	<choice hidden="true">
 		<text>5</text>
 		<event>
@@ -698,7 +698,7 @@
 	</choice>
 </event>
 
-<event name="TNC_CALLIE_QUEST_8">
+<event name="DSN_CALLIE_QUEST_8">
 	<beaconType text="STUDY SESSION" global="true">
 		<color r="153" g="255" b="31" a="1.0"/>
 		<unvisitedTooltip>You have a study session planned here.</unvisitedTooltip>
@@ -707,7 +707,7 @@
 	</beaconType>
 	<text>"My patience value has officially hit 0! It is also now plummeting into the negatives, though I doubt you even know what those are! You most certainly know how to shred my ships though, thousands of ships are going untaught because of you, my stupidest student! Answer these now, or I’ll be forced to fire and fire until you learn! Can you figure out what 5+0 is?"</text>
 	<metaVariable name="prof_callie_encounters" op="add" val="1"/>
-	<ship load="TNC_SHIP_MATH_AUTO" hostile="false"/>
+	<ship load="DSN_SHIP_MATH_AUTO" hostile="false"/>
 	<choice hidden="true">
 		<text>5</text>
 		<event>
@@ -750,7 +750,7 @@
 	</choice>
 </event>
 
-<event name="TNC_CALLIE_QUEST_9">
+<event name="DSN_CALLIE_QUEST_9">
 	<beaconType text="STUDY SESSION" global="true">
 		<color r="153" g="255" b="31" a="1.0"/>
 		<unvisitedTooltip>You have a study session planned here.</unvisitedTooltip>
@@ -759,7 +759,7 @@
 	</beaconType>
 	<text>The autoship is silent for a long moment, but after a minute it opens communications. "I am truly disappointed in you! I don’t know what else to do with someone who just won’t listen, my questions don’t yield any change, my weapons don’t cause any reaction, you are the worst student I have ever dealt with! Answer these, if you’re smart enough to do more than grunt. What number comes after 4?"</text>
 	<metaVariable name="prof_callie_encounters" op="add" val="1"/>
-	<ship load="TNC_SHIP_MATH_AUTO" hostile="false"/>
+	<ship load="DSN_SHIP_MATH_AUTO" hostile="false"/>
 	<choice hidden="true">
 		<text>5</text>
 		<event>
@@ -802,7 +802,7 @@
 	</choice>
 </event>
 
-<event name="TNC_CALLIE_QUEST_10">
+<event name="DSN_CALLIE_QUEST_10">
 	<beaconType text="STUDY SESSION" global="true">
 		<color r="153" g="255" b="31" a="1.0"/>
 		<unvisitedTooltip>You have a study session planned here.</unvisitedTooltip>
@@ -816,7 +816,7 @@ The autoship rattles off a list of surprisingly long and specific expletives, in
 "I hope you can at least answer this one, [STUDENT NAME], because I’m just about done with you! What does ‘five’ look like as a number?"
 </text>
 	<metaVariable name="prof_callie_encounters" op="add" val="1"/>
-	<ship load="TNC_SHIP_MATH_AUTO" hostile="false"/>
+	<ship load="DSN_SHIP_MATH_AUTO" hostile="false"/>
 	<choice hidden="true">
 		<text>5</text>
 		<event>
@@ -859,7 +859,7 @@ The autoship rattles off a list of surprisingly long and specific expletives, in
 	</choice>
 </event>
 
-<event name="TNC_CALLIE_QUEST_11">
+<event name="DSN_CALLIE_QUEST_11">
 	<beaconType text="STUDY SESSION" global="true">
 		<color r="153" g="255" b="31" a="1.0"/>
 		<unvisitedTooltip>You have a study session planned here.</unvisitedTooltip>
@@ -870,7 +870,7 @@ The autoship rattles off a list of surprisingly long and specific expletives, in
 
 The autoship’s weapons hum to life without further elaboration.</text>
 	<metaVariable name="prof_callie_encounters" op="add" val="1"/>
-	<ship load="TNC_SHIP_MATH_AUTO" hostile="false"/>
+	<ship load="DSN_SHIP_MATH_AUTO" hostile="false"/>
 	<choice hidden="true">
 		<text>5</text>
 		<event>
@@ -913,10 +913,10 @@ The autoship’s weapons hum to life without further elaboration.</text>
 	</choice>
 </event>
 
-<ship name="TNC_SHIP_MATH_AUTO" auto_blueprint="MU_AUTO_MATH">
+<ship name="DSN_SHIP_MATH_AUTO" auto_blueprint="MU_AUTO_MATH">
 	<destroyed>
 	<loadEvent>CALLIE_DEAD</loadEvent>
-	<variable name="tnc_callie_fight_counter" op = "add" value = "1"/>
+	<variable name="DSN_callie_fight_counter" op = "add" value = "1"/>
 	 </destroyed>
 	<triggeredEvent event="CALLIE_PROBLEM" seeded="false" thisFight="true" clearOnJump="true" minTime="20.0" maxTime="20.0" loops="999"/>
 </ship>
@@ -924,15 +924,15 @@ The autoship’s weapons hum to life without further elaboration.</text>
 
 <!--Callie Weapon Redemption Events. Only the reloaders for now-->
 
-<event name="TNC_CALLIE_RELOADER">
+<event name="DSN_CALLIE_RELOADER">
 	<text>What would you like to do?</text>
 	<choice req="LOOT_MATH_1" hidden="true" blue="false">
 		<text>Melt down an 'Adder' to improve your weapon speed by 1%.</text>
 			<event>
 				<text>You melt down the 'Adder' to improve your weapon speed by 1%.</text>
 				<remove name="LOOT_MATH_1"/>
-				<variable name="tnc_callie_reloader_counter" op = "add" value = "1"/>
-				<hiddenAug>TNC_MATH_RELOADER</hiddenAug>
+				<variable name="DSN_callie_reloader_counter" op = "add" value = "1"/>
+				<hiddenAug>DSN_MATH_RELOADER</hiddenAug>
 					<choice>
 						<text>Continue.</text>
 						<event load="STORAGE_CHECK"/>
@@ -945,8 +945,8 @@ The autoship’s weapons hum to life without further elaboration.</text>
 			<event>
 				<text>You melt down the 'Subtracter' to improve your weapon speed by 1%.</text>
 				<remove name="LOOT_MATH_2"/>
-				<variable name="tnc_callie_reloader_counter" op = "add" value = "1"/>
-				<hiddenAug>TNC_MATH_RELOADER</hiddenAug>
+				<variable name="DSN_callie_reloader_counter" op = "add" value = "1"/>
+				<hiddenAug>DSN_MATH_RELOADER</hiddenAug>
 					<choice>
 						<text>Continue.</text>
 						<event load="STORAGE_CHECK"/>
@@ -959,8 +959,8 @@ The autoship’s weapons hum to life without further elaboration.</text>
 			<event>
 				<text>You melt down the 'Multiplier' to improve your weapon speed by 1%.</text>
 				<remove name="LOOT_MATH_3"/>
-				<variable name="tnc_callie_reloader_counter" op = "add" value = "1"/>
-				<hiddenAug>TNC_MATH_RELOADER</hiddenAug>
+				<variable name="DSN_callie_reloader_counter" op = "add" value = "1"/>
+				<hiddenAug>DSN_MATH_RELOADER</hiddenAug>
 					<choice>
 						<text>Continue.</text>
 						<event load="STORAGE_CHECK"/>
@@ -973,8 +973,8 @@ The autoship’s weapons hum to life without further elaboration.</text>
 			<event>
 				<text>You melt down the 'Divider' to improve your weapon speed by 1%.</text>
 				<remove name="LOOT_MATH_4"/>
-				<variable name="tnc_callie_reloader_counter" op = "add" value = "1"/>
-				<hiddenAug>TNC_MATH_RELOADER</hiddenAug>
+				<variable name="DSN_callie_reloader_counter" op = "add" value = "1"/>
+				<hiddenAug>DSN_MATH_RELOADER</hiddenAug>
 					<choice>
 						<text>Continue.</text>
 						<event load="STORAGE_CHECK"/>
@@ -987,8 +987,8 @@ The autoship’s weapons hum to life without further elaboration.</text>
 			<event>
 				<text>You melt down the 'Equalizer' to improve your weapon speed by 1%.</text>
 				<remove name="LOOT_MATH_5"/>
-				<variable name="tnc_callie_reloader_counter" op = "add" value = "1"/>
-				<hiddenAug>TNC_MATH_RELOADER</hiddenAug>
+				<variable name="DSN_callie_reloader_counter" op = "add" value = "1"/>
+				<hiddenAug>DSN_MATH_RELOADER</hiddenAug>
 					<choice>
 						<text>Continue.</text>
 						<event load="STORAGE_CHECK"/>
@@ -1001,8 +1001,8 @@ The autoship’s weapons hum to life without further elaboration.</text>
 			<event>
 				<text>You melt down the 'Percentage' to improve your weapon speed by 1%.</text>
 				<remove name="LOOT_MATH_6"/>
-				<variable name="tnc_callie_reloader_counter" op = "add" value = "1"/>
-				<hiddenAug>TNC_MATH_RELOADER</hiddenAug>
+				<variable name="DSN_callie_reloader_counter" op = "add" value = "1"/>
+				<hiddenAug>DSN_MATH_RELOADER</hiddenAug>
 					<choice>
 						<text>Continue.</text>
 						<event load="STORAGE_CHECK"/>
@@ -1015,8 +1015,8 @@ The autoship’s weapons hum to life without further elaboration.</text>
 			<event>
 				<text>You melt down the 'Greater Than' to improve your weapon speed by 1%.</text>
 				<remove name="LOOT_MATH_7"/>
-				<variable name="tnc_callie_reloader_counter" op = "add" value = "1"/>
-				<hiddenAug>TNC_MATH_RELOADER</hiddenAug>
+				<variable name="DSN_callie_reloader_counter" op = "add" value = "1"/>
+				<hiddenAug>DSN_MATH_RELOADER</hiddenAug>
 					<choice>
 						<text>Continue.</text>
 						<event load="STORAGE_CHECK"/>

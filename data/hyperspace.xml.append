@@ -7,10 +7,10 @@
 		<mod:findLike type="shipOrder">
 
 		<mod-append:ship>PLAYER_SHIP_NIKO1</mod-append:ship>
-		<mod-append:ship>PLAYER_SHIP_TNC_CALLIEHUNTER1</mod-append:ship>
+		<mod-append:ship>PLAYER_SHIP_DSN_CALLIEHUNTER1</mod-append:ship>
 		<mod-append:ship>PLAYER_SHIP_JAWBREAKER</mod-append:ship>
 		<mod-append:ship>PLAYER_SHIP_FIRESTEALTH</mod-append:ship>
-		<mod-append:ship>PLAYER_SHIP_TNC_BLACKRAVEN</mod-append:ship>
+		<mod-append:ship>PLAYER_SHIP_DSN_BLACKRAVEN</mod-append:ship>
 		<mod-append:empty/> 
 		<mod-append:empty/>
 		<mod-append:empty/>
@@ -43,17 +43,17 @@
       			  </rooms>
 		</mod-append:customShip>
 
-		<mod-append:ship name="PLAYER_SHIP_TNC_CALLIEHUNTER1" b="true" c="true" />
-		<mod-append:customShip name="PLAYER_SHIP_TNC_CALLIEHUNTER1">
+		<mod-append:ship name="PLAYER_SHIP_DSN_CALLIEHUNTER1" b="true" c="true" />
+		<mod-append:customShip name="PLAYER_SHIP_DSN_CALLIEHUNTER1">
 			<hiddenAug>FOR_MULTIVERSE</hiddenAug>
 			<crewLimit>10</crewLimit>
 		</mod-append:customShip>
 
-		<mod-append:customShip name="PLAYER_SHIP_TNC_CALLIEHUNTER1_2">
+		<mod-append:customShip name="PLAYER_SHIP_DSN_CALLIEHUNTER1_2">
 			<hiddenAug>FOR_MULTIVERSE</hiddenAug>
 			<crewLimit>10</crewLimit>
 		</mod-append:customShip>
-		<mod-append:customShip name="PLAYER_SHIP_TNC_CALLIEHUNTER1_3">
+		<mod-append:customShip name="PLAYER_SHIP_DSN_CALLIEHUNTER1_3">
 			<hiddenAug>FOR_MULTIVERSE</hiddenAug>
 			<crewLimit>10</crewLimit>
 			<autoShipForce>true</autoShipForce>
@@ -90,19 +90,19 @@
 
 			<rooms>
 				<room id="5"> <!--top artillery-->
-					<roomAnim renderLayer="1">tnc_room_artillery_fire_1</roomAnim>
+					<roomAnim renderLayer="1">dsn_room_artillery_fire_1</roomAnim>
 				</room>
 
 				<room id="6"> <!--bottom artillery-->
-					<roomAnim renderLayer="1">tnc_room_artillery_fire_2</roomAnim>
+					<roomAnim renderLayer="1">dsn_room_artillery_fire_2</roomAnim>
 				</room>
 			</rooms>
 		</mod-append:customShip>
 
 
-		<mod-append:ship name="PLAYER_SHIP_TNC_BLACKRAVEN" b="false" c="false" />
+		<mod-append:ship name="PLAYER_SHIP_DSN_BLACKRAVEN" b="false" c="false" />
 
-		<mod-append:customShip name="PLAYER_SHIP_TNC_BLACKRAVEN">
+		<mod-append:customShip name="PLAYER_SHIP_DSN_BLACKRAVEN">
 			<hiddenAug>FOR_MULTIVERSE</hiddenAug>
 			<crewLimit>12</crewLimit>
 		</mod-append:customShip>
@@ -112,7 +112,7 @@
 	<mod:findLike type="events">
 			<mod:findName name="LIST_CHECK_AUGMENTS">
 				<mod-append:name>THICC_PUNCH_LIST</mod-append:name>
-				<mod-append:name>TNC_CALLIE_DRIVE_HACKER</mod-append:name>
+				<mod-append:name>DSN_CALLIE_DRIVE_HACKER</mod-append:name>
 				<mod-append:name>SECRET_SAUCE</mod-append:name>
 			</mod:findName>
 	</mod:findLike>
@@ -166,7 +166,7 @@
 <aug name="JAWBREAKER_ARMOR">
 	<function name="ROCK_ARMOR" value="0.70" useForReqs="true" warning="false"/>
     <function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false"/>
-	<crystalShard weapon="JAWBREAKER_ARMOR_PROJ_SHATTER" value="1.0" stackable="false"/>
+	<crystalShard weapon="JAWBREAKER_ARMOR_PROJ_SHATTER" value="0.5" stackable="false"/>
 	<locked/>
 	 <statBoosts>
         <statBoost name="allDamageTakenMultiplier">
@@ -1000,10 +1000,10 @@
 	</statBoost>
 	</statBoosts>
 	</aug>
-	<aug name ="TNC_CALLIE_DRIVE_HACKER">
+	<aug name ="DSN_CALLIE_DRIVE_HACKER">
 		<locked/>
 	</aug>
-	<aug name="TNC_MATH_RELOADER">
+	<aug name="DSN_MATH_RELOADER">
 	<function name="AUTO_COOLDOWN" value="0.01" useForReqs="false" warning="false"/>
 	</aug>
 	<aug name ="SECRET_SAUCE">
@@ -1024,12 +1024,12 @@
 
 
 <events>
-	<variable name="tnc_callie_fight_counter" op = "set" value = "0"/>
-	<variable name="tnc_callie_reloader_counter" op = "set" value = "0"/>
-	<variable name="tnc_installed" op ="set" value ="1"/>
+	<variable name="dsn_callie_fight_counter" op = "set" value = "0"/>
+	<variable name="dsn_callie_reloader_counter" op = "set" value = "0"/>
+	<variable name="dsn_installed" op ="set" value ="1"/>
 	<req name="HS_LIST_CALIIE_RELOADER" type="all">
 		<name>ANY GIFTLIST_WEAPONS_MATH</name>
-		<name>TNC_CALLIE_DRIVE_HACKER</name>
+		<name>DSN_CALLIE_DRIVE_HACKER</name>
 	</req>
 	<eventFile>saucetransform</eventFile>
 </events>

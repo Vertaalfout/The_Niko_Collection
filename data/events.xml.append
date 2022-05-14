@@ -2,7 +2,7 @@
 
 <mod:findName type="event" name="START_BEACON_EXPLAIN_LOAD">
 	<mod:findLike type="loadEventList">
-		<mod-append:event name="START_BEACON_EXPLAIN_CALLIE_HUNTER" req = "TNC_CALLIE_DRIVE_HACKER"/>
+		<mod-append:event name="START_BEACON_EXPLAIN_CALLIE_HUNTER" req = "DSN_CALLIE_DRIVE_HACKER"/>
 	</mod:findLike>
 </mod:findName>
 
@@ -10,7 +10,7 @@
 <event name="START_BEACON_EXPLAIN_CALLIE_HUNTER">
 	<text>Finally suited up and ready to go, you take a look at your beacon map. Looks like you still have a while until the fleet becomes an immediate threat, so you can spare some time to do something on the ship if you wish.</text>
 	<triggeredEvent event="TRUENOTHING">
-        <req name="tnc_callie_reloader_counter" lvl="9999"/>
+        <req name="dsn_callie_reloader_counter" lvl="9999"/>
         <triggeredEventBox>
             <image name="statusUI/reloader_counter.png" x="10" y="7" w="59" h="26" left="4" right="4" top="4" bottom="4"/>
             <text type="req" x="42" y="8"/>

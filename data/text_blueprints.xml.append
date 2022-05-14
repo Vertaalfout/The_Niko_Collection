@@ -16,6 +16,6 @@
 <text name="text_PLAYER_SHIP_JAWBREAKER_name">Jaw Crusher</text>
 <text name="text_PLAYER_SHIP_JAWBREAKER_desc">This Unique vessel is plated with a strange, very dense plating that can withstand many fights without as much as a scratch.</text>
 
-<text name="text_PLAYER_SHIP_TNC_BLACKRAVEN_class">Blackbird Cruiser</text>
-<text name="text_PLAYER_SHIP_TNC_BLACKRAVEN_name">The Blackbird</text>
-<text name="text_PLAYER_SHIP_TNC_BLACKRAVEN_desc">This ship is commanded by powerful crew, with the potential to improve their abilites further still.</text>
+<text name="text_PLAYER_SHIP_DSN_BLACKRAVEN_class">Blackbird Cruiser</text>
+<text name="text_PLAYER_SHIP_DSN_BLACKRAVEN_name">The Blackbird</text>
+<text name="text_PLAYER_SHIP_DSN_BLACKRAVEN_desc">This ship is commanded by powerful crew, with the potential to improve their abilites further still.</text>

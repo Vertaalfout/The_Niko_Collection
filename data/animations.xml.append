@@ -54,16 +54,16 @@
 
 <FTL>
 <!--Room Animations-->
-<animSheet name="tnc_room_artillery_fire_1" w="105" h="35" fw="105" fh="35">ship/interior/tnc_room_artillery_fire_1.png</animSheet>
-<anim name="tnc_room_artillery_fire_1">
-	<sheet>tnc_room_artillery_fire_1</sheet>
+<animSheet name="dsn_room_artillery_fire_1" w="105" h="35" fw="105" fh="35">ship/interior/dsn_room_artillery_fire_1.png</animSheet>
+<anim name="dsn_room_artillery_fire_1">
+	<sheet>dsn_room_artillery_fire_1</sheet>
 	<desc length="1" x="0" y="0"/>
 	<time>1</time>
 </anim>
 
-<animSheet name="tnc_room_artillery_fire_2" w="105" h="35" fw="105" fh="35">ship/interior/tnc_room_artillery_fire_2.png</animSheet>
-<anim name="tnc_room_artillery_fire_2">
-	<sheet>tnc_room_artillery_fire_2</sheet>
+<animSheet name="dsn_room_artillery_fire_2" w="105" h="35" fw="105" fh="35">ship/interior/dsn_room_artillery_fire_2.png</animSheet>
+<anim name="dsn_room_artillery_fire_2">
+	<sheet>dsn_room_artillery_fire_2</sheet>
 	<desc length="1" x="0" y="0"/>
 	<time>1</time>
 </anim>

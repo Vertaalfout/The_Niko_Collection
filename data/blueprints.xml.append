@@ -1,65 +1,65 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<shipBlueprint name="PLAYER_SHIP_NIKO1" layout="tnc_player_ship_niko_1" img="tnc_player_ship_niko_1">
+<shipBlueprint name="PLAYER_SHIP_NIKO1" layout="dsn_player_ship_niko_1" img="dsn_player_ship_niko_1">
 	<class>Niko Cruiser</class>
 	<name>Homebound</name>
 	<desc>After filling up on a breakfast of delicious pancakes, Niko took to the stars for the greatest adventure yet!</desc>
 	<systemList>
-		<artillery power="1" room="11" start="false" weapon="ARTILLERY_FED" img="room_tnc_artillery_niko_1" />
-		<battery power="1" max = "2" room="13" start="false" img="room_tnc_battery_niko_1" />
-		<cloaking power="1" room="6" start="false" img="room_tnc_cloaking_niko_1" />
+		<artillery power="1" room="11" start="false" weapon="ARTILLERY_FED" img="room_dsn_artillery_niko_1" />
+		<battery power="1" max = "2" room="13" start="false" img="room_dsn_battery_niko_1" />
+		<cloaking power="1" room="6" start="false" img="room_dsn_cloaking_niko_1" />
 		<clonebay power="1" room="2" start="true">
 			<slot>
 				<number>1</number>
 			</slot>
 		</clonebay>
-		<doors power="2" room="3" start="true" img="room_tnc_doors_niko_1">
+		<doors power="2" room="3" start="true" img="room_dsn_doors_niko_1">
 			<slot>
 				<direction>up</direction>
 				<number>1</number>
 			</slot>
 		</doors>
-		<drones power="2" room="10" max = "6" start="false" img="room_tnc_drones_niko_1" />
-		<engines power="1" room="15" start="true" img="room_tnc_engines_niko_1">
+		<drones power="2" room="10" max = "6" start="false" img="room_dsn_drones_niko_1" />
+		<engines power="1" room="15" start="true" img="room_dsn_engines_niko_1">
 			<slot>
 				<direction>left</direction>
 				<number>1</number>
 			</slot>
 		</engines>
-		<hacking power="1" room="8" start="false" img="room_tnc_hacking_niko_1" />
-		<medbay power="1" room="2" start="true" img="room_tnc_medbay_niko_1">
+		<hacking power="1" room="8" start="false" img="room_dsn_hacking_niko_1" />
+		<medbay power="1" room="2" start="true" img="room_dsn_medbay_niko_1">
 			<slot>
 				<number>-2</number>
 			</slot>
 		</medbay>
-		<mind power="1" room="4" start="false" img="room_tnc_mind_niko_1" />
-		<oxygen power="1" room="14" start="true" img="room_tnc_oxygen_niko_1" />
-		<pilot power="1" room="0" start="true" img="room_tnc_piloting_niko_1">
+		<mind power="1" room="4" start="false" img="room_dsn_mind_niko_1" />
+		<oxygen power="1" room="14" start="true" img="room_dsn_oxygen_niko_1" />
+		<pilot power="1" room="0" start="true" img="room_dsn_piloting_niko_1">
 			<slot>
 				<direction>right</direction>
 				<number>0</number>
 			</slot>
 		</pilot>
-		<sensors power="2" room="7" start="true" img="room_tnc_sensors_niko_1">
+		<sensors power="2" room="7" start="true" img="room_dsn_sensors_niko_1">
 			<slot>
 				<direction>down</direction>
 				<number>1</number>
 			</slot>
 		</sensors>
-		<shields power="2" room="5" max = "8"  start="true" img="room_tnc_shields_niko_1">
+		<shields power="2" room="5" max = "8"  start="true" img="room_dsn_shields_niko_1">
 			<slot>
 				<direction>down</direction>
 				<number>0</number>
 			</slot>
 		</shields>
 		<teleporter power="1" room="1" start="true" />
-		<weapons power="2" room="9" max = "6" start="true" img="room_tnc_weapons_niko_1">
+		<weapons power="2" room="9" max = "6" start="true" img="room_dsn_weapons_niko_1">
 			<slot>
 				<direction>up</direction>
 				<number>1</number>
 			</slot>
 		</weapons>
-		<temporal power="1" room="12" start="false" img="room_tnc_temporal_niko_1" />
+		<temporal power="1" room="12" start="false" img="room_dsn_temporal_niko_1" />
 	</systemList>
 	<weaponSlots>2</weaponSlots>
 	<droneSlots>2</droneSlots>
@@ -75,13 +75,13 @@
 	<aug name="WHOLESOME_SHIELD"/>
 </shipBlueprint>
 
-<shipBlueprint name="PLAYER_SHIP_JAWBREAKER" layout="tnc_jawbreaker_elite" img="tnc_jawbreaker_elite">
+<shipBlueprint name="PLAYER_SHIP_JAWBREAKER" layout="dsn_jawbreaker_elite" img="dsn_jawbreaker_elite">
 	<class>Jawbreaker Cruiser</class>
 	<name>Jaw Crusher</name>
 	<desc>This Unique vessel is plated with a strange, dense plating that can withstand many fights without as much as a scratch.</desc>
 	<systemList>
-		<artillery power="1" room="8" start="false" weapon="ARTILLERY_FED" img="room_tnc_artillery_jawbreaker_1" />
-		<battery power="1" max="2" room="13" start="false" img="room_tnc_battery_jawbreaker_1" />
+		<artillery power="1" room="8" start="false" weapon="ARTILLERY_FED" img="room_dsn_artillery_jawbreaker_1" />
+		<battery power="1" max="2" room="13" start="false" img="room_dsn_battery_jawbreaker_1" />
 		<cloaking power="2" max="5" room="17" start="true" img="room_cloaking" />
 		<clonebay power="2" room="12" start="false">
 			<slot>
@@ -95,33 +95,33 @@
 			</slot>
 		</doors>
 		<drones power="2" max="8" room="6" start="false" img="room_drones_6" />
-		<engines power="3" max="8" room="11" start="true" img="room_tnc_engines_jawbreaker_1">
+		<engines power="3" max="8" room="11" start="true" img="room_dsn_engines_jawbreaker_1">
 			<slot>
 				<direction>down</direction>
 				<number>3</number>
 			</slot>
 		</engines>
-		<hacking power="1" max="3" room="15" start="false" img="room_tnc_hacking_jawbreaker_1" />
+		<hacking power="1" max="3" room="15" start="false" img="room_dsn_hacking_jawbreaker_1" />
 		<medbay power="2" max="3" room="12" start="true" img="room_medbay_2">
 			<slot>
 				<number>-2</number>
 			</slot>
 		</medbay>
-		<mind power="1" max="3" room="4" start="false" img="room_tnc_mind_jawbreaker_1" />
-		<oxygen power="1" max="4" room="0" start="true" img="room_tnc_oxygen_jawbreaker_1" />
+		<mind power="1" max="3" room="4" start="false" img="room_dsn_mind_jawbreaker_1" />
+		<oxygen power="1" max="4" room="0" start="true" img="room_dsn_oxygen_jawbreaker_1" />
 		<pilot power="2" max="3" room="7" start="true" img="room_pilot">
 			<slot>
 				<direction>right</direction>
 				<number>0</number>
 			</slot>
 		</pilot>
-		<sensors power="2" max="3" room="14" start="true" img="room_tnc_sensors_jawbreaker_1">
+		<sensors power="2" max="3" room="14" start="true" img="room_dsn_sensors_jawbreaker_1">
 			<slot>
 				<direction>down</direction>
 				<number>3</number>
 			</slot>
 		</sensors>
-		<shields power="2" max="8" room="5" start="false" img="room_tnc_shields_jawbreaker_1">
+		<shields power="2" max="8" room="5" start="false" img="room_dsn_shields_jawbreaker_1">
 			<slot>
 				<direction>up</direction>
 				<number>0</number>
@@ -148,66 +148,66 @@
 	<aug name="EX_MEDBAY_NANO"/>
 </shipBlueprint>
 
-<shipBlueprint name="PLAYER_SHIP_NIKO1_2" layout="tnc_player_ship_niko_1" img="tnc_player_ship_niko_1_2">
+<shipBlueprint name="PLAYER_SHIP_NIKO1_2" layout="dsn_player_ship_niko_1" img="dsn_player_ship_niko_1_2">
 	<class>Niko Cruiser</class>
 	<name>Lightbringer</name>
 	<desc>After learning how dangerous the Multiverse can be, Niko found some strong friends to help keep her ship safe! This ship is a powerful boarding vessel, but still struggles with offensive capacity.</desc>
 	<systemList>
-		<artillery power="1" room="11" start="false" weapon="ARTILLERY_FED" img="room_tnc_artillery_niko_1" />
-		<battery power="1" max = "2" room="13" start="false" img="room_tnc_battery_niko_1" />
-		<cloaking power="1" room="6" start="false" img="room_tnc_cloaking_niko_1" />
+		<artillery power="1" room="11" start="false" weapon="ARTILLERY_FED" img="room_dsn_artillery_niko_1" />
+		<battery power="1" max = "2" room="13" start="false" img="room_dsn_battery_niko_1" />
+		<cloaking power="1" room="6" start="false" img="room_dsn_cloaking_niko_1" />
 		<clonebay power="1" room="2" start="true">
 			<slot>
 				<number>1</number>
 			</slot>
 		</clonebay>
-		<doors power="2" room="3" start="true" img="room_tnc_doors_niko_1">
+		<doors power="2" room="3" start="true" img="room_dsn_doors_niko_1">
 			<slot>
 				<direction>up</direction>
 				<number>1</number>
 			</slot>
 		</doors>
-		<drones power="2" room="10" max = "6" start="false" img="room_tnc_drones_niko_1" />
-		<engines power="1" room="15" start="true" img="room_tnc_engines_niko_1">
+		<drones power="2" room="10" max = "6" start="false" img="room_dsn_drones_niko_1" />
+		<engines power="1" room="15" start="true" img="room_dsn_engines_niko_1">
 			<slot>
 				<direction>left</direction>
 				<number>1</number>
 			</slot>
 		</engines>
-		<hacking power="1" room="8" start="false" img="room_tnc_hacking_niko_1" />
-		<medbay power="1" room="2" start="true" img="room_tnc_medbay_niko_1">
+		<hacking power="1" room="8" start="false" img="room_dsn_hacking_niko_1" />
+		<medbay power="1" room="2" start="true" img="room_dsn_medbay_niko_1">
 			<slot>
 				<number>-2</number>
 			</slot>
 		</medbay>
-		<mind power="1" room="4" start="true" img="room_tnc_mind_niko_1" />
-		<oxygen power="1" room="14" start="true" img="room_tnc_oxygen_niko_1" />
-		<pilot power="1" room="0" start="true" img="room_tnc_piloting_niko_1">
+		<mind power="1" room="4" start="true" img="room_dsn_mind_niko_1" />
+		<oxygen power="1" room="14" start="true" img="room_dsn_oxygen_niko_1" />
+		<pilot power="1" room="0" start="true" img="room_dsn_piloting_niko_1">
 			<slot>
 				<direction>right</direction>
 				<number>0</number>
 			</slot>
 		</pilot>
-		<sensors power="3" room="7" start="true" img="room_tnc_sensors_niko_1">
+		<sensors power="3" room="7" start="true" img="room_dsn_sensors_niko_1">
 			<slot>
 				<direction>down</direction>
 				<number>1</number>
 			</slot>
 		</sensors>
-		<shields power="2" room="5" max = "8"  start="true" img="room_tnc_shields_niko_1">
+		<shields power="2" room="5" max = "8"  start="true" img="room_dsn_shields_niko_1">
 			<slot>
 				<direction>down</direction>
 				<number>0</number>
 			</slot>
 		</shields>
 		<teleporter power="1" room="1" start="true" />
-		<weapons power="2" room="9" max = "6" start="true" img="room_tnc_weapons_niko_1">
+		<weapons power="2" room="9" max = "6" start="true" img="room_dsn_weapons_niko_1">
 			<slot>
 				<direction>up</direction>
 				<number>1</number>
 			</slot>
 		</weapons>
-		<temporal power="1" room="12" start="false" img="room_tnc_temporal_niko_1" />
+		<temporal power="1" room="12" start="false" img="room_dsn_temporal_niko_1" />
 	</systemList>
 	<weaponSlots>2</weaponSlots>
 	<droneSlots>2</droneSlots>
@@ -226,66 +226,66 @@
 	<aug name="CREW_FIREARMS"/>
 </shipBlueprint>
 
-<shipBlueprint name="PLAYER_SHIP_NIKO1_3" layout="tnc_player_ship_niko_1" img="tnc_player_ship_niko_1_3">
+<shipBlueprint name="PLAYER_SHIP_NIKO1_3" layout="dsn_player_ship_niko_1" img="dsn_player_ship_niko_1_3">
 	<class>Niko Cruiser</class>
 	<name>Solstice</name>
 	<desc>Realizing that defense was her ship's greatest strength, Niko invested in a cloaking system powerful enough to mask the glow of the sunbulb! With her leftover scrap, she managed to acquire a powerful fire weapon, as well as some drones.</desc>
 	<systemList>
-		<artillery power="1" room="11" start="false" weapon="ARTILLERY_FED" img="room_tnc_artillery_niko_1" />
-		<battery power="1" max = "2" room="13" start="false" img="room_tnc_battery_niko_1" />
-		<cloaking power="1" room="6" start="true" img="room_tnc_cloaking_niko_1" />
+		<artillery power="1" room="11" start="false" weapon="ARTILLERY_FED" img="room_dsn_artillery_niko_1" />
+		<battery power="1" max = "2" room="13" start="false" img="room_dsn_battery_niko_1" />
+		<cloaking power="1" room="6" start="true" img="room_dsn_cloaking_niko_1" />
 		<clonebay power="1" room="2" start="true">
 			<slot>
 				<number>1</number>
 			</slot>
 		</clonebay>
-		<doors power="2" room="3" start="true" img="room_tnc_doors_niko_1">
+		<doors power="2" room="3" start="true" img="room_dsn_doors_niko_1">
 			<slot>
 				<direction>up</direction>
 				<number>1</number>
 			</slot>
 		</doors>
-		<drones power="3" room="10" max = "6" start="true" img="room_tnc_drones_niko_1" />
-		<engines power="1" room="15" start="true" img="room_tnc_engines_niko_1">
+		<drones power="3" room="10" max = "6" start="true" img="room_dsn_drones_niko_1" />
+		<engines power="1" room="15" start="true" img="room_dsn_engines_niko_1">
 			<slot>
 				<direction>left</direction>
 				<number>1</number>
 			</slot>
 		</engines>
-		<hacking power="1" room="8" start="false" img="room_tnc_hacking_niko_1" />
-		<medbay power="1" room="2" start="true" img="room_tnc_medbay_niko_1">
+		<hacking power="1" room="8" start="false" img="room_dsn_hacking_niko_1" />
+		<medbay power="1" room="2" start="true" img="room_dsn_medbay_niko_1">
 			<slot>
 				<number>-2</number>
 			</slot>
 		</medbay>
-		<mind power="1" room="4" start="false" img="room_tnc_mind_niko_1" />
-		<oxygen power="1" room="14" start="true" img="room_tnc_oxygen_niko_1" />
-		<pilot power="3" room="0" start="true" img="room_tnc_piloting_niko_1">
+		<mind power="1" room="4" start="false" img="room_dsn_mind_niko_1" />
+		<oxygen power="1" room="14" start="true" img="room_dsn_oxygen_niko_1" />
+		<pilot power="3" room="0" start="true" img="room_dsn_piloting_niko_1">
 			<slot>
 				<direction>right</direction>
 				<number>0</number>
 			</slot>
 		</pilot>
-		<sensors power="2" room="7" start="true" img="room_tnc_sensors_niko_1">
+		<sensors power="2" room="7" start="true" img="room_dsn_sensors_niko_1">
 			<slot>
 				<direction>down</direction>
 				<number>1</number>
 			</slot>
 		</sensors>
-		<shields power="2" room="5" max = "8"  start="true" img="room_tnc_shields_niko_1">
+		<shields power="2" room="5" max = "8"  start="true" img="room_dsn_shields_niko_1">
 			<slot>
 				<direction>down</direction>
 				<number>0</number>
 			</slot>
 		</shields>
 		<teleporter power="1" room="1" start="false" />
-		<weapons power="2" room="9" max = "6" start="true" img="room_tnc_weapons_niko_1">
+		<weapons power="2" room="9" max = "6" start="true" img="room_dsn_weapons_niko_1">
 			<slot>
 				<direction>up</direction>
 				<number>1</number>
 			</slot>
 		</weapons>
-		<temporal power="1" room="12" start="false" img="room_tnc_temporal_niko_1" />
+		<temporal power="1" room="12" start="false" img="room_dsn_temporal_niko_1" />
 	</systemList>
 	<weaponSlots>2</weaponSlots>
 	<droneSlots>2</droneSlots>
@@ -304,7 +304,7 @@
 	<aug name="DRONE_RECOVERY"/>
 </shipBlueprint>
 
-<shipBlueprint name="PLAYER_SHIP_TNC_CALLIEHUNTER1" layout="tnc_calliehunter_1" img="tnc_calliehunter_1">
+<shipBlueprint name="PLAYER_SHIP_DSN_CALLIEHUNTER1" layout="dsn_calliehunter_1" img="dsn_calliehunter_1">
 	<class>Student Cruiser</class>
 	<name>The Negative</name>
 	<desc>An accurate description of their collective IQ, this ship is an old and nearly broken kestrel that a roving band of free mantis took over. These free mantis don't just want to help the federation, they want to learn! While they can't add 1+1, they did manage to jury rig a device to signal for a teacher throughout the multiverse! And one calculating proctor seems to always answer!</desc>
@@ -376,10 +376,10 @@
 	<crewCount amount="1" class="mantis_free" />
 	<crewCount amount="1" class="mantis_free" />
 	<crewCount amount="1" class="mantis_free" />
-	<aug name="TNC_CALLIE_DRIVE_HACKER"/>
+	<aug name="DSN_CALLIE_DRIVE_HACKER"/>
 </shipBlueprint>
 
-<shipBlueprint name="PLAYER_SHIP_TNC_CALLIEHUNTER1_2" layout="tnc_calliehunter_2" img="tnc_calliehunter_2">
+<shipBlueprint name="PLAYER_SHIP_DSN_CALLIEHUNTER1_2" layout="dsn_calliehunter_2" img="dsn_calliehunter_2">
 	<class>Student Cruiser</class>
 	<name>The Rounded</name>
 	<desc>This ship was taken over by some Suzerains, but to their surpise it was already inhabited by a duo of strange machines! They seem happy enough to work alongside you for now.</desc>
@@ -406,7 +406,7 @@
 			</slot>
 		</engines>
 		<hacking power="1" room="10" start="false" img="room_hacking_6" />
-		<medbay power="1" room="8" start="true" img="room_tnc_medbay_6">
+		<medbay power="1" room="8" start="true" img="room_dsn_medbay_6">
 			<slot>
 				<number>-2</number>
 			</slot>
@@ -432,7 +432,7 @@
 			</slot>
 		</shields>
 		<teleporter power="1" room="9" start="true" />
-		<weapons power="3" max="8" room="5" start="true" img="room_shields">
+		<weapons power="3" max="8" room="5" start="true" img="room_weapons">
 			<slot>
 				<direction>up</direction>
 				<number>1</number>
@@ -452,10 +452,10 @@
 	<crewCount amount="1" class="mantis_suzerain" />
 	<crewCount amount="1" class="obelisk_math_add" />
 	<crewCount amount="1" class="obelisk_math_add" />
-	<aug name="TNC_CALLIE_DRIVE_HACKER" />
+	<aug name="DSN_CALLIE_DRIVE_HACKER" />
 </shipBlueprint>
 
-<shipBlueprint name="PLAYER_SHIP_TNC_CALLIEHUNTER1_3" layout="tnc_calliehunter_3" img="tnc_calliehunter_3">
+<shipBlueprint name="PLAYER_SHIP_DSN_CALLIEHUNTER1_3" layout="dsn_calliehunter_3" img="dsn_calliehunter_3">
 	<class>Student Cruiser</class>
 	<name>The Modulus</name>
 	<desc>This odd vessel can barely support its crew, but its onboard calculators are far better than most, allowing it to perform certain tasks without crew assistance. It's also equiped with a strange flak weapon, engraved with &lt;STUDENT NAME&gt;.</desc>
@@ -482,7 +482,7 @@
 			</slot>
 		</engines>
 		<hacking power="1" room="9" start="true" img="room_hacking_8" />
-		<medbay power="1" room="10" start="false" img="room_tnc_medbay_6_2">
+		<medbay power="1" room="10" start="false" img="room_dsn_medbay_6_2">
 			<slot>
 				<number>-2</number>
 			</slot>
@@ -525,20 +525,20 @@
 	<maxPower amount="7" />
 	<crewCount amount="1" class="lanius" />
 	<crewCount amount="1" class="phantom_mare_alpha" />
-	<aug name="TNC_CALLIE_DRIVE_HACKER" />
+	<aug name="DSN_CALLIE_DRIVE_HACKER" />
 	<aug name="NO_GHOST" />
 </shipBlueprint>
 
 
 
 
-<shipBlueprint name="PLAYER_SHIP_FIRESTEALTH" layout="tnc_player_ship_firestealth" img="tnc_player_ship_firestealth">
+<shipBlueprint name="PLAYER_SHIP_FIRESTEALTH" layout="dsn_player_ship_firestealth" img="dsn_player_ship_firestealth">
 	<class>Ignis Stealth Cruiser</class>
 	<name>The Svarog</name>
 	<desc>This stealth ship is designed to burn enemy ships to the ground in mere moments, and eliminate threats before they become dangerous.</desc>
 	<systemList>
-		<artillery power="2" max ="5" room="5" start="true" weapon="TNC_FIRE_PINPOINT_ARTILLERY" img="tnc_3x1_invis"/>
-		<artillery power="2" max ="5" room="6" start="true" weapon="TNC_FIRE_PINPOINT_ARTILLERY" img="tnc_3x1_invis"/>
+		<artillery power="2" max ="5" room="5" start="true" weapon="DSN_FIRE_PINPOINT_ARTILLERY" img="dsn_3x1_invis"/>
+		<artillery power="2" max ="5" room="6" start="true" weapon="DSN_FIRE_PINPOINT_ARTILLERY" img="dsn_3x1_invis"/>
 		<battery power="1" max ="2" room="16" start="false" img="room_battery_3" />
 		<cloaking power="2" room="8" start="true" img="room_cloaking_3" />
 		<clonebay power="1" room="3" start="false">
@@ -579,20 +579,20 @@
 				<number>1</number>
 			</slot>
 		</sensors>
-		<shields power="2" max ="8" room="15" start="false" img="room_tnc_shields_fire_1">
+		<shields power="2" max ="8" room="15" start="false" img="room_dsn_shields_fire_1">
 			<slot>
 				<direction>up</direction>
 				<number>0</number>
 			</slot>
 		</shields>
 		<teleporter power="1" room="4" start="false" />
-		<weapons power="1" max ="8" room="12" start="true" img="room_tnc_weapons_niko_2">
+		<weapons power="1" max ="8" room="12" start="true" img="room_dsn_weapons_niko_2">
 			<slot>
 				<direction>down</direction>
 				<number>0</number>
 			</slot>
 		</weapons>
-		<temporal power="2" room="7" start="true" img="tnc_room_temporal_fire_1" />
+		<temporal power="2" room="7" start="true" img="dsn_room_temporal_fire_1" />
 	</systemList>
 	<weaponSlots>2</weaponSlots>
 	<droneSlots>3</droneSlots>
@@ -607,7 +607,7 @@
 	<crewCount amount="1" class="engi_separatist" />
 </shipBlueprint>
 
-<shipBlueprint name="PLAYER_SHIP_TNC_BLACKRAVEN" layout="tnc_blackraven_1" img="tnc_blackraven_1">
+<shipBlueprint name="PLAYER_SHIP_DSN_BLACKRAVEN" layout="dsn_blackraven_1" img="dsn_blackraven_1">
 	<class>Blackbird Cruiser</class>
 	<name>The Blackbird</name>
 	<desc>This ship is commanded by powerful crew, with the potential to improve their abilites further still.</desc>
@@ -634,7 +634,7 @@
 			</slot>
 		</engines>
 		<hacking power="1" room="14" start="false" img="room_hacking_3" />
-		<medbay power="1" room="11" start="false" img="room_tnc_medbay_niko_1">
+		<medbay power="1" room="11" start="false" img="room_dsn_medbay_niko_1">
 			<slot>
 				<number>-2</number>
 			</slot>
@@ -784,7 +784,7 @@
 	<stackable>false</stackable>
 </augBlueprint>
 
-<augBlueprint name="TNC_CALLIE_DRIVE_HACKER">
+<augBlueprint name="DSN_CALLIE_DRIVE_HACKER">
 	<title>Study Beacon</title>
 	<desc>A baffling piece of technology, designed by the most simple-minded engineers this side of the Multiverse. Built by a group of simple yet studious Free Mantis, this piece of jury-rigged tech allows them to chase down those with more knowledge, so that they can continue their lifelong wish of learning. Right now, they're locked onto any source of mathematical knowledge they can find, though so far they've only been able to find one teacher...</desc>
 	<cost>100</cost>
@@ -793,7 +793,7 @@
 	<bp>0</bp>
 </augBlueprint>
 
-<augBlueprint name="TNC_MATH_RELOADER">
+<augBlueprint name="DSN_MATH_RELOADER">
 	<title>Math Reloader</title>
 	<desc>Full disclosure, you shouldn't be seeing this augment. It's either a bug or you did something funky. What are you even doing anyway? I'd like to know. Anyway, have a 1% reloader.</desc>
 	<cost>0</cost>
@@ -859,7 +859,7 @@
 	<iconImage>ion</iconImage>
 </weaponBlueprint>
 
-<weaponBlueprint name="TNC_FIRE_PINPOINT_ARTILLERY">
+<weaponBlueprint name="DSN_FIRE_PINPOINT_ARTILLERY">
     <type>BEAM</type>
     <flavorType>Pinpoint</flavorType>
     <tip>tip_focus</tip>
