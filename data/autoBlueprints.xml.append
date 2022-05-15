@@ -111,11 +111,14 @@
 	<name>LIST_VARIANT_SEPARATIST</name>
 	<name>engi_defender</name>
 	<name>unique_turzil</name>
+	<name>remington</name>
+	<name>mossberg</name>
 </blueprintList>
 <blueprintList name="LIST_DSN_PROM_CREW_ORCHID">
 	<name>orchid</name>
 	<name>orchid_vampweed</name>
 	<name>orchid_chieftain</name>
+	<name>orchid_cultivator</name>
 </blueprintList>
 <blueprintList name="LIST_DSN_PROM_CREW_ROCK">
 	<name>LIST_CREW_ROCK_SKINS</name>

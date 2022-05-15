@@ -1127,6 +1127,14 @@
 		<text>Transform a Chief Defender.</text>
 		<event load="STORAGE_CHECK_PROM_VATS_CHIEFDEFENDER" />
 	</choice>
+	<choice req="remington" hidden="true">
+		<text>Transform a Engi Phoenix Defender.</text>
+		<event load="STORAGE_CHECK_PROM_VATS_ENGIPHOENIXDEFENDER" />
+	</choice>
+	<choice req="mossberg" hidden="true">
+		<text>Transform a Engi Microbe Defender.</text>
+		<event load="STORAGE_CHECK_PROM_VATS_ENGIMICROBEDEFENDER" />
+	</choice>
 	<choice hidden="true" req="pilot" lvl="1" blue="false" max_group="1">
 		<text>Nevermind, do something else.</text>
 		<event load="STORAGE_CHECK" />
@@ -1217,6 +1225,34 @@
 			</choice>
 		</event>
 	</choice>
+	<choice req="ENGI_DEFENDER_ADDON_INSTALLED_FORGEMASTER" hidden="true">
+		<text>Convert your Engi Defender into a Engi Phoenix Defender [Cost: 100~]</text>
+		<event>
+			<text>Your Engi Defender has been sucessfully converted into a Engi Phoenix Defender.</text>
+			<transformRace class="engi_defender">remington</transformRace>
+			<item_modify>
+				<item type="scrap" min="-100" max="-100" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice req="ENGI_DEFENDER_ADDON_INSTALLED_FORGEMASTER" hidden="true">
+		<text>Convert your Engi Defender into a Engi Microbe Defender [Cost: 100~]</text>
+		<event>
+			<text>Your Engi Defender has been sucessfully converted into a Engi Microbe Defender.</text>
+			<transformRace class="engi_defender">mossberg</transformRace>
+			<item_modify>
+				<item type="scrap" min="-100" max="-100" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
 	<choice hidden="true" req="pilot" lvl="1" blue="false" max_group="1">
 		<text>Nevermind...</text>
 		<event load="STORAGE_CHECK" />
@@ -1229,6 +1265,76 @@
 		<event>
 			<text>Your Chief Defender has been sucessfully converted into a Engi Defender.</text>
 			<transformRace class="unique_turzil">engi_defender</transformRace>
+			<item_modify>
+				<item type="scrap" min="-0" max="-0" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="pilot" lvl="1" blue="false" max_group="1">
+		<text>Nevermind...</text>
+		<event load="STORAGE_CHECK" />
+	</choice>
+</event>
+<event name="STORAGE_CHECK_PROM_VATS_ENGIPHOENIXDEFENDER">
+	<text>What would you like to transform your Engi Phoenix Defender into?</text>
+	<choice req="remington" hidden="true">
+		<text>Convert your Engi Phoenix Defender into a Engi Defender [Cost: 0~]</text>
+		<event>
+			<text>Your Engi Phoenix Defender has been sucessfully converted into a Engi Defender.</text>
+			<transformRace class="remington">engi_defender</transformRace>
+			<item_modify>
+				<item type="scrap" min="-0" max="-0" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice req="remington" hidden="true">
+		<text>Convert your Engi Phoenix Defender into a Engi Microbe Defender [Cost: 0~]</text>
+		<event>
+			<text>Your Engi Phoenix Defender has been sucessfully converted into a Engi Microbe Defender.</text>
+			<transformRace class="remington">mossberg</transformRace>
+			<item_modify>
+				<item type="scrap" min="-0" max="-0" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="pilot" lvl="1" blue="false" max_group="1">
+		<text>Nevermind...</text>
+		<event load="STORAGE_CHECK" />
+	</choice>
+</event>
+<event name="STORAGE_CHECK_PROM_VATS_ENGIMICROBEDEFENDER">
+	<text>What would you like to transform your Engi Microbe Defender into?</text>
+	<choice req="mossberg" hidden="true">
+		<text>Convert your Engi Microbe Defender into a Engi Defender [Cost: 0~]</text>
+		<event>
+			<text>Your Engi Microbe Defender has been sucessfully converted into a Engi Defender.</text>
+			<transformRace class="mossberg">engi_defender</transformRace>
+			<item_modify>
+				<item type="scrap" min="-0" max="-0" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice req="mossberg" hidden="true">
+		<text>Convert your Engi Microbe Defender into a Engi Phoenix Defender [Cost: 0~]</text>
+		<event>
+			<text>Your Engi Microbe Defender has been sucessfully converted into a Engi Phoenix Defender.</text>
+			<transformRace class="mossberg">remington</transformRace>
 			<item_modify>
 				<item type="scrap" min="-0" max="-0" />
 			</item_modify>
@@ -1256,6 +1362,10 @@
 	<choice req="orchid_chieftain" hidden="true">
 		<text>Transform a Orchid Chieftain.</text>
 		<event load="STORAGE_CHECK_PROM_VATS_ORCHIDCHIEFTAIN" />
+	</choice>
+	<choice req="orchid_cultivator" hidden="true">
+		<text>Transform a Vampweed Cultivator.</text>
+		<event load="STORAGE_CHECK_PROM_VATS_VAMPWEEDCULTIVATOR" />
 	</choice>
 	<choice hidden="true" req="pilot" lvl="1" blue="false" max_group="1">
 		<text>Nevermind, do something else.</text>
@@ -1312,6 +1422,20 @@
 			</choice>
 		</event>
 	</choice>
+	<choice req="orchid_vampweed" hidden="true">
+		<text>Convert your Vampweed into a Vampweed Cultivator [Cost: 70~]</text>
+		<event>
+			<text>Your Vampweed has been sucessfully converted into a Vampweed Cultivator.</text>
+			<transformRace class="orchid_vampweed">orchid_cultivator</transformRace>
+			<item_modify>
+				<item type="scrap" min="-70" max="-70" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
 	<choice hidden="true" req="pilot" lvl="1" blue="false" max_group="1">
 		<text>Nevermind...</text>
 		<event load="STORAGE_CHECK" />
@@ -1324,6 +1448,27 @@
 		<event>
 			<text>Your Orchid Chieftain has been sucessfully converted into a Orchid.</text>
 			<transformRace class="orchid_chieftain">orchid</transformRace>
+			<item_modify>
+				<item type="scrap" min="-0" max="-0" />
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="pilot" lvl="1" blue="false" max_group="1">
+		<text>Nevermind...</text>
+		<event load="STORAGE_CHECK" />
+	</choice>
+</event>
+<event name="STORAGE_CHECK_PROM_VATS_VAMPWEEDCULTIVATOR">
+	<text>What would you like to transform your Vampweed Cultivator into?</text>
+	<choice req="orchid_cultivator" hidden="true">
+		<text>Convert your Vampweed Cultivator into a Vampweed [Cost: 0~]</text>
+		<event>
+			<text>Your Vampweed Cultivator has been sucessfully converted into a Vampweed.</text>
+			<transformRace class="orchid_cultivator">orchid_vampweed</transformRace>
 			<item_modify>
 				<item type="scrap" min="-0" max="-0" />
 			</item_modify>
@@ -1454,7 +1599,7 @@
 			</choice>
 		</event>
 	</choice>
-	<choice req="LIST_CREW_ROCK_SKINS" hidden="true">
+	<choice req="LIST_CREW_ROCK_SKINS_ADDON_INSTALLED_FORGEMASTER" hidden="true">
 		<text>Convert your Rock into a Plated Rockman [Cost: 100~]</text>
 		<event>
 			<text>Your Rock has been sucessfully converted into a Plated Rockman.</text>

@@ -1027,11 +1027,25 @@
 	<variable name="dsn_callie_fight_counter" op = "set" value = "0"/>
 	<variable name="dsn_callie_reloader_counter" op = "set" value = "0"/>
 	<variable name="dsn_installed" op ="set" value ="1"/>
+	
+	<req name="ENGI_DEFENDER_ADDON_INSTALLED_FORGEMASTER" type="all">
+		<name>engi_defender</name>
+		<name>ADDON_INSTALLED_FORGEMASTER</name>
+	</req>
+	
+	<req name="LIST_CREW_ROCK_SKINS_ADDON_INSTALLED_FORGEMASTER" type="all">
+		<name>LIST_CREW_ROCK_SKINS</name>
+		<name>ADDON_INSTALLED_FORGEMASTER</name>
+	</req>
+	
 	<req name="HS_LIST_CALIIE_RELOADER" type="all">
 		<name>ANY GIFTLIST_WEAPONS_MATH</name>
 		<name>DSN_CALLIE_DRIVE_HACKER</name>
 	</req>
+
+
 	<eventFile>saucetransform</eventFile>
+
 </events>
 
 <crew>
