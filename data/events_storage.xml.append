@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <mod:findName type="event" name="STORAGE_CHECK_AUG">
-	
+
 	<mod-append:choice req="SECRET_SAUCE">
 		<text>(Promotion Vats) Transform a crew.</text>
 		<event load="STORAGE_CHECK_PROM_VATS"/>
 	</mod-append:choice>
-	
+
 	<mod-append:choice req="DSN_CALLIE_DRIVE_HACKER">
 		<text>(Study Beacon) Arrange a study session.</text>
 		<event load="DSN_CALLIE_DRIVE_HACKER_QUEUE"/>
 	</mod-append:choice>
-	
+
 	<mod-append:choice req="HS_LIST_CALIIE_RELOADER">
 		<text>(Study Beacon) Use one of Callie's weapons to improve the numbers on your weapons. (gives +1% weapon speed, no limit on stacking)</text>
 		<event load="DSN_CALLIE_RELOADER"/>
@@ -33,12 +33,12 @@
 		<text>Toggle your Math Flak ['Adder' Mode]</text>
 		<event load="COMBAT_CHECK_MATH_SHOTGUN_TOGGLE_ADDER"/>
 	</mod-append:choice>
-	
+
 	<mod-append:choice req="MATH_SHOTGUN_TOGGLE_GREATER_THAN" blue="false">
 		<text>Toggle your Math Flak ['Greater Than' Mode]</text>
 		<event load="COMBAT_CHECK_MATH_SHOTGUN_TOGGLE_GREATER_THAN"/>
 	</mod-append:choice>
-	
+
 	<mod-append:choice req="MATH_SHOTGUN_TOGGLE_MULTIPLIER" blue="false">
 		<text>Toggle your Math Flak ['Multiplier' Mode]</text>
 		<event load="COMBAT_CHECK_MATH_SHOTGUN_TOGGLE_MULTIPLIER"/>
@@ -138,7 +138,7 @@
 <event name="COMBAT_CHECK_MATH_SHOTGUN_TOGGLE_MULTIPLIER">
 	<text>What state do you want to set the weapon to?
 	Current mode: 'Multiplier' [7 shots, chains cooldown]</text>
-	
+
 	<choice hidden="true">
 		<text>Set the weapon to 'Adder' Mode. [12 shots, +1 second cooldown]</text>
 		<event>
@@ -175,7 +175,7 @@
 			</choice>
 		</event>
 	</choice>
-	
+
 	<choice hidden="true">
 		<text>Return to the toggle menu.</text>
 		<event load="COMBAT_CHECK_TOGGLE_LOAD"/>
@@ -261,7 +261,7 @@
 	</choice>
 </event>
 
-<!--Code for Callie Drive Hacker events-->	
+<!--Code for Callie Drive Hacker events-->
 <event name="DSN_CALLIE_DRIVE_HACKER_QUEUE">
 	<loadEventList first="true">
 		<event load="STORAGE_CHECK_DSN_CALLIE_DRIVE_HACKER_11" req="DSN_callie_fight_counter" lvl="10"/>
@@ -280,57 +280,57 @@
 
 
 <event name="STORAGE_CHECK_DSN_CALLIE_DRIVE_HACKER_1">
-	<text>You have no idea if this will really work, it’s less a piece of pristine tech and more just whatever bits of scrap and radio transmitters your mantis crew could stick together. Still, it transits a message throughout several universes. You press the button, and wait to see if your request for teaching will be answered.</text>
+	<text>You have no idea if this will really work, but you turn on the "machine" anyway. The device looks more like a pile of scrap and radio transmitters than an actual piece of tech, but it's what your crew managed stick together. If it works, you won't have to worry about being dumb for long! You press the button, and send a signal out to whoever will listen, begging to be "taught a lesson". Maybe that wasn't the right choice of words, but surely it doesn't matter that much!</text>
 	<quest event="DSN_CALLIE_QUEST_1"/>
 </event>
 
 <event name="STORAGE_CHECK_DSN_CALLIE_DRIVE_HACKER_2">
-	<text>Your first lesson was ended a tad prematurely by Callie’s ship sadly blowing up, you tune the signal towards the communication waves Callie had responde on, if she was really multiversally known maybe there are other versions of her out there? Even with your admittedly slow brain, it does make enough sense to try!</text>
+	<text>Although your first lesson was unfortunately cut short by Callie's... disassembly, you aren't giving up that easily. You tune the signal towards the communication frequencies that Callie had previously responded on. After all, the multiverse is huge! Maybe there are other versions of her out there? Even with your admittedly slow brain, it makes enough sense to try!</text>
 	<quest event="DSN_CALLIE_QUEST_2"/>
 </event>
 
 <event name="STORAGE_CHECK_DSN_CALLIE_DRIVE_HACKER_3">
-	<text>Callie’s lessons must be paying off! Your crew have stopped trying to chew into your reactor’s wiring, and are instead using the designated chewing wires! Sure, you might every once in a while hear sparking, but it’s better than your weapons going offline. You hit the button again, accepting the risk that she might kill you.</text>
+	<text>Callie’s lessons must be paying off! Your crew have stopped trying to chew into your reactor’s wiring, and are instead using the designated chewing wires! Sure, you might hear sparking every so often, but it’s better than your weapons going offline. You hit the button again, accepting the risk that she might kill you.</text>
 	<quest event="DSN_CALLIE_QUEST_3"/>
 </event>
 
 <event name="STORAGE_CHECK_DSN_CALLIE_DRIVE_HACKER_4">
-	<text>It seems you are disappointing your teacher a tad, but every good teacher can forgive their student! You do feel a bit bad about destroying every body she sends after you, but you can’t learn if you’re dead! You’re pretty sure at least, well, unless you get cloned. Is that you though? Concluding you’re not yet smart enough to deal with those questions, you send out radio waves for Callie.</text>
+	<text>It seems you are disappointing your teacher a bit, but surely Callie will forgive you if you answer her questions right! Every good teacher gives second, third, and maybe even fourth chances! You do feel a bit bad about destroying her each time, but you can’t learn if you’re dead! You’re pretty sure at least, well, unless you get cloned. Is that you though? Concluding you’re not yet smart enough to deal with those questions, you send out radio waves for Callie.</text>
 	<quest event="DSN_CALLIE_QUEST_4"/>
 </event>
 
 <event name="STORAGE_CHECK_DSN_CALLIE_DRIVE_HACKER_5">
-	<text>Now, how will middle school math questions teach you things like how to pilot a ship or defeat the rebel fleet? You aren’t entirely sure, but that’s for the math to teach you! Sure, Callie is getting more and more thirsty for your blood, but you intend on keeping it all in your body! Throwing safety to the wind, you purposefully summon an AI that has shown murderous tendencies each time you met it.</text>
+	<text>You wonder, how will middle school math questions teach you important things, like how to pilot a ship, aim your weapons, or defeat the rebel fleet? You aren’t entirely sure, but that’s for the math to teach you! Sure, Callie is getting more and more... bloodthirsty, but you don't plan on giving her any of your blood today. You're not sure what "bloodthirsty" actually means, but that's not a math question so you don't care. Throwing safety to the wind, you purposefully summon the murderous AI once again.</text>
 	<quest event="DSN_CALLIE_QUEST_5"/>
 </event>
 
 <event name="STORAGE_CHECK_DSN_CALLIE_DRIVE_HACKER_6">
-	<text>You call out for one of your crew to tell you how many times you’ve summoned Callie, it takes them a long time, every agonizing second dragging on as they mutter out every 1+1 they do, but eventually they come on the answer of 11,111, and with a sigh you hit the button for Callie once more, hoping they’ll learn by your example of answering her questions.</text>
+	<text>You call out for one of your crew to tell you how many times you've summoned Callie. The counting takes them a long time, every agonizing second dragging on as they mutter out every single number with difficulty. Eventually they come up with the answer of "11,111" and with a deep sigh you hit the button for Callie once more, hoping they’ll learn by your example of answering her questions.</text>
 	<quest event="DSN_CALLIE_QUEST_6"/>
 </event>
 
 <event name="STORAGE_CHECK_DSN_CALLIE_DRIVE_HACKER_7">
-	<text>So Callie is running out of patience with you? Well, that’s not an issue at all! You’ll just have to be patient with her, wait until she stops trying to kill you and you can sit down and finally ask her some of your most burning questions. Like how do you teach people who’s only math question is what one tastes like? Honestly, that one had  you stumped for a bit… It still has you stumped, so you send a summons for Callie again, knowing you won’t find an answer, but at least the thrill of combat will distract you!</text>
+	<text>Callie is running out of patience with you, it seems. Well, that’s not an issue at all! You’ll just have to be patient with her, wait until she stops trying to kill you, and you can sit down and finally ask her some of your most burning questions. Like how do you teach people whose only math question is what "one" tastes like? Honestly, that one had you stumped for a bit… It still has you stumped, so you send a summons for Callie again, hoping for knowledge. And barring that, perhaps she'll leave behind a colorful weapon for you again!</text>
 	<quest event="DSN_CALLIE_QUEST_7"/>
 </event>
 
 <event name="STORAGE_CHECK_DSN_CALLIE_DRIVE_HACKER_8">
-	<text>Where is Callie even procuring half of this equipment? She seems to be a glitchy mess who always has a corrupted question, but she has weaponry that would rival the finest of rebel and federation technology. You ask your crew, but the only theories you receive is that math is simply that powerful. You would argue against them, but you’re pretty sure if you did their small minds would explode. You hit the button for Callie again, wondering if she’ll come equipped with the same power as before.</text>
+	<text>Where is Callie even procuring half of this equipment? She seems to be a glitchy mess who always has a corrupted question, but she has weaponry that would rival the finest of Rebel and Federation technology. You ask your crew, but the only theories you receive is that "math is simply that powerful". You would argue against them, but you’re pretty sure if you did their small minds would explode. You hit the button for Callie again, wondering if she’ll come bearing the same firepower as before.</text>
 	<quest event="DSN_CALLIE_QUEST_8"/>
 </event>
 
 <event name="STORAGE_CHECK_DSN_CALLIE_DRIVE_HACKER_9">
-	<text>It seems the robot isn’t the best at math either, considering it still considers answering your calls for a teacher despite the losses it receives each time. Though you still summon it despite the fact that some of your crew have only ever completed the calculation of 2+1 once. They didn’t get it right, just completed it. With a heavy heart and a sigh, you summon Callie again.</text>
+	<text>It seems the autoship isn’t the best at math either, considering how it doesn't seem to mind the rapidly-increasing number of Callie casualties. You proceed to summon her once again. The display reads "SIGNAL 3 TRANSMITTING", sending your crew into a heated argument over what "3" is. Five minutes later, they all agree that "3" is simply one of those things to be left for greater minds to ponder. With a heavy heart and a sigh, you summon Callie again.</text>
 	<quest event="DSN_CALLIE_QUEST_9"/>
 </event>
 
 <event name="STORAGE_CHECK_DSN_CALLIE_DRIVE_HACKER_10">
-	<text>Callie is tired of you, and by now it's obvious your crew haven’t learned a single thing. Still, you keep receiving fire power, and you can convince your crew it's a great idea to fight this autoship each time, after all they’re learning! Plus you’re looting what’s left every time.</text>
+	<text>Callie is tired of you, and by now it's obvious your crew haven’t learned a single thing. Still, the colorful weapons are worth the effort. Surely, you can convince your crew that it's a great idea to fight this autoship each time. After all they’re 'learning', and that's all they seem to care about. The loot's enough for you, in any case, so you power up the device and wait.</text>
 	<quest event="DSN_CALLIE_QUEST_10"/>
 </event>
 
 <event name="STORAGE_CHECK_DSN_CALLIE_DRIVE_HACKER_11">
-	<text>You’ll never get a smart crew, and Callie won’t ever have a star pupil. You still summon her regardless, because you like her weapons.</text>
+	<text>Your crew have proven to be hopeless, and it seems Callie won’t ever have a star pupil from the likes of them. This bothers you little, as you're just in it for the weapons anyway.</text>
 	<quest event="DSN_CALLIE_QUEST_11"/>
 </event>
 
@@ -809,9 +809,9 @@
 		<visitedTooltip>Explored location. Nothing left of interest.</visitedTooltip>
 		<undiscoveredTooltip>An unvisited location.</undiscoveredTooltip>
 	</beaconType>
-	<text>"I am out of things to say, my creators never accounted for much beyond mathematics and weapon fire, so here is a selection of curse words left in the notes of my code!" 
+	<text>"I am out of things to say, my creators never accounted for much beyond mathematics and weapon fire, so here is a selection of curse words left in the notes of my code!"
 
-The autoship rattles off a list of surprisingly long and specific expletives, including some that would seem to be referring to itself, before proceeding into its normal questions. 
+The autoship rattles off a list of surprisingly long and specific expletives, including some that would seem to be referring to itself, before proceeding into its normal questions.
 
 "I hope you can at least answer this one, [STUDENT NAME], because I’m just about done with you! What does ‘five’ look like as a number?"
 </text>
@@ -939,7 +939,7 @@ The autoship’s weapons hum to life without further elaboration.</text>
 					</choice>
 			</event>
 	</choice>
-	
+
 	<choice req="LOOT_MATH_2" hidden="true" blue="false">
 		<text>Melt down a 'Subtracter' to improve your weapon speed by 1%.</text>
 			<event>
@@ -953,7 +953,7 @@ The autoship’s weapons hum to life without further elaboration.</text>
 					</choice>
 			</event>
 	</choice>
-	
+
 	<choice req="LOOT_MATH_3" hidden="true" blue="false">
 		<text>Melt down a 'Multiplier' to improve your weapon speed by 1%.</text>
 			<event>
@@ -967,7 +967,7 @@ The autoship’s weapons hum to life without further elaboration.</text>
 					</choice>
 			</event>
 	</choice>
-	
+
 	<choice req="LOOT_MATH_4" hidden="true" blue="false">
 		<text>Melt down a 'Divider' to improve your weapon speed by 1%.</text>
 			<event>
@@ -981,7 +981,7 @@ The autoship’s weapons hum to life without further elaboration.</text>
 					</choice>
 			</event>
 	</choice>
-	
+
 	<choice req="LOOT_MATH_5" hidden="true" blue="false">
 		<text>Melt down an 'Equalizer' to improve your weapon speed by 1%.</text>
 			<event>
@@ -995,7 +995,7 @@ The autoship’s weapons hum to life without further elaboration.</text>
 					</choice>
 			</event>
 	</choice>
-	
+
 	<choice req="LOOT_MATH_6" hidden="true" blue="false">
 		<text>Melt down a 'Percentage' to improve your weapon speed by 1%.</text>
 			<event>
@@ -1009,7 +1009,7 @@ The autoship’s weapons hum to life without further elaboration.</text>
 					</choice>
 			</event>
 	</choice>
-	
+
 	<choice req="LOOT_MATH_7" hidden="true" blue="false">
 		<text>Melt down a 'Greater Than' to improve your weapon speed by 1%.</text>
 			<event>
@@ -1023,10 +1023,10 @@ The autoship’s weapons hum to life without further elaboration.</text>
 					</choice>
 			</event>
 	</choice>
-	
+
 	<choice>
 		<text>Nevermind.</text>
 		<event load="STORAGE_CHECK"/>
 	</choice>
-	
+
 </event>
