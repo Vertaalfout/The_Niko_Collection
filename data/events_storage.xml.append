@@ -931,7 +931,7 @@ The autoship’s weapons hum to life without further elaboration.</text>
 			<event>
 				<text>You melt down the 'Adder' to improve your weapon speed by 1%.</text>
 				<remove name="LOOT_MATH_1"/>
-				<variable name="DSN_callie_reloader_counter" op = "add" value = "1"/>
+				<variable name="dsn_callie_reloader_counter" op = "add" value = "1"/>
 				<hiddenAug>DSN_MATH_RELOADER</hiddenAug>
 					<choice>
 						<text>Continue.</text>
