@@ -689,7 +689,7 @@
     <cost>130</cost>
     <rarity>0</rarity>
     <stackable>false</stackable>
-</augBlueprint> 
+</augBlueprint>
 
 <augBlueprint name="JAWBREAKER_ARMOR">
     <title>Jawbreaker Armor</title>
@@ -697,7 +697,7 @@
     <cost>75</cost>
     <rarity>0</rarity>
     <stackable>false</stackable>
-</augBlueprint> 
+</augBlueprint>
 
 <weaponBlueprint name="JAWBREAKER_ARMOR_PROJ_SHATTER">
 	<type>MISSILES</type>
@@ -859,6 +859,69 @@
 	<iconImage>ion</iconImage>
 </weaponBlueprint>
 
+<weaponBlueprint name="DSN_CATALYZER">
+		<type>LASER</type>
+		<title>'Catalyzer' Quasi-Particle Induction Unit</title>
+		<short>Catalyzer</short>
+		<desc>An weapon designed to generate localized pockets of ionic potential. Does little damage on its own, but devestating when used correctly.</desc>
+		<damage>0</damage>
+		<stun>2</stun>
+		<shots>1</shots>
+		<sp>10</sp>
+		<fireChance>0</fireChance>
+		<breachChance>0</breachChance>
+		<cooldown>10</cooldown>
+		<accuracyMod>100</accuracyMod>
+		<power>2</power>
+		<cost>170</cost>
+		<bp>2</bp>
+		<rarity>0</rarity>
+		<speed>69</speed>
+		<image>Catalyzer_Projectile</image>
+		<spawnCrew>
+			<race>dsn_catalyzer_crew</race>
+			<number>1</number>
+			<name>Ionic Manifestation</name>
+			<lifetime>10</lifetime>
+			<noSlot>true</noSlot>
+			<statBoosts>
+				<statBoost name="noClone">
+					<boostType>SET</boostType>
+					<value>true</value>
+					<shipTarget>ALL</shipTarget>
+					<crewTarget>ALL</crewTarget>
+					<priority>999999</priority>
+				</statBoost>
+				<statBoost name="canTeleport">
+					<boostType>SET</boostType>
+					<value>false</value>
+					<shipTarget>ALL</shipTarget>
+					<crewTarget>ALL</crewTarget>
+					<priority>999999</priority>
+				</statBoost>
+			</statBoosts>
+		</spawnCrew>
+		<launchSounds>
+			<sound>focus_strong</sound>
+		</launchSounds>
+		<hitShipSounds>
+			<sound>hitHull2</sound>
+			<sound>hitHull3</sound>
+		</hitShipSounds>
+		<hitShieldSounds>
+			<sound>hitShield1</sound>
+			<sound>hitShield2</sound>
+			<sound>hitShield3</sound>
+		</hitShieldSounds>
+		<missSounds>
+			<sound>miss</sound>
+		</missSounds>
+		<weaponArt>Catalyzer</weaponArt>
+		<iconImage>laser</iconImage>
+	</weaponBlueprint>
+
+
+
 <weaponBlueprint name="DSN_FIRE_PINPOINT_ARTILLERY">
     <type>BEAM</type>
     <flavorType>Pinpoint</flavorType>
@@ -934,7 +997,7 @@
 	<missSounds>
 		<sound>miss</sound>
 	</missSounds>
-	<weaponArt>toggle_math_flak_adder</weaponArt> 
+	<weaponArt>toggle_math_flak_adder</weaponArt>
 	<iconImage>flak</iconImage>
 </weaponBlueprint>
 
@@ -962,7 +1025,7 @@
 	<stun>5</stun>
 	<power>4</power>
 	<cost>100</cost>
-	
+
 	<statBoosts>
 		<statBoost name="moveSpeedMultiplier">
 			<boostType>MULT</boostType>
@@ -993,7 +1056,7 @@
 			<duration>10</duration>
 		</statBoost>
 	</statBoosts>
-	
+
 	<bp>10</bp>
 	<speed>26</speed>
 	<rarity>0</rarity>
@@ -1018,7 +1081,7 @@
 	<missSounds>
 		<sound>miss</sound>
 	</missSounds>
-	<weaponArt>toggle_math_flak_greater_than</weaponArt> 
+	<weaponArt>toggle_math_flak_greater_than</weaponArt>
 	<iconImage>flak</iconImage>
 </weaponBlueprint>
 
@@ -1071,7 +1134,7 @@
 	<missSounds>
 		<sound>miss</sound>
 	</missSounds>
-	<weaponArt>toggle_math_flak_multiplier</weaponArt> 
+	<weaponArt>toggle_math_flak_multiplier</weaponArt>
 	<iconImage>flak</iconImage>
 </weaponBlueprint>
 
@@ -1138,3 +1201,16 @@
 		<power>Sees adjacent rooms, NOT immune to mind control.</power>
 	</powerList>
 </crewBlueprint>
+
+
+<crewBlueprint name="dsn_catalyzer_crew">
+		<desc>A localized cloud of ionic potential.</desc>
+		<title>Anomaly Cloud</title>
+		<short>Cloud</short>
+		<cost>5000</cost>
+		<bp>2</bp>
+		<rarity>0</rarity>
+		<powerList>
+			<power>Releases a devastating pulse of energy on destruction, if you can destroy it before dissipation.</power>
+		</powerList>
+	</crewBlueprint>

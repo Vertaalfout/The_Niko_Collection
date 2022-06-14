@@ -17,6 +17,33 @@
 
 
 
+<animSheet name="Catalyzer" w="495" h="58" fw="33" fh="58">weapon_special/Catalyzer.png</animSheet>
+<weaponAnim name="Catalyzer">
+	<sheet>Catalyzer</sheet>
+	<desc length="15" x="0" y="0"/>
+	<chargedFrame>8</chargedFrame>
+	<fireFrame>9</fireFrame>
+	<firePoint  x="19" y="1"/>
+	<mountPoint x="4" y="45"/>
+	<!--<chargeImage>weapon_special/Catalyzer_glow.png</chargeImage>-->
+</weaponAnim>
+
+<animSheet name="Catalyzer_Projectile" w="22" h="15" fw="22" fh="15">weapon_special/Catalyzer_Projectile.png</animSheet>
+	<anim name="Catalyzer_Projectile">
+		<sheet>Catalyzer_Projectile</sheet>
+		<desc length="1" x="0" y="0"/>
+		<time>1</time>
+	</anim>
+
+
+
+
+
+
+
+
+
+
 <animSheet name="toggle_math_flak_adder" w="1072" h="79" fw="67" fh="79">weapon_math/toggle_math_flak_adder.png</animSheet>
 <weaponAnim name="toggle_math_flak_adder">
 	<sheet>toggle_math_flak_adder</sheet>
@@ -565,5 +592,132 @@
 	<desc length="1" x="0" y="0" />
 	<time>1</time>
 </anim>
+
+
+
+
+
+
+<animSheet name="dsn_catalyzer_crew" w="700" h="105" fw="35" fh="35">people/dsn_catalyzer_crew_base.png</animSheet>
+	<anim name="dsn_catalyzer_crew_clone">
+		<sheet>dsn_catalyzer_crew</sheet>
+		<desc length="20" x="0" y="2"/>
+		<time>0.75</time>
+	</anim>
+	<anim name="dsn_catalyzer_crew_death_right">
+		<sheet>dsn_catalyzer_crew</sheet>
+		<desc length="20" x="0" y="1"/>
+		<time>0.75</time>
+	</anim>
+	<anim name="dsn_catalyzer_crew_death_left">
+		<sheet>dsn_catalyzer_crew</sheet>
+		<desc length="20" x="0" y="1"/>
+		<time>0.75</time>
+	</anim>
+	<anim name="dsn_catalyzer_crew_walk_down">
+		<sheet>dsn_catalyzer_crew</sheet>
+		<desc length="20" x="0" y="2"/>
+		<time>1.0</time>
+	</anim>
+	<anim name="dsn_catalyzer_crew_walk_right">
+		<sheet>dsn_catalyzer_crew</sheet>
+		<desc length="20" x="0" y="2"/>
+		<time>1.0</time>
+	</anim>
+	<anim name="dsn_catalyzer_crew_walk_up">
+		<sheet>dsn_catalyzer_crew</sheet>
+		<desc length="20" x="0" y="2"/>
+		<time>1.0</time>
+	</anim>
+	<anim name="dsn_catalyzer_crew_walk_left">
+		<sheet>dsn_catalyzer_crew</sheet>
+		<desc length="20" x="0" y="2"/>
+		<time>1.0</time>
+	</anim>
+	<anim name="dsn_catalyzer_crew_shoot_down">
+		<sheet>dsn_catalyzer_crew</sheet>
+		<desc length="20" x="0" y="2"/>
+		<time>1.0</time>
+	</anim>
+	<anim name="dsn_catalyzer_crew_shoot_right">
+		<sheet>dsn_catalyzer_crew</sheet>
+		<desc length="20" x="0" y="2"/>
+		<time>1.0</time>
+	</anim>
+	<anim name="dsn_catalyzer_crew_shoot_up">
+		<sheet>dsn_catalyzer_crew</sheet>
+		<desc length="20" x="0" y="2"/>
+		<time>1.0</time>
+	</anim>
+	<anim name="dsn_catalyzer_crew_shoot_left">
+		<sheet>dsn_catalyzer_crew</sheet>
+		<desc length="20" x="0" y="2"/>
+		<time>1.0</time>
+	</anim>
+	<anim name="dsn_catalyzer_crew_fire_down">
+		<sheet>dsn_catalyzer_crew</sheet>
+		<desc length="20" x="0" y="2"/>
+		<time>1.0</time>
+	</anim>
+	<anim name="dsn_catalyzer_crew_fire_right">
+		<sheet>dsn_catalyzer_crew</sheet>
+		<desc length="20" x="0" y="2"/>
+		<time>1.0</time>
+	</anim>
+	<anim name="dsn_catalyzer_crew_fire_up">
+		<sheet>dsn_catalyzer_crew</sheet>
+		<desc length="20" x="0" y="2"/>
+		<time>1.0</time>
+	</anim>
+	<anim name="dsn_catalyzer_crew_fire_left">
+		<sheet>dsn_catalyzer_crew</sheet>
+		<desc length="20" x="0" y="2"/>
+		<time>1.0</time>
+	</anim>
+	<anim name="dsn_catalyzer_crew_repair">
+		<sheet>dsn_catalyzer_crew</sheet>
+		<desc length="20" x="0" y="2"/>
+		<time>1.0</time>
+	</anim>
+	<anim name="dsn_catalyzer_crew_punch_up">
+		<sheet>dsn_catalyzer_crew</sheet>
+		<desc length="20" x="0" y="2"/>
+		<time>1.0</time>
+	</anim>
+	<anim name="dsn_catalyzer_crew_punch_down">
+		<sheet>dsn_catalyzer_crew</sheet>
+		<desc length="20" x="0" y="2"/>
+		<time>1.0</time>
+	</anim>
+	<anim name="dsn_catalyzer_crew_teleport">
+		<sheet>dsn_catalyzer_crew</sheet>
+		<desc length="20" x="0" y="2"/>
+		<time>0.5</time>
+	</anim>
+	<anim name="dsn_catalyzer_crew_type_right">
+		<sheet>dsn_catalyzer_crew</sheet>
+		<desc length="20" x="0" y="2"/>
+		<time>0.75</time>
+	</anim>
+	<anim name="dsn_catalyzer_crew_type_left">
+		<sheet>dsn_catalyzer_crew</sheet>
+		<desc length="20" x="0" y="2"/>
+		<time>0.75</time>
+	</anim>
+	<anim name="dsn_catalyzer_crew_type_up">
+		<sheet>dsn_catalyzer_crew</sheet>
+		<desc length="20" x="0" y="2"/>
+		<time>0.75</time>
+	</anim>
+	<anim name="dsn_catalyzer_crew_type_down">
+		<sheet>dsn_catalyzer_crew</sheet>
+		<desc length="20" x="0" y="2"/>
+		<time>0.75</time>
+	</anim>
+	<anim name="dsn_catalyzer_crew_portrait">
+		<sheet>dsn_catalyzer_crew</sheet>
+		<desc length="1" x="0" y="2"/>
+		<time>1</time>
+	</anim>
 
 </FTL>

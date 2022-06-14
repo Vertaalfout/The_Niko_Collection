@@ -11,7 +11,7 @@
 		<mod-append:ship>PLAYER_SHIP_JAWBREAKER</mod-append:ship>
 		<mod-append:ship>PLAYER_SHIP_FIRESTEALTH</mod-append:ship>
 		<mod-append:ship>PLAYER_SHIP_DSN_BLACKRAVEN</mod-append:ship>
-		<mod-append:empty/> 
+		<mod-append:empty/>
 		<mod-append:empty/>
 		<mod-append:empty/>
 		<mod-append:empty/>
@@ -1027,17 +1027,17 @@
 	<variable name="dsn_callie_fight_counter" op = "set" value = "0"/>
 	<variable name="dsn_callie_reloader_counter" op = "set" value = "0"/>
 	<variable name="dsn_installed" op ="set" value ="1"/>
-	
+
 	<req name="ENGI_DEFENDER_ADDON_INSTALLED_FORGEMASTER" type="all">
 		<name>engi_defender</name>
 		<name>ADDON_INSTALLED_FORGEMASTER</name>
 	</req>
-	
+
 	<req name="LIST_CREW_ROCK_SKINS_ADDON_INSTALLED_FORGEMASTER" type="all">
 		<name>LIST_CREW_ROCK_SKINS</name>
 		<name>ADDON_INSTALLED_FORGEMASTER</name>
 	</req>
-	
+
 	<req name="HS_LIST_CALIIE_RELOADER" type="all">
 		<name>ANY GIFTLIST_WEAPONS_MATH</name>
 		<name>DSN_CALLIE_DRIVE_HACKER</name>
@@ -1174,6 +1174,96 @@
 			<transformRace>obelisk_math_add</transformRace>
 		</powerEffect>
 	</race>
+
+
+
+<!--Catalyzer Crew-->
+	<race name="dsn_catalyzer_crew">
+			<maxHealth>30</maxHealth>
+
+			<damageTakenMultiplier>0.01</damageTakenMultiplier>
+			<!--<allDamageTakenMultiplier>100</allDamageTakenMultiplier>-->
+
+			<canFight>false</canFight>
+			<canRepair>false</canRepair>
+			<canSabotage>false</canSabotage>
+			<canTeleport>false</canTeleport>
+			<resistsMindControl>true</resistsMindControl>
+			<canSuffocate>false</canSuffocate>
+			<damageMultiplier>0</damageMultiplier>
+			<rangedDamageMultiplier>0</rangedDamageMultiplier>
+			<suffocationModifier>0</suffocationModifier>
+			<fireDamageMultiplier>0.0</fireDamageMultiplier>
+			<selectable>false</selectable>
+			<stunMultiplier>0</stunMultiplier>
+			<fireRepairMultiplier>0</fireRepairMultiplier>
+			<canMan>false</canMan>
+			<noClone>true</noClone>
+			<noSlot>true</noSlot>
+			<controllable>false</controllable>
+			<canPhaseThroughDoors>false</canPhaseThroughDoors>
+			<moveSpeedMultiplier>0</moveSpeedMultiplier>
+			<noAI>true</noAI>
+
+			<animBase>rock</animBase>
+			<deathSounds>
+				<deathSound>rockDeath</deathSound>
+			</deathSounds>
+			<shootingSounds>
+				<shootingSound>rockThrow1</shootingSound>
+				<shootingSound>rockThrow2</shootingSound>
+				<shootingSound>rockThrow3</shootingSound>
+			</shootingSounds>
+			<repairSounds animSoundFrame="5">
+				<repairSound>rockThud1</repairSound>
+				<repairSound>rockThud2</repairSound>
+				<repairSound>rockThud3</repairSound>
+			</repairSounds>
+
+			<deathEffect>
+				<damage>8</damage>
+				<persDamage>8</persDamage>
+				<sysDamage>8</sysDamage>
+				<ion>8</ion>
+				<fireChance>10</fireChance>
+				<friendlyFire>true</friendlyFire>
+				<shipFriendlyFire>true</shipFriendlyFire>
+			</deathEffect>
+
+
+			<powerEffect>
+				<cooldown>9</cooldown>
+				<jumpCooldown>reset</jumpCooldown>
+				<powerCharges>1</powerCharges>
+				<chargesPerJump>1</chargesPerJump>
+
+				<powerSounds>
+					<powerSound>silence</powerSound>
+				</powerSounds>
+				<statBoosts>
+					<statBoost name="deathEffect">
+							<boostType>SET</boostType>
+							<crewTarget>SELF</crewTarget>
+							<shipTarget>ALL</shipTarget>
+							<priority>999999</priority>
+							<deathEffect>
+							</deathEffect>
+					</statBoost>
+					<statBoost name="trueHealAmount">
+						<boostType>FLAT</boostType>
+						<amount>-9999999</amount>
+						<shipTarget>ALL</shipTarget>
+						<crewTarget>SELF</crewTarget>
+						<priority>999999</priority>
+					</statBoost>
+			</statBoosts>
+				<buttonText>Dissolve</buttonText>
+				<tooltip>Ready: Dissolve harmlessly once time runs out</tooltip>
+				<cooldownColor r="95" g="40" b="162"/>
+				<activateWhenReady enemiesOnly="false">true</activateWhenReady>
+			</powerEffect>
+
+		</race>
 
 
 
