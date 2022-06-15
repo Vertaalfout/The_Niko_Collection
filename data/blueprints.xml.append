@@ -884,6 +884,7 @@
 			<name>Ionic Manifestation</name>
 			<lifetime>10</lifetime>
 			<noSlot>true</noSlot>
+			<enemy>true</enemy>
 			<statBoosts>
 				<statBoost name="noClone">
 					<boostType>SET</boostType>

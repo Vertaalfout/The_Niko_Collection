@@ -1232,11 +1232,10 @@
 
 
 			<powerEffect>
-				<cooldown>9</cooldown>
+				<cooldown>10</cooldown>
 				<jumpCooldown>reset</jumpCooldown>
 				<powerCharges>1</powerCharges>
 				<chargesPerJump>1</chargesPerJump>
-
 				<powerSounds>
 					<powerSound>silence</powerSound>
 				</powerSounds>
@@ -1256,7 +1255,7 @@
 						<crewTarget>SELF</crewTarget>
 						<priority>999999</priority>
 					</statBoost>
-			</statBoosts>
+				</statBoosts>
 				<buttonText>Dissolve</buttonText>
 				<tooltip>Ready: Dissolve harmlessly once time runs out</tooltip>
 				<cooldownColor r="95" g="40" b="162"/>
